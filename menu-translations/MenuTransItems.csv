@@ -1,0 +1,51 @@
+en,de,es,fr,gr,in,it,nl,pl,pt,ru
+Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox
+All apps,Alle Anwendungen,Todas las aplicaciones,Toutes les applications,Όλες οι εφαρμογές,Semua Aplikasi,Tutte le applicazioni,Wszystkie aplikacje,Wszystkie aplikacje,Todas as aplicações,Все приложения
+Browser,Browser,Navegador,Navigateur,Περιήγηση,Peramban,Browser,Przeglądarka,Browser,Browser,Браузер
+Email,E-Mail,Correo electrónico,Courriel,Ηλεκτρονική διεύθυνση,Email,Invia un'e-mail a,E-mail,Email,Email,Email
+File manager ,Datei-Manager ,Gestor de archivos ,Gestionnaire de fichiers ,Διαχείριση αρχείων,Pengelola Berkas,File manager ,Menedżer plików,Menedżer plików ,Gestor de ficheiros ,Менеджер файлов 
+Help ,Hilfe ,Ayuda ,Aide ,Βοήθεια,Bantuan,Aiuto ,Pomoc,Pomoc ,Ajuda ,Помощь 
+Music,Musik,Música,Musique,Μουσική,Musik,Musica,Muzyka,Muzyka,Música,Музыка
+Run ,Führen Sie  aus. ,Corre ,Courir ,Εκτέλεση,Jalankan,Esegui ,Uruchom,Biegnij ,Corre ,Запустить 
+Terminal,Terminal,Terminal,Terminal,Τερματικό,Terminal,Terminale,Terminal,Terminal,Terminal,Терминал
+Look,Siehe,Mira,Regardez,Εμφάνιση,Tampilan,Guarda,Wygląd,Spójrz na,Veja,Посмотреть
+Conky,Conky,Conky,Conky,Conky,Conky,Conky,Conky,Conky,Conky,Конки
+Docks,Docks,Muelles,Docks,Docks,Docks,Darsene,Doki,Doki,Docas,Доки
+Default,Standardmäßig,Por defecto,Par défaut,Προκαθορισμένο,Setelan Bawaan,Predefinito,Domyślny,Domyślnie,Por defeito,По умолчанию
+Dockmaker,Dockmaker,Dockmaker,Dockmaker,Dockmaker,DockMaker,Dockmaker,Dockmaker,Dockmaker,Dockmaker,Докмейкер
+Desktop icons,Desktop-Symbole,Iconos de escritorio,Icônes de bureau,Εικονίδια επιφάνειας εργασίας,Ikon Desktop,Icone da tavolo,Ikony pulpitu,Ikony na pulpicie,Ícones do ambiente de trabalho,Иконки рабочего стола
+Monitors,Überwacht,Monitores,Surveille,Έλεγχος,Layar,Monitor,Monitory,Monitory,Monitores,Мониторы
+Style,Stil,Estilo,Style,Στυλ,Gaya,Stile,Styl,Styl,Estilo,Стиль
+Theme,Thema,Tema,Thème,Θέμα,Tema,Tema,Motyw,Temat,Tema,Тема
+Toolbar,Symbolleiste,Barra de herramientas,Barre d'outils,Γραμμή εργαλείων,Bilah Alat,Barra degli strumenti,Pasek narzędzi,Pasek narzędzi,Barra de ferramentas,Панель инструментов
+Legacy,Vermächtnis,Legado,Héritage,Κληρονομιά,Legacy,Eredità,Starsza wersja,Dziedzictwo,Legado,Наследие
+User last,Benutzer zuletzt,El último usuario,Dernier utilisateur,Προηγούμενο,Pemakai Terakhir,Ultimo utente,Ostatnie ustawienie użytkownika,Ostatni użytkownik,Último utilizador,Последний пользователь
+Wallpaper,Bildschirmhintergrund,Fondo de pantalla,Fond d'écran,Ταπετσαρία,Wallpaper,Carta da parati,Tapeta,Tapeta,Wallpaper,Обои
+Settings,Einstellungen,Ajustes,Paramètres,Ρυθμίσεις,Setelan,Impostazioni,Ustawienia,Ustawienia,Definições,Настройки
+Configure,Konfigurieren Sie,Configurar,Configurer,Διαμόρφωση,Konfigurasi,Configurare,Konfiguracja,Konfiguracja,Configurar,Настройка
+Apps,Anwendungen,Aplicaciones,Apps,Εφαρμογές,Aplikasi,Applicazioni,Aplikacje,Apps,Apps,Приложения
+Init,Init,Init,Init,Init,Init,Init,Init,Init,Init,Ините
+Keys,Schlüssel,Llaves,Clés,Keys,Tombol,Tasti,Skróty klawiszowe,Klucze,Chaves,Ключи
+Menu,Menü,Menú,Menu,Μενού,Menu,Menu,Menu,Menu,Menu,Меню
+Overlay,Überlagerung,Superposición,Superposition,Επικάλυμμα,Lembaran Atas,Sovrapposizione,Nakładka graficzna,Nakładka,Overlay,Наложение
+Startup,Neugründung,Inicio,Startup,Startup,Memulai ,Avvio,Autostart,Startup,Arranque,Запуск
+Styles,Stile,Estilos,Styles,Στυλ,Gaya,Stili,Style,Style,Estilos,Стили
+Keyboard,Tastatur,Teclado,Clavier,Πληκτρολόγιο,Papan Ketik,Tastiera,Klawiatura,Keyboard,Teclado,Клавиатура
+Traditional look,Traditionelles Aussehen,Aspecto tradicional,Aspect traditionnel,Παραδοσιακή εμφάνιση,Tampilan Tradisional,Look tradizionale,Domyślny wygląd,Tradycyjny wygląd,Aspecto tradicional,Традиционный вид
+"Window, slit, toolbar","Fenster, Schlitz, Symbolleiste","Ventana, rendija, barra de herramientas","Fenêtre, fente, barre d'outils","Παράθυρο, σχισμή, γραμμή εργαλείων","Jendela, Celah, Bilah Alat","Finestra, fessura, barra degli strumenti","Okno, slit, pasek narzędzi","Okno, szczelina, pasek narzędzi","Janela, fenda, barra de ferramentas","Окно, щель, панель инструментов"
+Out of sight,Außer Sichtweite,Fuera de la vista,A l'abri des regards,Κρυμμένα,Diluar Pandangan,Lontano dagli occhi,Ukryj,Poza zasięgiem wzroku,Fora de vista,С глаз долой
+Kill dock            ,Killdock            ,Muelle de la muerte            ,Quai d'extinction            ,Τερματισμός dock,Matikan Dock,Kill dock            ,Zabij dock,Kill dock            ,Cais da matança            ,док-убийца            
+Kill a window        ,Ein Fenster töten        ,Matar una ventana        ,Tuer une fenêtre        ,Τερματισμός παραθύρου,Matikan Jendela,Uccidere una finestra        ,Zabij okno,Zabić okno        ,Matar uma janela        ,Убить окно        
+Toggle conky         ,Umschalten conky         ,Cambiar conky...         ,Toggle conky         ,Εναλλαγή conky         ,Tombol Conky,Attivare e disattivare il conky         ,Przełącznik Conky,Kostka do przełączania         ,Alternar conky         ,Тугл-конки         
+Toggle iDesk         ,iDesk umschalten         ,Cambiar el iDesk         ,Basculer l'iDesk         ,Εναλλαγή iDesk         ,Tombol iDesk,Attivare e disattivare l'iDesk         ,Przełącznik iDesk,Przełączanie iDesk         ,Toggle iDesk         ,Toggle iDesk         
+Toggle icons         ,Symbole umschalten         ,Iconos de conmutación         ,Icônes de basculement         ,Εναλλαγή εικονιδίων       ,Tombol ikon,Icone a levetta         ,Przełącznik ikon pulpitu,Ikony do przełączania         ,Alternar ícones         ,переключающиеся иконки         
+Toggle autohide dock ,Autohide-Dock umschalten ,Cambiar el muelle de auto-ocultación ,Basculer le quai autohide ,Εναλλαγή autohide dock ,Tombol sembunyikan otomatis dock,Attivare il dock autohide ,Przełącznik autoukrywania docku,Przełączyć autohide dok ,Alternar a doca de autoculto ,Тоггл-автохидный док 
+Toggle autohide toolbar,Umschalten der Autohide-Werkzeugleiste,Cambiar la barra de herramientas de auto-ocultación,Barre d'outils de masquage automatique,Εναλλαγή autohide toolbar,Tombol sembunyikan otomatis bilah alat,Attivare e disattivare la barra degli strumenti autohide,Przełącznik autoukrywania paska narzędzi,"Przełączany, automatyczny pasek narzędzi",Alternar a barra de ferramentas de autoculto,Переключить автоматическую панель инструментов
+Toggle monitors      ,Monitore umschalten      ,Cambiar los monitores...      ,Basculer les moniteurs      ,Εναλλαγή monitors      ,Tombol monitor,Monitor a levetta      ,Przełącznik monitorów,Monitory przełączające      ,Monitores Toggle      ,Тумблерные мониторы      
+Disable default dock ,Standard-Dock deaktivieren ,Deshabilitar el acoplamiento por defecto ,Désactiver le dock par défaut ,Απενεργοποίηση προεπιλεγμένο dock ,Matikan setelan bawaan dock,Disattivare il dock di default ,Wyłącz domyślny dock,Wyłączenie domyślnego doku ,Desactivar a doca por defeito ,Отключить стандартную док-станцию 
+Leave,Verlassen Sie,Deje,Quitter,Εξοδος,Meninggalkan,Lascia,Wyjdź,Wyjdź,Sair,Оставить
+Refresh,Aktualisieren Sie,Actualizar,Rafraîchir,Ανανέωση,Segarkan,Aggiorna,Odśwież,Odświeżyć,Actualização,Обновить
+Suspend,aussetzen,Suspender,Suspendre,Αναστολή,Suspend,Sospendi,Wstrzymaj,Zawiesić,Suspendam,Приостановить
+Logout,Abmeldung,Cierre de sesión,Déconnexion,Αποσύνδεση,Keluar,Logout,Wyloguj,Logout,Sair,Выход из системы
+Reboot,Neustart,Reiniciar,Redémarrer,Επανεκκινήση,Mulai ulang,Riavvio,Uruchom ponownie,Reboot,Reinicialização,Перезагрузить
+Shutdown,Herunterfahren,Apagado,Fermeture,Τερματισμός,Matikan,Spegnimento,Zamknij,Zamknięcie,Encerramento,Отключение

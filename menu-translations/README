@@ -1,0 +1,12 @@
+To produce new translated menus using the R script:
+
+1) install R-base, which will pull in a number of other packages
+2) add new column to MenuTransItems.csv and populate with translations; header should be the 2-letter language code in lower case
+3) copy this folder to a working location
+4) open a terminal in this folder and enter
+
+Rscript fluxbox.R
+
+5) the output will include all existing translations along with any new ones; this can be avoided by deleting all existing language columns except the first English one before adding in a new language. There will be an extra menu-mx_en that can be discarded.
+
+6) paste the new menu back into this folder

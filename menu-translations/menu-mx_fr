@@ -8,7 +8,7 @@
     [exec] (Executer...) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Visualiser...) 
+    [submenu] (Apparence) 
         [exec] (Conky-Manager){conky-manager2}
         [submenu] (Docks...)
             [exec] (Dock Par défaut) {~/.fluxbox/scripts/DefaultDock.mxdk}
@@ -16,7 +16,7 @@
             [exec] (Modifier le Dock) {mx-dockmaker}
         [end]
         [exec] (Icônes de bureau) {mx-idesktool}
-        [exec] (Info. Système) {gkrellm}
+        [exec] (Moniteur système) {gkrellm}
         [submenu] (Style...)
             [stylesdir] (~/.fluxbox/styles)
             [separator]
@@ -24,7 +24,7 @@
         [end]
         [exec] (Thèmes) {lxappearance}
         [submenu] (Barre d'outils...)
-            [exec] (Barre d'outils) {toolbar-legacy}
+            [exec] (Style classique) {toolbar-legacy}
             [exec] (Dernier utilisateur) {toolbar-userlast}
         [end]
         [submenu] (Fonds d'écran...)
@@ -62,7 +62,7 @@
     [end] 
     [separator]
     [submenu] (Afficher/Masquer...)
-    [exec] (Masquer wmalauncher) { killall wmalauncher               }
+    [exec] (Masquer le dock) { killall wmalauncher               }
     [exec] (Tuer une fenêtre bloquée) { xkill                             }
     [separator]
     [exec] (Afficher/Masquer conky) { conkytoggle.sh                    }
@@ -70,7 +70,7 @@
     [exec] (Afficher/Masquer Icônes) { idesktoggle icons                 }
     [exec] (Afficher/Masquer Dock) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Afficher/Masquer la Barre d'outils) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Afficher/Masquer Info. système) { toggle-mx gkrellm                 }
+    [exec] (Afficher/Masquer Moniteur système) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Désactiver le dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]

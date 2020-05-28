@@ -1,31 +1,31 @@
 [begin] (Fluxbox) 
     [exec] (Todas las aplicaciones) {xfce4-appfinder}
-    [exec] (Navegador) {firefox}
+    [exec] (Navegador web) {firefox}
     [exec] (Correo electrónico) {thunderbird}
-    [exec] (Gestor de archivos) {thunar $HOME/.fluxbox} 
+    [exec] (Administrador de archivos) {thunar $HOME/.fluxbox} 
     [exec] (Ayuda) {thunar /usr/share/mxflux/help}
-    [exec] (Música) {clementine}
-    [exec] (Corre) {fbrun} 
-    [exec] (Terminal) {xfce4-terminal} 
+    [exec] (Reproducción de música) {clementine}
+    [exec] (Ejecutar) {fbrun} 
+    [exec] (Emulador de terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Mira) 
+    [submenu] (Aspecto) 
         [exec] (Conky){conky-manager2}
-        [submenu] (Muelles)
+        [submenu] (Docks)
             [exec] (Por defecto) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
             [exec] (Dockmaker) {mx-dockmaker}
         [end]
         [exec] (Iconos de escritorio) {mx-idesktool}
-        [exec] (Monitores) {gkrellm}
-        [submenu] (Estilo)
+        [exec] (Monitores del sistema) {gkrellm}
+        [submenu] (Estilos)
             [stylesdir] (~/.fluxbox/styles)
             [separator]
             [stylesdir] (/usr/share/fluxbox/styles) 
         [end]
-        [exec] (Tema) {lxappearance}
+        [exec] (Temas) {lxappearance}
         [submenu] (Barra de herramientas)
-            [exec] (Legado) {toolbar-legacy}
-            [exec] (El último usuario) {toolbar-userlast}
+            [exec] (Heredada) {toolbar-legacy}
+            [exec] (Ultima usada) {toolbar-userlast}
         [end]
         [submenu] (Fondo de pantalla)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
@@ -34,10 +34,10 @@
         [end]
     [end]
     [submenu] (Ajustes)
-        [submenu] (Configurar)
+        [submenu] (Configuración)
             [exec] (Aplicaciones) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
-            [exec] (Llaves) {xdg-open ~/.fluxbox/keys}
+            [exec] (Atajos de teclado) {xdg-open ~/.fluxbox/keys}
             [exec] (Menú) {xdg-open ~/.fluxbox/menu-mx}
             [exec] (Superposición) {xdg-open ~/.fluxbox/overlay}
             [exec] (Inicio) {featherpad ~/.fluxbox/startup}
@@ -62,23 +62,23 @@
     [end] 
     [separator]
     [submenu] (Fuera de la vista)
-            [exec] (Muelle de la muerte) { killall wmalauncher               }
-    [exec] (Matar una ventana) { xkill                             }
+            [exec] (Cerrar aplicaciones) { killall wmalauncher               }
+    [exec] (Cerrar una ventana) { xkill                             }
     [separator]
     [exec] (Cambiar conky...) { conkytoggle.sh                    }
-    [exec] (Cambiar el iDesk) { idesktoggle idesk                 }
-    [exec] (Iconos de conmutación) { idesktoggle icons                 }
-    [exec] (Cambiar el muelle de auto-ocultación) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Cambiar la barra de herramientas de auto-ocultación) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Cambiar iDesk) { idesktoggle idesk                 }
+    [exec] (Cambiar iconos) { idesktoggle icons                 }
+    [exec] (Cambiar auto-ocultación del dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Cambiar auto-ocultación de la barra de herramientas) {$HOME/.fluxbox/scripts/toggletoolbar}
     [exec] (Cambiar los monitores...) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Deshabilitar el acoplamiento por defecto) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Cerrar aplicaciones por defecto) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] (Deje)
+    [submenu] (Salir)
         [exec] (Actualizar) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Suspender) {sudo 'pm-suspend'}
-        [exit] (Cierre de sesión) 
+        [exit] (Cerrar sesión) 
         [exec] (Reiniciar) {sudo /sbin/reboot} 
-        [exec] (Apagado) {sudo /sbin/halt}
+        [exec] (Apagar) {sudo /sbin/halt}
     [end]
 [end]

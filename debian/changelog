@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
-mxfb-docs (20.05.26) mx; urgency=medium
+mxfb-docs (20.05.01) mx; urgency=medium
 
-  * initial build
+  * seperate docs and menu-mx translations from main mx-fluxbox package
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 14 Apr 2020 20:53:06 -0400
->>>>>>> 67bd6c61c715261b5505c4dd6b0ad8b241cba527
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 27 May 2020 21:38:04 -0400

@@ -38,7 +38,7 @@
             [exec] (Aplikasi) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Tombol) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx_in}
             [exec] (Lembaran Atas) {xdg-open ~/.fluxbox/overlay}
             [exec] (Memulai) {featherpad ~/.fluxbox/startup}
             [exec] (Gaya) {thunar ~/.fluxbox/styles/}

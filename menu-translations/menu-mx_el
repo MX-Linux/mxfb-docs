@@ -38,7 +38,7 @@
             [exec] (Εφαρμογές) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Keys) {xdg-open ~/.fluxbox/keys}
-            [exec] (Μενού) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Μενού) {xdg-open ~/.fluxbox/menu-mx_el}
             [exec] (Επικάλυμμα) {xdg-open ~/.fluxbox/overlay}
             [exec] (Startup) {featherpad ~/.fluxbox/startup}
             [exec] (Στυλ) {thunar ~/.fluxbox/styles/}

@@ -38,7 +38,7 @@
             [exec] (Anwendungen) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Tastenkürzel) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menü) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Menü) {xdg-open ~/.fluxbox/menu-mx_de}
             [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
             [exec] (Startup) {featherpad ~/.fluxbox/startup}
             [exec] (Stile) {thunar ~/.fluxbox/styles/}

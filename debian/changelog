@@ -1,3 +1,9 @@
+mxfb-docs (20.05.02) mx; urgency=medium
+
+  * make sure edit menu item edits the menu translation in use 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 29 May 2020 17:27:34 -0400
+
 mxfb-docs (20.05.01) mx; urgency=medium
 
   * seperate docs and menu-mx translations from main mx-fluxbox package

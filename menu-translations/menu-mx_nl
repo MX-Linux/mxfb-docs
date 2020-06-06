@@ -8,7 +8,7 @@
     [exec] (Voer de campagne  uit.) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Kijk op) 
+    [submenu] (Verschijning) 
         [exec] (Conky){conky-manager2}
         [submenu] (Dokken)
             [exec] (Standaard) {~/.fluxbox/scripts/DefaultDock.mxdk}
@@ -38,7 +38,7 @@
             [exec] (Apps) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Toetsen) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx_nl}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
             [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
             [exec] (Opstarten) {featherpad ~/.fluxbox/startup}
             [exec] (Stijlen) {thunar ~/.fluxbox/styles/}
@@ -57,7 +57,7 @@
 			      [exec] (US) {setxkbmap us}
         [end]
         [exec] (Traditionele uitstraling) {toolbar-default}
-        [config] (Venster, spleet, werkbalk)
+        [config] (Venster)
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]

@@ -17,7 +17,7 @@
         [end]
         [exec] (Ikony pulpitu) {mx-idesktool}
         [exec] (Monitory) {gkrellm}
-        [submenu] (Style)
+        [submenu] (Styl)
             [stylesdir] (~/.fluxbox/styles)
             [separator]
             [stylesdir] (/usr/share/fluxbox/styles) 
@@ -38,7 +38,7 @@
             [exec] (Aplikacje) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Skróty klawiszowe) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx_pl}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
             [exec] (Nakładka graficzna) {xdg-open ~/.fluxbox/overlay}
             [exec] (Autostart) {featherpad ~/.fluxbox/startup}
             [exec] (Style) {thunar ~/.fluxbox/styles/}
@@ -57,7 +57,7 @@
 			      [exec] (US) {setxkbmap us}
         [end]
         [exec] (Domyślny wygląd) {toolbar-default}
-        [config] (Okno, slit, pasek narzędzi)
+        [config] (spleet)
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
@@ -78,7 +78,7 @@
         [exec] (Odśwież) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Wstrzymaj) {sudo 'pm-suspend'}
         [exit] (Wyloguj) 
-        [exec] (Zrestartuj) {sudo /sbin/reboot} 
+        [exec] (Uruchom ponownie) {sudo /sbin/reboot} 
         [exec] (Zamknij) {sudo /sbin/halt}
     [end]
 [end]

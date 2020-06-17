@@ -1,0 +1,84 @@
+[begin] (Fluxbox) 
+    [exec] (Todas as aplicações) {xfce4-appfinder}
+    [exec] (Navegador de internet) {firefox}
+    [exec] (Email) {thunderbird}
+    [exec] (Gerenciador de arquivos) {thunar $HOME/.fluxbox} 
+    [exec] (Ajuda) {thunar /usr/share/mxflux/help}
+    [exec] (Música) {clementine}
+    [exec] (Executar) {fbrun} 
+    [exec] (Terminal) {xfce4-terminal} 
+    [separator]
+    [submenu] (Aparência) 
+        [exec] (Conky){conky-manager2}
+        [submenu] (Docks)
+            [exec] (Padrão) {~/.fluxbox/scripts/DefaultDock.mxdk}
+            [separator]
+            [exec] (Dockmaker) {mx-dockmaker}
+        [end]
+        [exec] (Ícones da área de trabalho) {mx-idesktool}
+        [exec] (Monitores) {gkrellm}
+        [submenu] (Estilo)
+            [stylesdir] (~/.fluxbox/styles)
+            [separator]
+            [stylesdir] (/usr/share/fluxbox/styles) 
+        [end]
+        [exec] (Tema) {lxappearance}
+        [submenu] (Barra de ferramentas)
+            [exec] (Legado) {toolbar-legacy}
+            [exec] (Último usuário) {toolbar-userlast}
+        [end]
+        [submenu] (Papel de parede)
+            [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+            [separator]
+            [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+        [end]
+    [end]
+    [submenu] (Definições)
+        [submenu] (Configurar)
+            [exec] (Aplicações) {xdg-open ~/.fluxbox/apps}
+            [exec] (Inicialização) {xdg-open ~/.fluxbox/init}
+            [exec] (Chaveiro) {xdg-open ~/.fluxbox/keys}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
+            [exec] (Início) {featherpad ~/.fluxbox/startup}
+            [exec] (Estilos) {thunar ~/.fluxbox/styles/}
+        [end]
+        [submenu] (Teclado)
+            [exec] (DE) {setxkbmap de}
+			      [exec] (ES) {setxkbmap es} 
+			      [exec] (FR) {setxkbmap fr}
+			      [exec] (GB) {setxkbmap gb}
+			      [exec] (GR) {setxkbmap gr}
+			      [exec] (JA) {setxkbmap ja}
+			      [exec] (IT) {setxkbmap it}
+			      [exec] (PL) {setxkbmap pl}
+			      [exec] (PT) {setxkbmap pt}
+			      [exec] (RU) {setxkbmap ru}
+			      [exec] (US) {setxkbmap us}
+        [end]
+        [exec] (Aparência tradicional) {toolbar-default}
+        [config] (Janela, slit, barra de ferramentas)
+        [exec] (Xfce) {xfce4-settings-manager}
+    [end] 
+    [separator]
+    [submenu] (Fora de vista)
+            [exec] (Terminar dock) { killall wmalauncher               }
+    [exec] (Terminar uma janela) { xkill                             }
+    [separator]
+    [exec] (Alternar conky) { conkytoggle.sh                    }
+    [exec] (Alternar iDesk) { idesktoggle idesk                 }
+    [exec] (Alternar ícones) { idesktoggle icons                 }
+    [exec] (Alternar auto-ocultar dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Alternar auto-ocultar barra de ferramentas) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Alternar monitores) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Desabilitar dock padrão) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [end]
+    [submenu] (Sair)
+        [exec] (Atualizar) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Suspender) {sudo 'pm-suspend'}
+        [exit] (Sair) 
+        [exec] (Reiniciar) {sudo /sbin/reboot} 
+        [exec] (Desligar) {sudo /sbin/halt}
+    [end]
+[end]

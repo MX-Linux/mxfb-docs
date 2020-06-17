@@ -1,0 +1,84 @@
+[begin] (Fluxbox) 
+    [exec] (جميع التطبيقات) {xfce4-appfinder}
+    [exec] (المتصفح) {firefox}
+    [exec] (البريد الإلكتروني) {thunderbird}
+    [exec] (مدير الملفات) {thunar $HOME/.fluxbox} 
+    [exec] (مساعدة) {thunar /usr/share/mxflux/help}
+    [exec] (موسيقى) {clementine}
+    [exec] (Run  تشغيل) {fbrun} 
+    [exec] (Terminal طرفية) {xfce4-terminal} 
+    [separator]
+    [submenu] (مظهر) 
+        [exec] (كونكي Conky){conky-manager2}
+        [submenu] (شرائط التطبيقات)
+            [exec] (افتراضي) {~/.fluxbox/scripts/DefaultDock.mxdk}
+            [separator]
+            [exec] (معدّل شريط التطبيقات) {mx-dockmaker}
+        [end]
+        [exec] (أيقونات سطح المكتب) {mx-idesktool}
+        [exec] (الشاشات) {gkrellm}
+        [submenu] (نسق)
+            [stylesdir] (~/.fluxbox/styles)
+            [separator]
+            [stylesdir] (/usr/share/fluxbox/styles) 
+        [end]
+        [exec] (السمات) {lxappearance}
+        [submenu] (شريط الأدوات)
+            [exec] (Legacy قديم) {toolbar-legacy}
+            [exec] (المستخدم السابق) {toolbar-userlast}
+        [end]
+        [submenu] (خلفية الشاشة)
+            [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+            [separator]
+            [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+        [end]
+    [end]
+    [submenu] (إعدادات)
+        [submenu] (ضبط)
+            [exec] (التطبيقات) {xdg-open ~/.fluxbox/apps}
+            [exec] (Init) {xdg-open ~/.fluxbox/init}
+            [exec] (مفاتيح) {xdg-open ~/.fluxbox/keys}
+            [exec] (قائمة) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Overlay  تراكب) {xdg-open ~/.fluxbox/overlay}
+            [exec] (بدء التشغيل) {featherpad ~/.fluxbox/startup}
+            [exec] (أنماط) {thunar ~/.fluxbox/styles/}
+        [end]
+        [submenu] (لوحة المفاتيح)
+            [exec] (DE) {setxkbmap de}
+			      [exec] (ES) {setxkbmap es} 
+			      [exec] (FR) {setxkbmap fr}
+			      [exec] (GB) {setxkbmap gb}
+			      [exec] (GR) {setxkbmap gr}
+			      [exec] (JA) {setxkbmap ja}
+			      [exec] (IT) {setxkbmap it}
+			      [exec] (PL) {setxkbmap pl}
+			      [exec] (PT) {setxkbmap pt}
+			      [exec] (RU) {setxkbmap ru}
+			      [exec] (US) {setxkbmap us}
+        [end]
+        [exec] (المظهر التقليدي) {toolbar-default}
+        [config] (نافذة , فتحة, شريط الأدوات)
+        [exec] (Xfce) {xfce4-settings-manager}
+    [end] 
+    [separator]
+    [submenu] (خارج النظر)
+            [exec] (إنهاء شريط التطبيقات) { killall wmalauncher               }
+    [exec] (انهاء نافذة) { xkill                             }
+    [separator]
+    [exec] (إيقاف/تشغيل Conky) { conkytoggle.sh                    }
+    [exec] (إيقاف/تشغيل iDesk) { idesktoggle idesk                 }
+    [exec] (إظهار/إخفاء الأيقونات) { idesktoggle icons                 }
+    [exec] (إيقاف/تشغيل الاخفاء التلقائي لشريط التطبيقات) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (إيقاف/تشغيل الاخفاء التلقائي لشريط الأدوات) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (تبديل الشاشات) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (تعطيل شريط التطبيقات الافتراضي) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [end]
+    [submenu] (مغادرة)
+        [exec] (تحديث) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (تعليق) {sudo 'pm-suspend'}
+        [exit] (تسجيل الخروج) 
+        [exec] (إعادة التشغيل) {sudo /sbin/reboot} 
+        [exec] (إيقاف التشغيل) {sudo /sbin/halt}
+    [end]
+[end]

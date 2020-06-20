@@ -1,3 +1,9 @@
+mxfb-docs (20.06.01) mx; urgency=medium
+
+  * updated menu translations 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 20 Jun 2020 17:03:40 -0400
+
 mxfb-docs (20.05.02) mx; urgency=medium
 
   * make sure edit menu item edits the menu translation in use 

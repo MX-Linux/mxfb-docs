@@ -1,0 +1,79 @@
+Planned Edits of MX Fluxbox Docs
+================================
+mowest
+07/26/2020
+
+== Page 1 ==
+
+Use the default toolbar at the bottom ("dock" changed to "toolbar"; "bottom" changed to "top")
+
+    * I highlight a number of changes that eliminate "dock" from the discussion of the fluxbox toolbar. I have two reasons for this. It cuts down the length of documentation, and it doesn't introduce a different naming convention from the fluxbox manpage documentation. I believe in the long run it will make for a cleaner manual that will reflect the same vocabulary as the fluxbox manpage.
+
+The user can see the (eliminated "entire") MX-Xfce (Whisker) menu ("MX-Xfce (Whisker) menu" changed to "MX-Xfce Application Finder") by clicking "All apps" in the desktop menu, pressing F6, (added the Oxford comma) or using ("clicking" instead of "using" to fit in with common instruction for using a GUI button) the MX Linux icon on the left end of the dock. (changed to "on the top of the dock on the left side of the screen.")
+
+    * From what I understand that what opens is not the whisker menu because that is a panel extension, and you would need an Xfce panel to run the whisker menu.
+
+== Page 2 ==
+
+(I inserted a new graphic of the toolbar to reflect the current styling of that toolbar.)
+
+I changed some wording of the title and first paragraph to remove the choice of "dock".
+
+== Page 3 ==
+
+I changed the headings about "Legacy" to bring in the word "toolbar" to make the section more consistent.
+
+== Page 4 ==
+
+I changed "All apps" to "Application Finder" the actual name for the XFCE program.
+
+I changed the last paragraph with references to MX-Twice which doesn't exist in that folder, but instead other MX tweaked styles are found in ~/.fluxbox/styles.
+
+== Page 5 ==
+
+I changed the 2nd paragraph about themes. "Arc-Darker" seems to be the current default theme. I also changed the reference to opening lxappearance because the menu selections were off.
+
+Corrected, "ajust" to "adjust" in the third paragraph on the page.
+
+Corrected paragraph which refers to backgrounds and switched everything to "wallpapers" to fit the menu name. Changed the menu names to reflect the current menu.
+
+Under "Conky" I corrected the menu references to reflect the default menu.
+
+== Page 6 ==
+
+Under "Can I use my own keystroke combinations?" I rewrote the phrase after the menu reference to remove an unfinished parenthetical thought.
+
+    * A note about the fact that some "keybindings may not work" I believe this maybe because MX-Fluxbox is starting with the default Fluxbox keys file and adding to that, but would it be possible for us to simply edit the ones that don't work, so they do work out of the box for MX users? The one obvious one that I'm thinking of is the one in that file that gives a key combination to open a terminal. It tries to launch xterm which is not installed on MX. Couldn't we just change that one to "xfce4-terminal" so that at least some terminal launches when that key combination is used?
+
+I have some questions under, "Are there options available for apps that I launch?"
+
+    * I rewrote this paragraph because when I right click on the title bar of two different installs of MX-Fluxbox, I don't get any of these window options, but they do show up if I right click on their entries on the toolbar. So I have rewritten this paragraph to reflect this change.
+    * I thought I remembered using Fluxbox in the past where you could right click on the title bar and those options would come up, so I'm unsure of what setting might have been changed in MX-Fluxbox so that it doesn't seem to work in the most recent version.
+
+
+Under "What screen options exist?" I have removed the references to menu entries that don't exist.
+
+Added a new screenshot for gkrellm for size and placement purposes, and moved it to page 7 where it is mentioned.
+
+== Page 7 ==
+
+I added a new graphic of the current dock, and changed the wording slightly to indicate that the dock is indeed the vertical one on the left side of the screen.
+
+== Page 9 ==
+
+I took a new screenshot of the current icons that are being managed by idesk, and placed that graphic next to the section on "locking" where they are referred to. I also changed the wording of that section to reflect the current default of two icons on the screen.
+
+== Pages 10-12 ==
+
+I didn't touch these pages that spoke about the wmalauncher. There is the new MX Dockmaker that uses wmalauncher on the backend, and those docs are in the wiki. I was wondering if we should maybe move a copy of the wiki documentation into this document, but I didn't make that change at this time. I'm wondering about the value in keeping the wmalauncher info in a MX user manual since I would imagine that we are encouraging users to make use of the new MX Dockmaker, but I feel that is a decision that is better left to the community. Perhaps it could become more of a reference link in the future for those who really want to dig deep into wmalauncher.
+
+== Page 13 ==
+
+Changed the version date to today.
+
+== Note for Jerry ==
+
+Jerry, I wanted to express my appreciation for the work that has gone into MX-Fluxbox. I'm very interested in this project and would like to continue to contribute in whatever ways you see fit. I'm not a coder like my son, but I would like to continue making the docs better if that is an area that you feel comfortable in letting me participate. MX-Fluxbox truly comes across as a labor of love, and I look forward to seeing how it continues to develop in the future.
+
+Steve (mowest or in someplaces mowestusa)
+

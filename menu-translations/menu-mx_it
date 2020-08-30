@@ -1,4 +1,5 @@
 [begin] (Fluxbox) 
+    [exec] (Info...) {about-mx-fluxbox)
     [exec] (Tutte le applicazioni) {xfce4-appfinder}
     [exec] (Browser) {firefox}
     [exec] (Invia un'e-mail a) {thunderbird}
@@ -24,8 +25,8 @@
         [end]
         [exec] (Tema) {lxappearance}
         [submenu] (Barra degli strumenti)
-            [exec] (Eredità) {toolbar-legacy}
-            [exec] (Ultimo utente) {toolbar-userlast}
+            [exec] (Fluxbox) {toggletint2}
+            [exec] (Look tradizionale) {toggletint2}
         [end]
         [submenu] (Carta da parati)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
@@ -38,7 +39,7 @@
             [exec] (Applicazioni) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Tasti) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx_it}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
             [exec] (Sovrapposizione) {xdg-open ~/.fluxbox/overlay}
             [exec] (Avvio) {featherpad ~/.fluxbox/startup}
             [exec] (Stili) {thunar ~/.fluxbox/styles/}
@@ -56,8 +57,7 @@
 			      [exec] (RU) {setxkbmap ru}
 			      [exec] (US) {setxkbmap us}
         [end]
-        [exec] (Look tradizionale) {toolbar-default}
-        [config] (Finestra, fessura, barra degli strumenti)
+        [config] (Fluxbox)
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]

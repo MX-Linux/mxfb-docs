@@ -1,49 +1,50 @@
 [begin] (Fluxbox) 
-    [exec] (Rechercher des applications) {xfce4-appfinder}
-    [exec] (Navigateur Internet) {firefox}
+    [exec] (À propos...) {about-mx-fluxbox)
+    [exec] (Toutes les applications) {xfce4-appfinder}
+    [exec] (Navigateur) {firefox}
     [exec] (Courriel) {thunderbird}
     [exec] (Gestionnaire de fichiers) {thunar $HOME/.fluxbox} 
     [exec] (Aide) {thunar /usr/share/mxflux/help}
     [exec] (Musique) {clementine}
-    [exec] (Executer...) {fbrun} 
+    [exec] (Courir) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Apparence) 
-        [exec] (Conky-Manager){conky-manager2}
-        [submenu] (Docks...)
-            [exec] (Dock Par défaut) {~/.fluxbox/scripts/DefaultDock.mxdk}
+    [submenu] (Regardez) 
+        [exec] (Conky){conky-manager2}
+        [submenu] (Docks)
+            [exec] (Par défaut) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
-            [exec] (Modifier le Dock) {mx-dockmaker}
+            [exec] (Dockmaker) {mx-dockmaker}
         [end]
         [exec] (Icônes de bureau) {mx-idesktool}
-        [exec] (Moniteur système) {gkrellm}
-        [submenu] (Style...)
+        [exec] (Surveille) {gkrellm}
+        [submenu] (Style)
             [stylesdir] (~/.fluxbox/styles)
             [separator]
             [stylesdir] (/usr/share/fluxbox/styles) 
         [end]
-        [exec] (Thèmes) {lxappearance}
-        [submenu] (Barre d'outils...)
-            [exec] (Style classique) {toolbar-legacy}
-            [exec] (Dernier utilisateur) {toolbar-userlast}
+        [exec] (Thème) {lxappearance}
+        [submenu] (Barre d'outils)
+            [exec] (Fluxbox) {toggletint2}
+            [exec] (Aspect traditionnel) {toggletint2}
         [end]
-        [submenu] (Fonds d'écran...)
+        [submenu] (Fond d'écran)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
         [end]
     [end]
-    [submenu] (Paramètres...)
-        [submenu] (Configurer...)
+    [submenu] (Paramètres)
+        [submenu] (Configurer)
             [exec] (Apps) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Clés) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx_fr}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
             [exec] (Superposition) {xdg-open ~/.fluxbox/overlay}
             [exec] (Startup) {featherpad ~/.fluxbox/startup}
             [exec] (Styles) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] (Langues du Clavier...)
+        [submenu] (Clavier)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -56,29 +57,28 @@
 			      [exec] (RU) {setxkbmap ru}
 			      [exec] (US) {setxkbmap us}
         [end]
-        [exec] (Barre d'outils par défaut) {toolbar-default}
-        [config] (Fenêtres, curseurs, barre d'outils)
-        [exec] (Paramètres de Xfce) {xfce4-settings-manager}
+        [config] (Fluxbox)
+        [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] (Afficher/Masquer...)
-    [exec] (Masquer le dock) { killall wmalauncher               }
-    [exec] (Tuer une fenêtre bloquée) { xkill                             }
+    [submenu] (A l'abri des regards)
+            [exec] (Quai d'extinction) { killall wmalauncher               }
+    [exec] (Tuer une fenêtre) { xkill                             }
     [separator]
-    [exec] (Afficher/Masquer conky) { conkytoggle.sh                    }
-    [exec] (Afficher/Masquer iDesk) { idesktoggle idesk                 }
-    [exec] (Afficher/Masquer Icônes) { idesktoggle icons                 }
-    [exec] (Afficher/Masquer Dock) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Afficher/Masquer la Barre d'outils) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Afficher/Masquer Moniteur système) { toggle-mx gkrellm                 }
+    [exec] (Toggle conky) { conkytoggle.sh                    }
+    [exec] (Basculer l'iDesk) { idesktoggle idesk                 }
+    [exec] (Icônes de basculement) { idesktoggle icons                 }
+    [exec] (Basculer le quai autohide) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Barre d'outils de masquage automatique) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Basculer les moniteurs) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Désactiver le dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Désactiver le dock par défaut) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] (Déconnexion...)
-        [exec] (Rafraîchir Fluxbox WM...) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] (Mise en veille du PC) {sudo 'pm-suspend'}
-        [exit] (Déconnexion...) 
-        [exec] (Redémarrer le PC) {sudo /sbin/reboot} 
-        [exec] (Éteindre le PC) {sudo /sbin/halt}
+    [submenu] (Quitter)
+        [exec] (Rafraîchir) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Suspendre) {sudo 'pm-suspend'}
+        [exit] (Déconnexion) 
+        [exec] (Redémarrer) {sudo /sbin/reboot} 
+        [exec] (Fermeture) {sudo /sbin/halt}
     [end]
 [end]

@@ -1,4 +1,5 @@
 [begin] (Fluxbox) 
+    [exec] (About) {about-mx-fluxbox)
     [exec] (All apps) {xfce4-appfinder}
     [exec] (Browser) {firefox}
     [exec] (Email) {thunderbird}
@@ -24,8 +25,8 @@
         [end]
         [exec] (Theme) {lxappearance}
         [submenu] (Toolbar)
-            [exec] (Legacy) {toolbar-legacy}
-            [exec] (User last) {toolbar-userlast}
+            [exec] (Fluxbox) {toggletint2}
+            [exec] (Traditional) {toggletint2}
         [end]
         [submenu] (Wallpaper)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
@@ -56,8 +57,7 @@
 			      [exec] (RU) {setxkbmap ru}
 			      [exec] (US) {setxkbmap us}
         [end]
-        [exec] (Traditional look) {toolbar-default}
-        [config] (Window, slit, toolbar)
+        [config] (Fluxbox)
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]

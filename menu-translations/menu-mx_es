@@ -1,31 +1,32 @@
 [begin] (Fluxbox) 
+    [exec] (Acerca de...) {about-mx-fluxbox)
     [exec] (Todas las aplicaciones) {xfce4-appfinder}
-    [exec] (Navegador web) {firefox}
+    [exec] (Navegador) {firefox}
     [exec] (Correo electrónico) {thunderbird}
-    [exec] (Administrador de archivos) {thunar $HOME/.fluxbox} 
+    [exec] (Gestor de archivos) {thunar $HOME/.fluxbox} 
     [exec] (Ayuda) {thunar /usr/share/mxflux/help}
-    [exec] (Reproducción de música) {clementine}
-    [exec] (Ejecutar) {fbrun} 
-    [exec] (Emulador de terminal) {xfce4-terminal} 
+    [exec] (Música) {clementine}
+    [exec] (Corre) {fbrun} 
+    [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Aspecto) 
+    [submenu] (Mira) 
         [exec] (Conky){conky-manager2}
-        [submenu] (Docks)
+        [submenu] (Muelles)
             [exec] (Por defecto) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
             [exec] (Dockmaker) {mx-dockmaker}
         [end]
         [exec] (Iconos de escritorio) {mx-idesktool}
-        [exec] (Monitores del sistema) {gkrellm}
-        [submenu] (Estilos)
+        [exec] (Monitores) {gkrellm}
+        [submenu] (Estilo)
             [stylesdir] (~/.fluxbox/styles)
             [separator]
             [stylesdir] (/usr/share/fluxbox/styles) 
         [end]
-        [exec] (Temas) {lxappearance}
+        [exec] (Tema) {lxappearance}
         [submenu] (Barra de herramientas)
-            [exec] (Heredada) {toolbar-legacy}
-            [exec] (Ultima usada) {toolbar-userlast}
+            [exec] (Fluxbox) {toggletint2}
+            [exec] (Aspecto tradicional) {toggletint2}
         [end]
         [submenu] (Fondo de pantalla)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
@@ -34,11 +35,11 @@
         [end]
     [end]
     [submenu] (Ajustes)
-        [submenu] (Configuración)
+        [submenu] (Configurar)
             [exec] (Aplicaciones) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
-            [exec] (Atajos de teclado) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menú) {xdg-open ~/.fluxbox/menu-mx_es}
+            [exec] (Llaves) {xdg-open ~/.fluxbox/keys}
+            [exec] (Menú) {xdg-open ~/.fluxbox/menu-mx}
             [exec] (Superposición) {xdg-open ~/.fluxbox/overlay}
             [exec] (Inicio) {featherpad ~/.fluxbox/startup}
             [exec] (Estilos) {thunar ~/.fluxbox/styles/}
@@ -56,29 +57,28 @@
 			      [exec] (RU) {setxkbmap ru}
 			      [exec] (US) {setxkbmap us}
         [end]
-        [exec] (Aspecto tradicional) {toolbar-default}
-        [config] (Ventana, rendija, barra de herramientas)
+        [config] (Fluxbox)
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
     [submenu] (Fuera de la vista)
-            [exec] (Cerrar aplicaciones) { killall wmalauncher               }
-    [exec] (Cerrar una ventana) { xkill                             }
+            [exec] (Muelle de la muerte) { killall wmalauncher               }
+    [exec] (Matar una ventana) { xkill                             }
     [separator]
     [exec] (Cambiar conky...) { conkytoggle.sh                    }
-    [exec] (Cambiar iDesk) { idesktoggle idesk                 }
-    [exec] (Cambiar iconos) { idesktoggle icons                 }
-    [exec] (Cambiar auto-ocultación del dock) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Cambiar auto-ocultación de la barra de herramientas) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Cambiar el iDesk) { idesktoggle idesk                 }
+    [exec] (Iconos de conmutación) { idesktoggle icons                 }
+    [exec] (Cambiar el muelle de auto-ocultación) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Cambiar la barra de herramientas de auto-ocultación) {$HOME/.fluxbox/scripts/toggletoolbar}
     [exec] (Cambiar los monitores...) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Cerrar aplicaciones por defecto) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Deshabilitar el acoplamiento por defecto) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] (Salir)
+    [submenu] (Deje)
         [exec] (Actualizar) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Suspender) {sudo 'pm-suspend'}
-        [exit] (Cerrar sesión) 
+        [exit] (Cierre de sesión) 
         [exec] (Reiniciar) {sudo /sbin/reboot} 
-        [exec] (Apagar) {sudo /sbin/halt}
+        [exec] (Apagado) {sudo /sbin/halt}
     [end]
 [end]

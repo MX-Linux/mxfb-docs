@@ -1,5 +1,6 @@
 en,ar,de,es,fr,el,in,it,nl,pl,pt,pt_BR,ru
 Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox,Fluxbox
+About,حول,Über...,Acerca de...,À propos...,Περί...,Tentang,Info...,Over...,O...,Sobre...,Sobre...,O...
 All apps,جميع التطبيقات ,Alle Anwendungen,Todas las aplicaciones,Toutes les applications,Όλες οι εφαρμογές,Semua Aplikasi,Tutte le applicazioni,Alle apps,Wszystkie aplikacje,Todas as aplicações,Todas as aplicações,Все приложения
 Browser,المتصفح ,Browser,Navegador,Navigateur,Περιήγηση,Peramban,Browser,Browser,Przeglądarka,Browser,Navegador de internet,Браузер
 Email,البريد الإلكتروني ,E-Mail,Correo electrónico,Courriel,Ηλεκτρονική διεύθυνση,Email,Invia un'e-mail a,E-mail,E-mail,Email,Email,Email
@@ -18,8 +19,6 @@ Monitors,الشاشات,Überwacht,Monitores,Surveille,Έλεγχος,Layar,Moni
 Style,نسق,Stil,Estilo,Style,Στυλ,Gaya,Stile,Stijl,Styl,Estilo,Estilo,Стиль
 Theme,السمات,Thema,Tema,Thème,Θέμα,Tema,Tema,Thema,Motyw,Tema,Tema,Тема
 Toolbar,شريط الأدوات,Symbolleiste,Barra de herramientas,Barre d'outils,Γραμμή εργαλείων,Bilah Alat,Barra degli strumenti,Werkbalk,Pasek narzędzi,Barra de ferramentas,Barra de ferramentas,Панель инструментов
-Legacy,Legacy قديم,Vermächtnis,Legado,Héritage,Κληρονομιά,Legacy,Eredità,Legacy,Starsza wersja,Legado,Legado,Наследие
-User last,المستخدم السابق,Benutzer zuletzt,El último usuario,Dernier utilisateur,Προηγούμενο,Pemakai Terakhir,Ultimo utente,De gebruiker blijft,Ostatnie ustawienie użytkownika,Último utilizador,Último usuário,Последний пользователь
 Wallpaper,خلفية الشاشة,Bildschirmhintergrund,Fondo de pantalla,Fond d'écran,Ταπετσαρία,Wallpaper,Carta da parati,Behang,Tapeta,Wallpaper,Papel de parede,Обои
 Settings,إعدادات,Einstellungen,Ajustes,Paramètres,Ρυθμίσεις,Setelan,Impostazioni,Instellingen,Ustawienia,Definições,Definições,Настройки
 Configure,ضبط,Konfigurieren Sie,Configurar,Configurer,Διαμόρφωση,Konfigurasi,Configurare,Configureer,Konfiguracja,Configurar,Configurar,Настройка
@@ -31,8 +30,7 @@ Overlay,Overlay  تراكب,Überlagerung,Superposición,Superposition,Επικ�
 Startup,بدء التشغيل,Neugründung,Inicio,Startup,Startup,Memulai ,Avvio,Opstarten,Autostart,Arranque,Início,Запуск
 Styles,أنماط,Stile,Estilos,Styles,Στυλ,Gaya,Stili,Stijlen,Style,Estilos,Estilos,Стили
 Keyboard,لوحة المفاتيح,Tastatur,Teclado,Clavier,Πληκτρολόγιο,Papan Ketik,Tastiera,Toetsenbord,Klawiatura,Teclado,Teclado,Клавиатура
-Traditional look,المظهر التقليدي,Traditionelles Aussehen,Aspecto tradicional,Aspect traditionnel,Παραδοσιακή εμφάνιση,Tampilan Tradisional,Look tradizionale,Traditionele uitstraling,Domyślny wygląd,Aspecto tradicional,Aparência tradicional,Традиционный вид
-"Window, slit, toolbar","نافذة , فتحة, شريط الأدوات","Fenster, Schlitz, Symbolleiste","Ventana, rendija, barra de herramientas","Fenêtre, fente, barre d'outils","Παράθυρο, σχισμή, γραμμή εργαλείων","Jendela, Celah, Bilah Alat","Finestra, fessura, barra degli strumenti",Venster, spleet, werkbalk,"Janela, slit, barra de ferramentas","Окно, щель, панель инструментов"
+Traditional,المظهر التقليدي,Traditionelles Aussehen,Aspecto tradicional,Aspect traditionnel,Παραδοσιακή εμφάνιση,Tampilan Tradisional,Look tradizionale,Traditionele uitstraling,Domyślny wygląd,Aspecto tradicional,Aparência tradicional,Традиционный вид
 Out of sight,خارج النظر,Außer Sichtweite,Fuera de la vista,A l'abri des regards,Κρυμμένα,Diluar Pandangan,Lontano dagli occhi,Uit het zicht,Ukryj,Fora de vista,Fora de vista,С глаз долой
 Kill dock            ,إنهاء شريط التطبيقات,Killdock            ,Muelle de la muerte            ,Quai d'extinction            ,Τερματισμός dock,Matikan Dock,Kill dock            ,Dodendok            ,Zabij dock,Cais da matança            ,Terminar dock,док-убийца            
 Kill a window        ,انهاء نافذة,Ein Fenster töten        ,Matar una ventana        ,Tuer une fenêtre        ,Τερματισμός παραθύρου,Matikan Jendela,Uccidere una finestra        ,Dood een venster        ,Zabij okno,Matar uma janela        ,Terminar uma janela,Убить окно        

@@ -1,3 +1,12 @@
+mxfb-docs (20.06.01+nmu1) mx ; urgency=medium
+
+  * Non-maintainer upload.
+  * revised documentation for 2.2
+  * regenerated menus 
+  * cleaned out old files
+
+ -- j b <jb@X1Cmx>  Sun, 30 Aug 2020 08:22:52 -0400
+
 mxfb-docs (20.06.01) mx; urgency=medium
 
   * updated menu translations 

@@ -9,7 +9,7 @@
     [exec] (Führen Sie  aus.) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Siehe) 
+    [submenu] (Aussehen) 
         [exec] (Conky){conky-manager2}
         [submenu] (Docks)
             [exec] (Standardmäßig) {~/.fluxbox/scripts/DefaultDock.mxdk}

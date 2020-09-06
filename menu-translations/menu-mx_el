@@ -1,5 +1,5 @@
 [begin] (Fluxbox) 
-    [exec] (Περί...) {about-mx-fluxbox)
+    [exec] (Περί...) {about-mx-fluxbox}
     [exec] (Όλες οι εφαρμογές) {rofi -show drun}
     [exec] (Περιήγηση) {firefox}
     [exec] (Ηλεκτρονική διεύθυνση) {thunderbird}

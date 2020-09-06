@@ -1,5 +1,5 @@
 [begin] (Fluxbox) 
-    [exec] (حول) {about-mx-fluxbox)
+    [exec] (حول) {about-mx-fluxbox}
     [exec] (جميع التطبيقات) {rofi -show drun}
     [exec] (المتصفح) {firefox}
     [exec] (البريد الإلكتروني) {thunderbird}

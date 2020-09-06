@@ -1,5 +1,5 @@
 [begin] (Fluxbox) 
-    [exec] (Tentang) {about-mx-fluxbox)
+    [exec] (Tentang) {about-mx-fluxbox}
     [exec] (Semua Aplikasi) {rofi -show drun}
     [exec] (Peramban) {firefox}
     [exec] (Email) {thunderbird}

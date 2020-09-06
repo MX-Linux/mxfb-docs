@@ -1,5 +1,5 @@
 [begin] (Fluxbox) 
-    [exec] (O...) {about-mx-fluxbox)
+    [exec] (O...) {about-mx-fluxbox}
     [exec] (Wszystkie aplikacje) {rofi -show drun}
     [exec] (Przeglądarka) {firefox}
     [exec] (E-mail) {thunderbird}

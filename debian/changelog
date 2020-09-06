@@ -1,3 +1,10 @@
+mxfb-docs (20.09.06) mx; urgency=medium
+
+  * corrected error in menu entry About
+  * corrected language code for indonesian
+
+ -- j b <jb@X1Cmx>  Sun, 06 Sep 2020 07:40:24 -0400
+
 mxfb-docs (20.08.30) mx; urgency=medium
 
   * Non-maintainer upload.

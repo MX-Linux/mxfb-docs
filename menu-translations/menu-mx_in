@@ -1,6 +1,6 @@
 [begin] (Fluxbox) 
-    [exec] (Tentang) {about-mx-fluxbox)
-    [exec] (Semua Aplikasi) {xfce4-appfinder}
+    [exec] (Tentang) {about-mx-fluxbox}
+    [exec] (Semua Aplikasi) {rofi -show drun}
     [exec] (Peramban) {firefox}
     [exec] (Email) {thunderbird}
     [exec] (Pengelola Berkas) {thunar $HOME/.fluxbox} 

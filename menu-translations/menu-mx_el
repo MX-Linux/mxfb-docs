@@ -1,6 +1,6 @@
 [begin] (Fluxbox) 
-    [exec] (Περί...) {about-mx-fluxbox)
-    [exec] (Όλες οι εφαρμογές) {xfce4-appfinder}
+    [exec] (Περί...) {about-mx-fluxbox}
+    [exec] (Όλες οι εφαρμογές) {rofi -show drun}
     [exec] (Περιήγηση) {firefox}
     [exec] (Ηλεκτρονική διεύθυνση) {thunderbird}
     [exec] (Διαχείριση αρχείων) {thunar $HOME/.fluxbox} 

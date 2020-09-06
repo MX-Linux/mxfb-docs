@@ -1,6 +1,6 @@
 [begin] (Fluxbox) 
     [exec] (Über...) {about-mx-fluxbox)
-    [exec] (Alle Anwendungen) {xfce4-appfinder}
+    [exec] (Alle Anwendungen) {rofi -show drun}
     [exec] (Browser) {firefox}
     [exec] (E-Mail) {thunderbird}
     [exec] (Datei-Manager) {thunar $HOME/.fluxbox} 

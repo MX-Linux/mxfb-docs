@@ -1,7 +1,7 @@
 [begin] (Fluxbox) 
     [exec] (Sobre...) {about-mx-fluxbox}
     [exec] (Todas as aplicações) {rofi -show drun}
-    [exec] (Navegador de internet) {firefox}
+    [exec] (Navegador de Internet) {firefox}
     [exec] (Correio electrónico) {thunderbird}
     [exec] (Gestor de ficheiros) {thunar $HOME/.fluxbox} 
     [exec] (Ajuda) {thunar /usr/share/mxflux/help}
@@ -36,9 +36,9 @@
     [end]
     [submenu] (Definições)
         [submenu] (Configurar)
-            [exec] (Apps) {xdg-open ~/.fluxbox/apps}
+            [exec] (Aplicações) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
-            [exec] (Chaves) {xdg-open ~/.fluxbox/keys}
+            [exec] (Teclas) {xdg-open ~/.fluxbox/keys}
             [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx_pt}
             [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
             [exec] (Arranque) {featherpad ~/.fluxbox/startup}
@@ -75,7 +75,7 @@
     [exec] (Desactivar a doca padrão) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
     [submenu] (Sair)
-        [exec] (Actualizar) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Atualizar) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Suspender) {sudo 'pm-suspend'}
         [exit] (Encerrar sessão) 
         [exec] (Reinicializar) {sudo /sbin/reboot} 

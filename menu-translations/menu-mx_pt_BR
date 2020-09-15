@@ -38,8 +38,8 @@
         [submenu] (Configurar)
             [exec] (Aplicações) {xdg-open ~/.fluxbox/apps}
             [exec] (Inicialização) {xdg-open ~/.fluxbox/init}
-            [exec] (Chaveiro) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Teclas) {xdg-open ~/.fluxbox/keys}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx_BR}
             [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
             [exec] (Início) {featherpad ~/.fluxbox/startup}
             [exec] (Estilos) {thunar ~/.fluxbox/styles/}

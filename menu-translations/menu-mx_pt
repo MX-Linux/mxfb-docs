@@ -1,18 +1,18 @@
 [begin] (Fluxbox) 
     [exec] (Sobre...) {about-mx-fluxbox}
     [exec] (Todas as aplicações) {rofi -show drun}
-    [exec] (Browser) {firefox}
-    [exec] (Email) {thunderbird}
+    [exec] (Navegador de Internet) {firefox}
+    [exec] (Correio electrónico) {thunderbird}
     [exec] (Gestor de ficheiros) {thunar $HOME/.fluxbox} 
     [exec] (Ajuda) {thunar /usr/share/mxflux/help}
     [exec] (Música) {clementine}
-    [exec] (Corre) {fbrun} 
+    [exec] (Executar) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Veja) 
+    [submenu] (Ver) 
         [exec] (Conky){conky-manager2}
         [submenu] (Docas)
-            [exec] (Por defeito) {~/.fluxbox/scripts/DefaultDock.mxdk}
+            [exec] (Padrão) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
             [exec] (Dockmaker) {mx-dockmaker}
         [end]
@@ -36,10 +36,10 @@
     [end]
     [submenu] (Definições)
         [submenu] (Configurar)
-            [exec] (Apps) {xdg-open ~/.fluxbox/apps}
+            [exec] (Aplicações) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
-            [exec] (Chaves) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] (Teclas) {xdg-open ~/.fluxbox/keys}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx_pt}
             [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
             [exec] (Arranque) {featherpad ~/.fluxbox/startup}
             [exec] (Estilos) {thunar ~/.fluxbox/styles/}
@@ -58,27 +58,27 @@
 			      [exec] (US) {setxkbmap us}
         [end]
         [config] (Fluxbox)
-        [exec] (Xfce) {xfce4-settings-manager}
+        [exec] (Gestor de configurações do Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
     [submenu] (Fora de vista)
-            [exec] (Cais da matança) { killall wmalauncher               }
+            [exec] (Desactivar doca) { killall wmalauncher               }
     [exec] (Matar uma janela) { xkill                             }
     [separator]
     [exec] (Alternar conky) { conkytoggle.sh                    }
-    [exec] (Toggle iDesk) { idesktoggle idesk                 }
+    [exec] (Alternar iDesk) { idesktoggle idesk                 }
     [exec] (Alternar ícones) { idesktoggle icons                 }
     [exec] (Alternar a doca de autoculto) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Alternar a barra de ferramentas de autoculto) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Monitores Toggle) { toggle-mx gkrellm                 }
+    [exec] (Alternar ocultação automática da barra de ferramentas) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Alternar Monitores) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Desactivar a doca por defeito) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Desactivar a doca padrão) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
     [submenu] (Sair)
-        [exec] (Actualização) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] (Suspendam) {sudo 'pm-suspend'}
-        [exit] (Sair) 
-        [exec] (Reinicialização) {sudo /sbin/reboot} 
-        [exec] (Encerramento) {sudo /sbin/halt}
+        [exec] (Atualizar) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Suspender) {sudo 'pm-suspend'}
+        [exit] (Encerrar sessão) 
+        [exec] (Reinicializar) {sudo /sbin/reboot} 
+        [exec] (Desligar) {sudo /sbin/halt}
     [end]
 [end]

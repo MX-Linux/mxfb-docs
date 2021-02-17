@@ -1,4 +1,10 @@
-mxfb-docs (21/02.17) mx; urgency=medium
+mxfb-docs (21.02.17) UNRELEASED; urgency=medium
+
+  * Took out the MXFBPi docs for a separate repo
+
+ -- Jerry Bond <jb@X1Cmx>  Wed, 17 Feb 2021 16:27:59 -0500
+
+mxfb-docs (21.02.17) mx; urgency=medium
 
   * added MXFBPi docs for release
 

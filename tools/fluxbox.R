@@ -1,10 +1,7 @@
 # Localize base file(s) based on a translations file
 # 2021-05-14 BBL
 
-BASE_FILES <- c("menu-mx_template",
-                "appearance_template",
-                "settings_template",
-                "out-of-sight_template")
+BASE_FILES <- list.files(pattern = "_template")
 
 TRANSLATIONS <- "MenuTransItems.csv"
 
@@ -12,7 +9,8 @@ OUTPUT_DIR <- "../menu-translations/"
 
 mappings <- read.csv(TRANSLATIONS)
 message("Welcome to fluxbox_trans.R")
-message("I see ", ncol(mappings) - 1, " translations to make ")
+message("I see ", length(BASE_FILES), " base template files")
+message("I see ", ncol(mappings) - 1, " translations to make")
 message("Number of mappings = ", nrow(mappings))
 message("Eliminating spaces before and after close and open parens")
 

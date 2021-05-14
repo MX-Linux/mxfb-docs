@@ -1,0 +1,29 @@
+# the original default submenus can be found in /usr/share/mxflux/menu/
+
+[begin] (Fluxbox)
+	[exec] (All Apps) {rofi -show drun}
+    [exec] (Browser) {chromium-browser}
+    [exec] (Email) {claws-mail}
+    [exec] (File manager ) {thunar $HOME/.fluxbox} 
+    [exec] (Help ) {thunar /usr/share/mxflux/help}
+    [exec] (Music) {vlc}
+    [exec] (Run ) {rofi -show run} 
+    [exec] (Terminal) {xfce4-terminal} 
+    [separator]
+    [submenu] (Appearance)
+    [include] (~/.fluxbox/submenus/appearance)
+    [end]
+    [submenu] (Settings)
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
+    [separator]
+    [submenu] (Out of sight)
+        [include] (~/.fluxbox/submenus/out-of-sight)
+    [end]
+    [submenu] (Leave)
+        [exec] (Refresh) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exit] (Logout) 
+        [exec] (Reboot  ) {shutdown -r now} 
+        [exec] (Shutdown) {shutdown -P now}
+    [end]
+[end]

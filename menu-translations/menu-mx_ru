@@ -10,7 +10,7 @@
     [exec] (Терминал) {xfce4-terminal} 
     [separator]
     [submenu] (Посмотреть) 
-        [exec] (Конки){conky-manager2}
+        [exec] (Conky Конки){conky-manager2}
         [submenu] (Доки)
             [exec] (По умолчанию) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
@@ -26,25 +26,25 @@
         [exec] (Тема) {lxappearance}
         [submenu] (Панель инструментов)
             [exec] (Fluxbox) {toggletint2}
-            [exec] (Традиционный вид) {toggletint2}
+            [exec] (Tradisional) {toggletint2}
         [end]
-        [submenu] (Обои)
+        [submenu] (da)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
         [end]
     [end]
     [submenu] (Настройки)
-        [submenu] (Настройка)
+        [submenu] (Configurar)
             [exec] (Приложения) {xdg-open ~/.fluxbox/apps}
             [exec] (Ините) {xdg-open ~/.fluxbox/init}
-            [exec] (Ключи) {xdg-open ~/.fluxbox/keys}
+            [exec] (Chaveiro) {xdg-open ~/.fluxbox/keys}
             [exec] (Меню) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Наложение) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Запуск) {featherpad ~/.fluxbox/startup}
+            [exec] (Nakładka) {xdg-open ~/.fluxbox/overlay}
+            [exec] (Arranque) {featherpad ~/.fluxbox/startup}
             [exec] (Стили) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] (Клавиатура)
+        [submenu] (Teclado)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -61,24 +61,24 @@
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] (С глаз долой)
-            [exec] (док-убийца) { killall wmalauncher               }
-    [exec] (Убить окно) { xkill                             }
+    [submenu] (Out of sight)
+            [exec] (Kill dock            ) { killall wmalauncher               }
+    [exec] (Kill a window        ) { xkill                             }
     [separator]
-    [exec] (Тугл-конки) { conkytoggle.sh                    }
-    [exec] (Toggle iDesk) { idesktoggle idesk                 }
-    [exec] (переключающиеся иконки) { idesktoggle icons                 }
-    [exec] (Тоггл-автохидный док) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Переключить автоматическую панель инструментов) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Тумблерные мониторы) { toggle-mx gkrellm                 }
+    [exec] (Toggle conky         ) { conkytoggle.sh                    }
+    [exec] (Toggle iDesk         ) { idesktoggle idesk                 }
+    [exec] (Toggle icons         ) { idesktoggle icons                 }
+    [exec] (Toggle autohide dock ) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Toggle monitors      ) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Отключить стандартную док-станцию) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Disable default dock ) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] (Оставить)
-        [exec] (Обновить) { fluxbox-remote restart; idesktoggle idesk refresh }
+    [submenu] (Sair)
+        [exec] (Atualizar) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Приостановить) {sudo 'pm-suspend'}
-        [exit] (Выход из системы) 
-        [exec] (Перезагрузить) {sudo /sbin/reboot} 
-        [exec] (Отключение) {sudo /sbin/halt}
+        [exit] (Wyloguj) 
+        [exec] (ponownie) {sudo /sbin/reboot} 
+        [exec] (Desligar) {sudo /sbin/halt}
     [end]
 [end]

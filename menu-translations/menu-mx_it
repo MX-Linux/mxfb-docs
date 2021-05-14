@@ -2,7 +2,7 @@
     [exec] (Info...) {about-mx-fluxbox}
     [exec] (Tutte le applicazioni) {rofi -show drun}
     [exec] (Browser) {firefox}
-    [exec] (Invia un'e-mail a) {thunderbird}
+    [exec] (E-mail) {thunderbird}
     [exec] (File manager) {thunar $HOME/.fluxbox} 
     [exec] (Aiuto) {thunar /usr/share/mxflux/help}
     [exec] (Musica) {clementine}
@@ -26,25 +26,25 @@
         [exec] (Tema) {lxappearance}
         [submenu] (Barra degli strumenti)
             [exec] (Fluxbox) {toggletint2}
-            [exec] (Look tradizionale) {toggletint2}
+            [exec] (Aspect) {toggletint2}
         [end]
-        [submenu] (Carta da parati)
+        [submenu] (Fond)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
         [end]
     [end]
     [submenu] (Impostazioni)
-        [submenu] (Configurare)
+        [submenu] (Konfigurasi)
             [exec] (Applicazioni) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Tasti) {xdg-open ~/.fluxbox/keys}
             [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Sovrapposizione) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Avvio) {featherpad ~/.fluxbox/startup}
+            [exec] (Επικάλυμμα) {xdg-open ~/.fluxbox/overlay}
+            [exec] (Memulai) {featherpad ~/.fluxbox/startup}
             [exec] (Stili) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] (Tastiera)
+        [submenu] (Papan)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -61,24 +61,24 @@
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] (Lontano dagli occhi)
-            [exec] (Kill dock) { killall wmalauncher               }
-    [exec] (Uccidere una finestra) { xkill                             }
+    [submenu] (Out of sight)
+            [exec] (Kill dock            ) { killall wmalauncher               }
+    [exec] (Kill a window        ) { xkill                             }
     [separator]
-    [exec] (Attivare e disattivare il conky) { conkytoggle.sh                    }
-    [exec] (Attivare e disattivare l'iDesk) { idesktoggle idesk                 }
-    [exec] (Icone a levetta) { idesktoggle icons                 }
-    [exec] (Attivare il dock autohide) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Attivare e disattivare la barra degli strumenti autohide) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Monitor a levetta) { toggle-mx gkrellm                 }
+    [exec] (Toggle conky         ) { conkytoggle.sh                    }
+    [exec] (Toggle iDesk         ) { idesktoggle idesk                 }
+    [exec] (Toggle icons         ) { idesktoggle icons                 }
+    [exec] (Toggle autohide dock ) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Toggle monitors      ) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Disattivare il dock di default) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Disable default dock ) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] (Lascia)
-        [exec] (Aggiorna) { fluxbox-remote restart; idesktoggle idesk refresh }
+    [submenu] (Meninggalkan)
+        [exec] (Segarkan) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Sospendi) {sudo 'pm-suspend'}
-        [exit] (Logout) 
-        [exec] (Riavvio) {sudo /sbin/reboot} 
-        [exec] (Spegnimento) {sudo /sbin/halt}
+        [exit] (Déconnexion) 
+        [exec] (Mulai) {sudo /sbin/reboot} 
+        [exec] (Matikan) {sudo /sbin/halt}
     [end]
 [end]

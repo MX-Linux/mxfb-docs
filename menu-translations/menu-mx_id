@@ -26,25 +26,25 @@
         [exec] (Tema) {lxappearance}
         [submenu] (Bilah Alat)
             [exec] (Fluxbox) {toggletint2}
-            [exec] (Tampilan Tradisional) {toggletint2}
+            [exec] (tradicional) {toggletint2}
         [end]
-        [submenu] (Wallpaper)
+        [submenu] (pantalla)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
         [end]
     [end]
     [submenu] (Setelan)
-        [submenu] (Konfigurasi)
+        [submenu] (Διαμόρφωση)
             [exec] (Aplikasi) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Tombol) {xdg-open ~/.fluxbox/keys}
             [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Lembaran Atas) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Memulai) {featherpad ~/.fluxbox/startup}
+            [exec] (Superposition) {xdg-open ~/.fluxbox/overlay}
+            [exec] (Startup) {featherpad ~/.fluxbox/startup}
             [exec] (Gaya) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] (Papan Ketik)
+        [submenu] (Πληκτρολόγιο)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -61,24 +61,24 @@
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] (Diluar Pandangan)
-            [exec] (Matikan Dock) { killall wmalauncher               }
-    [exec] (Matikan Jendela) { xkill                             }
+    [submenu] (Out of sight)
+            [exec] (Kill dock            ) { killall wmalauncher               }
+    [exec] (Kill a window        ) { xkill                             }
     [separator]
-    [exec] (Tombol Conky) { conkytoggle.sh                    }
-    [exec] (Tombol iDesk) { idesktoggle idesk                 }
-    [exec] (Tombol ikon) { idesktoggle icons                 }
-    [exec] (Tombol sembunyikan otomatis dock) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Tombol sembunyikan otomatis bilah alat) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Tombol monitor) { toggle-mx gkrellm                 }
+    [exec] (Toggle conky         ) { conkytoggle.sh                    }
+    [exec] (Toggle iDesk         ) { idesktoggle idesk                 }
+    [exec] (Toggle icons         ) { idesktoggle icons                 }
+    [exec] (Toggle autohide dock ) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Toggle monitors      ) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Matikan setelan bawaan dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Disable default dock ) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] (Meninggalkan)
-        [exec] (Segarkan) { fluxbox-remote restart; idesktoggle idesk refresh }
+    [submenu] (Εξοδος)
+        [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Suspend) {sudo 'pm-suspend'}
-        [exit] (Keluar) 
-        [exec] (Mulai ulang) {sudo /sbin/reboot} 
-        [exec] (Matikan) {sudo /sbin/halt}
+        [exit] (sesión) 
+        [exec] (Επανεκκινήση) {sudo /sbin/reboot} 
+        [exec] (Τερματισμός) {sudo /sbin/halt}
     [end]
 [end]

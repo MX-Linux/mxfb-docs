@@ -1,20 +1,20 @@
 [begin] (Fluxbox) 
     [exec] (حول) {about-mx-fluxbox}
     [exec] (جميع التطبيقات) {rofi -show drun}
-    [exec] (المتصفح) {firefox}
-    [exec] (البريد الإلكتروني) {thunderbird}
+    [exec] (المتصفحالإلكتروني) {firefox}
+    [exec] (البريد) {thunderbird}
     [exec] (مدير الملفات) {thunar $HOME/.fluxbox} 
     [exec] (مساعدة) {thunar /usr/share/mxflux/help}
     [exec] (موسيقى) {clementine}
-    [exec] (Run  تشغيل) {fbrun} 
-    [exec] (Terminal طرفية) {xfce4-terminal} 
+    [exec] (تشغيل) {fbrun} 
+    [exec] (طرفية) {xfce4-terminal} 
     [separator]
     [submenu] (مظهر) 
-        [exec] (كونكي Conky){conky-manager2}
-        [submenu] (شرائط التطبيقات)
+        [exec] (كونكي){conky-manager2}
+        [submenu] (شرائطالتطبيقات)
             [exec] (افتراضي) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
-            [exec] (معدّل شريط التطبيقات) {mx-dockmaker}
+            [exec] (معدّلشريط التطبيقات) {mx-dockmaker}
         [end]
         [exec] (أيقونات سطح المكتب) {mx-idesktool}
         [exec] (الشاشات) {gkrellm}
@@ -26,9 +26,9 @@
         [exec] (السمات) {lxappearance}
         [submenu] (شريط الأدوات)
             [exec] (Fluxbox) {toggletint2}
-            [exec] (المظهر التقليدي) {toggletint2}
+            [exec] (المظهر) {toggletint2}
         [end]
-        [submenu] (خلفية الشاشة)
+        [submenu] (خلفية)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
@@ -40,11 +40,11 @@
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (مفاتيح) {xdg-open ~/.fluxbox/keys}
             [exec] (قائمة) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Overlay  تراكب) {xdg-open ~/.fluxbox/overlay}
-            [exec] (بدء التشغيل) {featherpad ~/.fluxbox/startup}
+            [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
+            [exec] (بدء) {featherpad ~/.fluxbox/startup}
             [exec] (أنماط) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] (لوحة المفاتيح)
+        [submenu] (لوحة)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -61,24 +61,24 @@
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] (خارج النظر)
-            [exec] (إنهاء شريط التطبيقات) { killall wmalauncher               }
-    [exec] (انهاء نافذة) { xkill                             }
+    [submenu] (Out of sight)
+            [exec] (Kill dock            ) { killall wmalauncher               }
+    [exec] (Kill a window        ) { xkill                             }
     [separator]
-    [exec] (إيقاف/تشغيل Conky) { conkytoggle.sh                    }
-    [exec] (إيقاف/تشغيل iDesk) { idesktoggle idesk                 }
-    [exec] (إظهار/إخفاء الأيقونات) { idesktoggle icons                 }
-    [exec] (إيقاف/تشغيل الاخفاء التلقائي لشريط التطبيقات) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (إيقاف/تشغيل الاخفاء التلقائي لشريط الأدوات) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (تبديل الشاشات) { toggle-mx gkrellm                 }
+    [exec] (Toggle conky         ) { conkytoggle.sh                    }
+    [exec] (Toggle iDesk         ) { idesktoggle idesk                 }
+    [exec] (Toggle icons         ) { idesktoggle icons                 }
+    [exec] (Toggle autohide dock ) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Toggle monitors      ) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (تعطيل شريط التطبيقات الافتراضي) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Disable default dock ) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
     [submenu] (مغادرة)
         [exec] (تحديث) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (تعليق) {sudo 'pm-suspend'}
-        [exit] (تسجيل الخروج) 
-        [exec] (إعادة التشغيل) {sudo /sbin/reboot} 
-        [exec] (إيقاف التشغيل) {sudo /sbin/halt}
+        [exit] (تسجيل) 
+        [exec] (إعادة) {sudo /sbin/reboot} 
+        [exec] (إيقاف) {sudo /sbin/halt}
     [end]
 [end]

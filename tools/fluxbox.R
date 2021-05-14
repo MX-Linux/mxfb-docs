@@ -8,6 +8,8 @@ BASE_FILES <- c("menu-mx_template",
 
 TRANSLATIONS <- "MenuTransItems.csv"
 
+OUTPUT_DIR <- "../menu-translations/"
+
 mappings <- read.csv(TRANSLATIONS)
 message("Welcome to fluxbox_trans.R")
 message("I see ", ncol(mappings) - 1, " translations to make ")
@@ -19,7 +21,6 @@ for(bf in BASE_FILES) {
   message("------------------------------------")
   message("Processing ", bf)
   base <- readLines(bf)
-  
   
   for(i in seq_along(mappings)) {
     message("------------------------------------")
@@ -51,7 +52,7 @@ for(bf in BASE_FILES) {
       outfile <- paste(gsub("_template", "", bf), lang, sep = "_")
       message("Translated ", trcount, " terms")
       message("Writing ", outfile)
-      writeLines(trans, outfile)
+      writeLines(trans, file.path(OUTPUT_DIR, outfile))
     } # for j
   } # for i
 } # for bf

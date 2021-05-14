@@ -1,0 +1,27 @@
+[begin] (Veja) 
+    [exec] (Conky){conky-manager2}
+    [submenu] (Docas)
+        [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
+        [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
+        [exec] (Por defeito) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [separator]
+        [exec] (Dockmaker) {mx-dockmaker}
+    [end]
+    [exec] (Ícones do ambiente de trabalho) {mx-idesktool}
+    [exec] (Monitores) {gkrellm}
+    [submenu] (Estilo)
+        [stylesdir] (~/.fluxbox/styles)
+        [separator]
+        [stylesdir] (/usr/share/fluxbox/styles) 
+    [end]
+    [exec] (Tema) {lxappearance}
+    [submenu] (Barra de ferramentas)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] (εμφάνιση) {toggletint2}
+    [end]
+    [submenu] (Wallpaper) 
+    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+    [separator]
+    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+    [end]
+[end]

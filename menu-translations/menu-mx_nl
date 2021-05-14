@@ -6,7 +6,7 @@
     [exec] (Bestandsmanager) {thunar $HOME/.fluxbox} 
     [exec] (Help) {thunar /usr/share/mxflux/help}
     [exec] (Muziek) {clementine}
-    [exec] (Voer de campagne  uit.) {fbrun} 
+    [exec] (Voer uit) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
     [submenu] (Verschijning) 
@@ -26,25 +26,25 @@
         [exec] (Thema) {lxappearance}
         [submenu] (Werkbalk)
             [exec] (Fluxbox) {toggletint2}
-            [exec] (Traditionele uitstraling) {toggletint2}
+            [exec] (traditionnel) {toggletint2}
         [end]
-        [submenu] (Behang)
+        [submenu] (d'écran)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
         [end]
     [end]
     [submenu] (Instellingen)
-        [submenu] (Configureer)
+        [submenu] (Configurare)
             [exec] (Apps) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Toetsen) {xdg-open ~/.fluxbox/keys}
             [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Opstarten) {featherpad ~/.fluxbox/startup}
+            [exec] (Lembaran) {xdg-open ~/.fluxbox/overlay}
+            [exec] () {featherpad ~/.fluxbox/startup}
             [exec] (Stijlen) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] (Toetsenbord)
+        [submenu] (Ketik)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -61,24 +61,24 @@
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] (Uit het zicht)
-            [exec] (Dodendok) { killall wmalauncher               }
-    [exec] (Dood een venster) { xkill                             }
+    [submenu] (Out of sight)
+            [exec] (Kill dock            ) { killall wmalauncher               }
+    [exec] (Kill a window        ) { xkill                             }
     [separator]
-    [exec] (Schakelen tussen conky) { conkytoggle.sh                    }
-    [exec] (Schakel iDesk) { idesktoggle idesk                 }
-    [exec] (Schakelen tussen pictogrammen) { idesktoggle icons                 }
-    [exec] (Schakelaar voor autodokker) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Schakel de autohide-werkbalk in) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Schakelen tussen de monitoren) { toggle-mx gkrellm                 }
+    [exec] (Toggle conky         ) { conkytoggle.sh                    }
+    [exec] (Toggle iDesk         ) { idesktoggle idesk                 }
+    [exec] (Toggle icons         ) { idesktoggle icons                 }
+    [exec] (Toggle autohide dock ) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Toggle monitors      ) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Standaard dok uitschakelen) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Disable default dock ) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] (Verlaat)
-        [exec] (Vernieuwen) { fluxbox-remote restart; idesktoggle idesk refresh }
+    [submenu] (Lascia)
+        [exec] (Aggiorna) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Schorsen) {sudo 'pm-suspend'}
-        [exit] (Uitloggen) 
-        [exec] (Herstart) {sudo /sbin/reboot} 
-        [exec] (Uitschakeling) {sudo /sbin/halt}
+        [exit] (Αποσύνδεση) 
+        [exec] (ulang) {sudo /sbin/reboot} 
+        [exec] (Spegnimento) {sudo /sbin/halt}
     [end]
 [end]

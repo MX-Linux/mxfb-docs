@@ -26,25 +26,25 @@
         [exec] (Θέμα) {lxappearance}
         [submenu] (Γραμμή εργαλείων)
             [exec] (Fluxbox) {toggletint2}
-            [exec] (Παραδοσιακή εμφάνιση) {toggletint2}
+            [exec] (Aspecto) {toggletint2}
         [end]
-        [submenu] (Ταπετσαρία)
+        [submenu] (de)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
         [end]
     [end]
     [submenu] (Ρυθμίσεις)
-        [submenu] (Διαμόρφωση)
+        [submenu] (Configurer)
             [exec] (Εφαρμογές) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Keys) {xdg-open ~/.fluxbox/keys}
             [exec] (Μενού) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Επικάλυμμα) {xdg-open ~/.fluxbox/overlay}
+            [exec] (Superposición) {xdg-open ~/.fluxbox/overlay}
             [exec] (Startup) {featherpad ~/.fluxbox/startup}
             [exec] (Στυλ) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] (Πληκτρολόγιο)
+        [submenu] (Clavier)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -61,24 +61,24 @@
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] (Κρυμμένα)
-            [exec] (Τερματισμός dock) { killall wmalauncher               }
-    [exec] (Τερματισμός παραθύρου) { xkill                             }
+    [submenu] (Out of sight)
+            [exec] (Kill dock            ) { killall wmalauncher               }
+    [exec] (Kill a window        ) { xkill                             }
     [separator]
-    [exec] (Εναλλαγή conky) { conkytoggle.sh                    }
-    [exec] (Εναλλαγή iDesk) { idesktoggle idesk                 }
-    [exec] (Εναλλαγή εικονιδίων) { idesktoggle icons                 }
-    [exec] (Εναλλαγή autohide dock) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Εναλλαγή autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Εναλλαγή monitors) { toggle-mx gkrellm                 }
+    [exec] (Toggle conky         ) { conkytoggle.sh                    }
+    [exec] (Toggle iDesk         ) { idesktoggle idesk                 }
+    [exec] (Toggle icons         ) { idesktoggle icons                 }
+    [exec] (Toggle autohide dock ) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Toggle monitors      ) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Απενεργοποίηση προεπιλεγμένο dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Disable default dock ) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] (Εξοδος)
-        [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }
+    [submenu] (Quitter)
+        [exec] (Rafraîchir) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Αναστολή) {sudo 'pm-suspend'}
-        [exit] (Αποσύνδεση) 
-        [exec] (Επανεκκινήση) {sudo /sbin/reboot} 
-        [exec] (Τερματισμός) {sudo /sbin/halt}
+        [exit] (de) 
+        [exec] (Redémarrer) {sudo /sbin/reboot} 
+        [exec] (Fermeture) {sudo /sbin/halt}
     [end]
 [end]

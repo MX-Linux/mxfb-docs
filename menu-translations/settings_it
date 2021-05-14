@@ -1,0 +1,32 @@
+[begin] (Impostazioni)
+    [exec] (Info...) {about-mx-fluxbox}
+    [exec] (Backup) {grsync}
+    [submenu] (Konfigurasi)
+        [exec] (Applicazioni) {xdg-open ~/.fluxbox/apps}
+        [exec] (Init) {xdg-open ~/.fluxbox/init}
+        [exec] (Tasti) {xdg-open ~/.fluxbox/keys}
+        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [exec] (Επικάλυμμα) {xdg-open ~/.fluxbox/overlay}
+        [exec] (Memulai) {featherpad ~/.fluxbox/startup}
+        [exec] (Stili) {thunar ~/.fluxbox/styles/}
+    [end]
+    [submenu] (Display) 
+    [exec] (Change) {arandr} 
+    [exec](Aiuto) {featherpad ~/.fluxbox/components/HELP_Display} 
+    [end] 
+    [submenu] (Papan)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+    [config] (Fluxbox)
+    [exec] (Xfce) {xfce4-settings-manager}
+[end]

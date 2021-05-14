@@ -1,5 +1,5 @@
 # Localize base file(s) based on a translations file
-# 2021-05-14 BBL
+# 2021-05-14 Ben Bond-Lamberty
 
 BASE_FILES <- list.files(pattern = "_template")
 
@@ -15,7 +15,6 @@ message("Number of mappings = ", nrow(mappings))
 message("Eliminating spaces before and after close and open parens")
 
 for(bf in BASE_FILES) {
-  
   message("------------------------------------")
   message("Processing ", bf)
   base <- readLines(bf)
@@ -27,6 +26,7 @@ for(bf in BASE_FILES) {
     
     trans <- base
     trcount <- 0
+    
     for(j in seq_len(nrow(mappings))) {
       # First column holds the English term to translate
       term <- paste0("\\(", trimws(mappings[j, 1]), "[[:space:]]*\\)")

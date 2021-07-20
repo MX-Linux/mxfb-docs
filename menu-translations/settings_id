@@ -1,20 +1,20 @@
 [begin] (Setelan)
-    [exec] (Tentang) {about-mx-fluxbox}
-    [exec] (Backup) {grsync}
-    [submenu] (Διαμόρφωση)
-        [exec] (Aplikasi) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
-        [exec] (Tombol) {xdg-open ~/.fluxbox/keys}
+    [exec] (About) {about-mx-fluxbox}
+    [exec] () {grsync}
+    [submenu] ()
+        [exec] () {xdg-open ~/.fluxbox/apps}
+        [exec] () {xdg-open ~/.fluxbox/init}
+        [exec] () {xdg-open ~/.fluxbox/keys}
         [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-        [exec] (Superposition) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Startup) {featherpad ~/.fluxbox/startup}
-        [exec] (Gaya) {thunar ~/.fluxbox/styles/}
+        [exec] () {xdg-open ~/.fluxbox/overlay}
+        [exec] () {featherpad ~/.fluxbox/startup}
+        [exec] () {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] (Display) 
+    [submenu] () 
     [exec] (Change) {arandr} 
     [exec](Bantuan) {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 
-    [submenu] (Πληκτρολόγιο)
+    [submenu] ()
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
         [exec] (FR) {setxkbmap fr}

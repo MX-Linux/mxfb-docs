@@ -1,20 +1,20 @@
-[begin] (Ρυθμίσεις)
-    [exec] (Περί...) {about-mx-fluxbox}
-    [exec] (Backup) {grsync}
-    [submenu] (Configurer)
-        [exec] (Εφαρμογές) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
-        [exec] (Keys) {xdg-open ~/.fluxbox/keys}
-        [exec] (Μενού) {xdg-open ~/.fluxbox/menu-mx}
-        [exec] (Superposición) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Startup) {featherpad ~/.fluxbox/startup}
-        [exec] (Στυλ) {thunar ~/.fluxbox/styles/}
+[begin] ("Ρυθμίσεις")
+    [exec] (About) {about-mx-fluxbox}
+    [exec] ("Αντιγράφων ασφαλείας") {grsync}
+    [submenu] ("Ρύθμιση")
+        [exec] ("Εφαρμογές") {xdg-open ~/.fluxbox/apps}
+        [exec] ("Init") {xdg-open ~/.fluxbox/init}
+        [exec] ("Κλειδιά") {xdg-open ~/.fluxbox/keys}
+        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [exec] ("Overlay") {xdg-open ~/.fluxbox/overlay}
+        [exec] ("Εκκίνηση") {featherpad ~/.fluxbox/startup}
+        [exec] ("Στυλ") {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] (Display) 
+    [submenu] ("Οθόνη") 
     [exec] (Change) {arandr} 
-    [exec](Βοήθεια) {featherpad ~/.fluxbox/components/HELP_Display} 
+    [exec]("Βοήθεια") {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 
-    [submenu] (Clavier)
+    [submenu] ("Πληκτρολόγιο")
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
         [exec] (FR) {setxkbmap fr}
@@ -27,6 +27,6 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] (Fluxbox)
+    [config] ("Fluxbox")
     [exec] (Xfce) {xfce4-settings-manager}
 [end]

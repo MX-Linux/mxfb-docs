@@ -1,20 +1,20 @@
 [begin] (Instellingen)
-    [exec] (Over...) {about-mx-fluxbox}
+    [exec] (About) {about-mx-fluxbox}
     [exec] (Backup) {grsync}
-    [submenu] (Configurare)
-        [exec] (Apps) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
+    [submenu] (Configureer)
+        [exec] ("Apps") {xdg-open ~/.fluxbox/apps}
+        [exec] ("Init") {xdg-open ~/.fluxbox/init}
         [exec] (Toetsen) {xdg-open ~/.fluxbox/keys}
         [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-        [exec] (Lembaran) {xdg-open ~/.fluxbox/overlay}
-        [exec] () {featherpad ~/.fluxbox/startup}
+        [exec] (Overlapping) {xdg-open ~/.fluxbox/overlay}
+        [exec] (Opstarten) {featherpad ~/.fluxbox/startup}
         [exec] (Stijlen) {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] (Display) 
+    [submenu] (Beeldscherm) 
     [exec] (Change) {arandr} 
-    [exec](Help) {featherpad ~/.fluxbox/components/HELP_Display} 
+    [exec]("Help") {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 
-    [submenu] (Ketik)
+    [submenu] (Toetsenbord)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
         [exec] (FR) {setxkbmap fr}

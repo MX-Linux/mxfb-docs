@@ -1,0 +1,13 @@
+[begin] ("視界から消去") 
+    [exec] ("ドックの停止") { killall wmalauncher               }
+    [exec] ("ウィンドウの終了") { xkill                             }
+    [separator]
+    [exec] ("コンキーの切り換え") { conkytoggle.sh                    }
+    [exec] ("iDesk の切り換え") { idesktoggle idesk                 }
+    [exec] ("アイコンの切り換え") { idesktoggle icons                 }
+    [exec] ("ドックを自動的に隠す機能の切り換え") { $HOME/.fluxbox/scripts/toggledock }
+    [exec] ("ツールバーを自動的に隠す機能の切り換え") {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] ("モニタの切り換え") { toggle-mx gkrellm                 }
+    [separator]
+    [exec] ("標準ドックの無効化") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

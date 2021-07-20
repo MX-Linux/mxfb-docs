@@ -5,7 +5,7 @@
         [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
         [exec] (Setelan Bawaan) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
-        [exec] (DockMaker) {mx-dockmaker}
+        [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Ikon Desktop) {mx-idesktool}
     [exec] (Layar) {gkrellm}
@@ -17,9 +17,9 @@
     [exec] (Tema) {lxappearance}
     [submenu] (Bilah Alat)
         [exec] (Fluxbox) {toggletint2}
-        [exec] (tradicional) {toggletint2}
+        [exec] () {toggletint2}
     [end]
-    [submenu] (pantalla) 
+    [submenu] (Pantalla) 
     [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
     [separator]
     [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}

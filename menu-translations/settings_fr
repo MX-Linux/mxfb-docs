@@ -1,20 +1,20 @@
-[begin] (Paramètres)
-    [exec] (À propos…) {about-mx-fluxbox}
-    [exec] (Backup) {grsync}
-    [submenu] (Configurar)
-        [exec] (Apps) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
-        [exec] (Clés) {xdg-open ~/.fluxbox/keys}
+[begin] ("Paramètres")
+    [exec] (About) {about-mx-fluxbox}
+    [exec] ("Backup") {grsync}
+    [submenu] ("Configure")
+        [exec] ("Apps") {xdg-open ~/.fluxbox/apps}
+        [exec] ("Init") {xdg-open ~/.fluxbox/init}
+        [exec] ("Keys") {xdg-open ~/.fluxbox/keys}
         [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-        [exec] (Überlagerung) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Inicio) {featherpad ~/.fluxbox/startup}
-        [exec] (Styles) {thunar ~/.fluxbox/styles/}
+        [exec] ("Overlay") {xdg-open ~/.fluxbox/overlay}
+        [exec] ("Startup") {featherpad ~/.fluxbox/startup}
+        [exec] ("Styles") {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] (Display) 
+    [submenu] ("Affichage") 
     [exec] (Change) {arandr} 
-    [exec](Aide) {featherpad ~/.fluxbox/components/HELP_Display} 
+    [exec]("Aide") {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 
-    [submenu] (Teclado)
+    [submenu] ("Clavier")
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
         [exec] (FR) {setxkbmap fr}
@@ -27,6 +27,6 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] (Fluxbox)
+    [config] ("Fluxbox")
     [exec] (Xfce) {xfce4-settings-manager}
 [end]

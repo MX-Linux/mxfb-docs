@@ -1,0 +1,13 @@
+[begin] ("视界外") 
+    [exec] ("杀死程序坞进程") { killall wmalauncher               }
+    [exec] ("杀死一个窗口进程") { xkill                             }
+    [separator]
+    [exec] ("切换 Conky") { conkytoggle.sh                    }
+    [exec] ("切换 iDesk") { idesktoggle idesk                 }
+    [exec] ("切换图标") { idesktoggle icons                 }
+    [exec] ("切换自动隐藏程序坞") { $HOME/.fluxbox/scripts/toggledock }
+    [exec] ("切换自动隐藏工具栏") {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] ("切换显示器") { toggle-mx gkrellm                 }
+    [separator]
+    [exec] ("禁用默认程序坞") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

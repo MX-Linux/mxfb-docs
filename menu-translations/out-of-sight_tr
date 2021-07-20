@@ -1,0 +1,13 @@
+[begin] ("Gözden uzak") 
+    [exec] ("Paneli yoket") { killall wmalauncher               }
+    [exec] () { xkill                             }
+    [separator]
+    [exec] () { conkytoggle.sh                    }
+    [exec] () { idesktoggle idesk                 }
+    [exec] ("Simgeleri değiştir") { idesktoggle icons                 }
+    [exec] ("Paneli otomatik gizlemeyi açıp kapama") { $HOME/.fluxbox/scripts/toggledock }
+    [exec] ("Araç çubuğunu otomatik gizlemeyi açıp kapama") {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] () { toggle-mx gkrellm                 }
+    [separator]
+    [exec] ("Öntanımlı panel devre dışı") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

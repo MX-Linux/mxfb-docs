@@ -1,0 +1,84 @@
+[begin] ("כל היישומים") 
+    [exec] (About) {about-mx-fluxbox}
+    [exec] () {rofi -show drun}
+    [exec] () {firefox}
+    [exec] () {thunderbird}
+    [exec] ("עזרה") {thunar $HOME/.fluxbox} 
+    [exec] () {thunar /usr/share/mxflux/help}
+    [exec] () {clementine}
+    [exec] () {fbrun} 
+    [exec] () {xfce4-terminal} 
+    [separator]
+    [submenu] () 
+        [exec] (){conky-manager2}
+        [submenu] ()
+            [exec] () {~/.fluxbox/scripts/DefaultDock.mxdk}
+            [separator]
+            [exec] () {mx-dockmaker}
+        [end]
+        [exec] () {mx-idesktool}
+        [exec] ("סגנון") {gkrellm}
+        [submenu] ()
+            [stylesdir] (~/.fluxbox/styles)
+            [separator]
+            [stylesdir] (/usr/share/fluxbox/styles) 
+        [end]
+        [exec] () {lxappearance}
+        [submenu] ()
+            [exec] ("כל היישומים") {toggletint2}
+            [exec] ("רקע") {toggletint2}
+        [end]
+        [submenu] ()
+            [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+            [separator]
+            [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+        [end]
+    [end]
+    [submenu] ()
+        [submenu] ()
+            [exec] () {xdg-open ~/.fluxbox/apps}
+            [exec] () {xdg-open ~/.fluxbox/init}
+            [exec] () {xdg-open ~/.fluxbox/keys}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] () {xdg-open ~/.fluxbox/overlay}
+            [exec] ("סגנונות") {featherpad ~/.fluxbox/startup}
+            [exec] () {thunar ~/.fluxbox/styles/}
+        [end]
+        [submenu] ()
+            [exec] (DE) {setxkbmap de}
+			      [exec] (ES) {setxkbmap es} 
+			      [exec] (FR) {setxkbmap fr}
+			      [exec] (GB) {setxkbmap gb}
+			      [exec] (GR) {setxkbmap gr}
+			      [exec] (JA) {setxkbmap ja}
+			      [exec] (IT) {setxkbmap it}
+			      [exec] (PL) {setxkbmap pl}
+			      [exec] (PT) {setxkbmap pt}
+			      [exec] (RU) {setxkbmap ru}
+			      [exec] (US) {setxkbmap us}
+        [end]
+        [config] ("כל היישומים")
+        [exec] (Xfce) {xfce4-settings-manager}
+    [end] 
+    [separator]
+    [submenu] ()
+            [exec] () { killall wmalauncher               }
+    [exec] () { xkill                             }
+    [separator]
+    [exec] () { conkytoggle.sh                    }
+    [exec] () { idesktoggle idesk                 }
+    [exec] () { idesktoggle icons                 }
+    [exec] () { $HOME/.fluxbox/scripts/toggledock }
+    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] () { toggle-mx gkrellm                 }
+    [separator]
+    [exec] () { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [end]
+    [submenu] ("ריענון")
+        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] () {sudo 'pm-suspend'}
+        [exit] () 
+        [exec] () {sudo /sbin/reboot} 
+        [exec] () {sudo /sbin/halt}
+    [end]
+[end]

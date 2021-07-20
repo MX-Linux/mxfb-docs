@@ -1,16 +1,16 @@
 [begin] (إعدادات)
-    [exec] (حول) {about-mx-fluxbox}
-    [exec] (Backup) {grsync}
+    [exec] (About) {about-mx-fluxbox}
+    [exec] () {grsync}
     [submenu] (ضبط)
         [exec] (التطبيقات) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
+        [exec] () {xdg-open ~/.fluxbox/init}
         [exec] (مفاتيح) {xdg-open ~/.fluxbox/keys}
-        [exec] (قائمة) {xdg-open ~/.fluxbox/menu-mx}
-        [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
+        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [exec] () {xdg-open ~/.fluxbox/overlay}
         [exec] (بدء) {featherpad ~/.fluxbox/startup}
         [exec] (أنماط) {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] (Display) 
+    [submenu] () 
     [exec] (Change) {arandr} 
     [exec](مساعدة) {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 

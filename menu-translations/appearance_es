@@ -1,25 +1,25 @@
-[begin] (Mira) 
-    [exec] (Conky){conky-manager2}
-    [submenu] (Muelles)
+[begin] ("Apariencia") 
+    [exec] ("Conky"){conky-manager2}
+    [submenu] ("Barra de iconos")
         [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
         [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
-        [exec] (Por defecto) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] ("Por defecto") {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
-        [exec] (Dockmaker) {mx-dockmaker}
+        [exec] ("Dockmaker") {mx-dockmaker}
     [end]
-    [exec] (Iconos de escritorio) {mx-idesktool}
-    [exec] (Monitores) {gkrellm}
-    [submenu] (Estilo)
+    [exec] ("Iconos del escritorio") {mx-idesktool}
+    [exec] ("Monitores") {gkrellm}
+    [submenu] ("Diseño")
         [stylesdir] (~/.fluxbox/styles)
         [separator]
         [stylesdir] (/usr/share/fluxbox/styles) 
     [end]
-    [exec] (Tema) {lxappearance}
-    [submenu] (Barra de herramientas)
-        [exec] (Fluxbox) {toggletint2}
-        [exec] (Traditionelles) {toggletint2}
+    [exec] ("Tema") {lxappearance}
+    [submenu] ("Barra de herramientas")
+        [exec] ("Fluxbox") {toggletint2}
+        [exec] ("Tradicional") {toggletint2}
     [end]
-    [submenu] (Bildschirmhintergrund) 
+    [submenu] ("Fondo de pantalla") 
     [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
     [separator]
     [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}

@@ -1,0 +1,32 @@
+[begin] ("Innstillinger")
+    [exec] (About) {about-mx-fluxbox}
+    [exec] ("Reservekopi") {grsync}
+    [submenu] ("Oppsett")
+        [exec] ("Programmer") {xdg-open ~/.fluxbox/apps}
+        [exec] ("Initialisering") {xdg-open ~/.fluxbox/init}
+        [exec] ("Taster") {xdg-open ~/.fluxbox/keys}
+        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [exec] ("Legg over") {xdg-open ~/.fluxbox/overlay}
+        [exec] ("Oppstart") {featherpad ~/.fluxbox/startup}
+        [exec] ("Stiler") {thunar ~/.fluxbox/styles/}
+    [end]
+    [submenu] ("Skjerm") 
+    [exec] (Change) {arandr} 
+    [exec]("Hjelp") {featherpad ~/.fluxbox/components/HELP_Display} 
+    [end] 
+    [submenu] ("Tastatur")
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+    [config] ("Fluxbox")
+    [exec] (Xfce) {xfce4-settings-manager}
+[end]

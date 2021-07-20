@@ -1,0 +1,84 @@
+[begin] ("Fluxbox") 
+    [exec] (About) {about-mx-fluxbox}
+    [exec] ("Alle programmer") {rofi -show drun}
+    [exec] ("Nettleser") {firefox}
+    [exec] ("E-post") {thunderbird}
+    [exec] ("Filbehandler") {thunar $HOME/.fluxbox} 
+    [exec] ("Hjelp") {thunar /usr/share/mxflux/help}
+    [exec] ("Musikk") {clementine}
+    [exec] ("Kjør") {fbrun} 
+    [exec] ("Terminal") {xfce4-terminal} 
+    [separator]
+    [submenu] ("Utseende") 
+        [exec] ("Conky"){conky-manager2}
+        [submenu] ("Samlevinduer")
+            [exec] ("Forvalg") {~/.fluxbox/scripts/DefaultDock.mxdk}
+            [separator]
+            [exec] ("Dockmaker") {mx-dockmaker}
+        [end]
+        [exec] ("Skrivebordsikoner") {mx-idesktool}
+        [exec] ("Skjermer") {gkrellm}
+        [submenu] ("Stil")
+            [stylesdir] (~/.fluxbox/styles)
+            [separator]
+            [stylesdir] (/usr/share/fluxbox/styles) 
+        [end]
+        [exec] ("Tema") {lxappearance}
+        [submenu] ("Verktøylinje")
+            [exec] ("Fluxbox") {toggletint2}
+            [exec] ("Tradisjonell") {toggletint2}
+        [end]
+        [submenu] ("Bakgrunnsbilde")
+            [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+            [separator]
+            [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+        [end]
+    [end]
+    [submenu] ("Innstillinger")
+        [submenu] ("Oppsett")
+            [exec] ("Programmer") {xdg-open ~/.fluxbox/apps}
+            [exec] ("Initialisering") {xdg-open ~/.fluxbox/init}
+            [exec] ("Taster") {xdg-open ~/.fluxbox/keys}
+            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+            [exec] ("Legg over") {xdg-open ~/.fluxbox/overlay}
+            [exec] ("Oppstart") {featherpad ~/.fluxbox/startup}
+            [exec] ("Stiler") {thunar ~/.fluxbox/styles/}
+        [end]
+        [submenu] ("Tastatur")
+            [exec] (DE) {setxkbmap de}
+			      [exec] (ES) {setxkbmap es} 
+			      [exec] (FR) {setxkbmap fr}
+			      [exec] (GB) {setxkbmap gb}
+			      [exec] (GR) {setxkbmap gr}
+			      [exec] (JA) {setxkbmap ja}
+			      [exec] (IT) {setxkbmap it}
+			      [exec] (PL) {setxkbmap pl}
+			      [exec] (PT) {setxkbmap pt}
+			      [exec] (RU) {setxkbmap ru}
+			      [exec] (US) {setxkbmap us}
+        [end]
+        [config] ("Fluxbox")
+        [exec] (Xfce) {xfce4-settings-manager}
+    [end] 
+    [separator]
+    [submenu] ("Ute av syne")
+            [exec] ("Tvangsavslutt samlevindu") { killall wmalauncher               }
+    [exec] ("Tvangsavslutt vindu") { xkill                             }
+    [separator]
+    [exec] ("Veksle conky") { conkytoggle.sh                    }
+    [exec] ("Veksle iDesk") { idesktoggle idesk                 }
+    [exec] ("Veksle ikoner") { idesktoggle icons                 }
+    [exec] ("Veksle autoskjuling av samlevindu") { $HOME/.fluxbox/scripts/toggledock }
+    [exec] ("Veksle autoskjuling av verktøylinje") {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] ("Veksle skjermer") { toggle-mx gkrellm                 }
+    [separator]
+    [exec] ("Slå av forvalgt samlevindu") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [end]
+    [submenu] ("Forlat")
+        [exec] ("Oppdater") { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] ("Hvilemodus") {sudo 'pm-suspend'}
+        [exit] ("Logg ut") 
+        [exec] ("Start på nytt") {sudo /sbin/reboot} 
+        [exec] ("Slå av") {sudo /sbin/halt}
+    [end]
+[end]

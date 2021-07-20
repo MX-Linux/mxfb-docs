@@ -1,11 +1,11 @@
 [begin] (Uiterlijk) 
-    [exec] ("Conky"){conky-manager2}
-    [submenu] ("Docks")
+    [exec] (Conky){conky-manager2}
+    [submenu] (Docks)
         [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
         [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
         [exec] (Standaard) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
-        [exec] ("Dockmaker") {mx-dockmaker}
+        [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Desktop iconen) {mx-idesktool}
     [exec] (Beeldschermen) {gkrellm}
@@ -17,7 +17,7 @@
     [exec] (Thema) {lxappearance}
     [submenu] (Gereedschapsbalk)
         [exec] (Fluxbox) {toggletint2}
-        [exec] ("Traditioneel") {toggletint2}
+        [exec] (Traditioneel) {toggletint2}
     [end]
     [submenu] (Desktopachtergrond) 
     [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}

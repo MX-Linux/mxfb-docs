@@ -2,8 +2,8 @@
     [exec] (About) {about-mx-fluxbox}
     [exec] (Backup) {grsync}
     [submenu] (Configureer)
-        [exec] ("Apps") {xdg-open ~/.fluxbox/apps}
-        [exec] ("Init") {xdg-open ~/.fluxbox/init}
+        [exec] (Apps) {xdg-open ~/.fluxbox/apps}
+        [exec] (Init) {xdg-open ~/.fluxbox/init}
         [exec] (Toetsen) {xdg-open ~/.fluxbox/keys}
         [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
         [exec] (Overlapping) {xdg-open ~/.fluxbox/overlay}
@@ -12,7 +12,7 @@
     [end]
     [submenu] (Beeldscherm) 
     [exec] (Change) {arandr} 
-    [exec]("Help") {featherpad ~/.fluxbox/components/HELP_Display} 
+    [exec](Help) {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 
     [submenu] (Toetsenbord)
         [exec] (DE) {setxkbmap de}

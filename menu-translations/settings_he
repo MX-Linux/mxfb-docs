@@ -7,7 +7,7 @@
         [exec] () {xdg-open ~/.fluxbox/keys}
         [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
         [exec] () {xdg-open ~/.fluxbox/overlay}
-        [exec] ("סגנונות") {featherpad ~/.fluxbox/startup}
+        [exec] (סגנונות) {featherpad ~/.fluxbox/startup}
         [exec] () {thunar ~/.fluxbox/styles/}
     [end]
     [submenu] () 
@@ -27,6 +27,6 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] ("כל היישומים")
+    [config] (כל היישומים)
     [exec] (Xfce) {xfce4-settings-manager}
 [end]

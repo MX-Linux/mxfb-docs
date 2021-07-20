@@ -1,13 +1,13 @@
-[begin] ("Poza polem widzenia") 
-    [exec] ("Zabij dok") { killall wmalauncher               }
-    [exec] ("Zabij okno") { xkill                             }
+[begin] (Poza polem widzenia) 
+    [exec] (Zabij dok) { killall wmalauncher               }
+    [exec] (Zabij okno) { xkill                             }
     [separator]
-    [exec] ("Przełącz conky") { conkytoggle.sh                    }
-    [exec] ("Przełącz iDesk") { idesktoggle idesk                 }
-    [exec] ("Przełącz ikony") { idesktoggle icons                 }
-    [exec] ("Przełącz automatyczne ukrywanie doku") { $HOME/.fluxbox/scripts/toggledock }
-    [exec] ("Przełącz automatyczne ukrywanie paska narzędzi") {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] ("Przełącz monitory") { toggle-mx gkrellm                 }
+    [exec] (Przełącz conky) { conkytoggle.sh                    }
+    [exec] (Przełącz iDesk) { idesktoggle idesk                 }
+    [exec] (Przełącz ikony) { idesktoggle icons                 }
+    [exec] (Przełącz automatyczne ukrywanie doku) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Przełącz automatyczne ukrywanie paska narzędzi) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Przełącz monitory) { toggle-mx gkrellm                 }
     [separator]
-    [exec] ("Wyłącz domyślny dok") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Wyłącz domyślny dok) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

@@ -1,13 +1,13 @@
-[begin] ("Masquer") 
-    [exec] ("Arrêter le dock") { killall wmalauncher               }
-    [exec] ("Arrêter une fenêtre") { xkill                             }
+[begin] (Masquer) 
+    [exec] (Arrêter le dock) { killall wmalauncher               }
+    [exec] (Arrêter une fenêtre) { xkill                             }
     [separator]
-    [exec] ("Basculer conky") { conkytoggle.sh                    }
-    [exec] ("Basculer l'iDesk") { idesktoggle idesk                 }
-    [exec] ("Basculer les icônes") { idesktoggle icons                 }
-    [exec] ("Basculer masquage auto. dock") { $HOME/.fluxbox/scripts/toggledock }
-    [exec] ("Basculer masquage auto. barre d'outils") {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] ("Basculer les moniteurs") { toggle-mx gkrellm                 }
+    [exec] (Basculer conky) { conkytoggle.sh                    }
+    [exec] (Basculer l'iDesk) { idesktoggle idesk                 }
+    [exec] (Basculer les icônes) { idesktoggle icons                 }
+    [exec] (Basculer masquage auto. dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Basculer masquage auto. barre d'outils) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Basculer les moniteurs) { toggle-mx gkrellm                 }
     [separator]
-    [exec] ("Désactiver le dock par défaut") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Désactiver le dock par défaut) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

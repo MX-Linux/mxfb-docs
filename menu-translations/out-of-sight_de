@@ -1,13 +1,13 @@
-[begin] ("Verstecken") 
-    [exec] ("Dock abschießen") { killall wmalauncher               }
-    [exec] ("Fenster abschießen") { xkill                             }
+[begin] (Verstecken) 
+    [exec] (Dock abschießen) { killall wmalauncher               }
+    [exec] (Fenster abschießen) { xkill                             }
     [separator]
-    [exec] ("Conky an/aus") { conkytoggle.sh                    }
-    [exec] ("iDesk an/aus") { idesktoggle idesk                 }
-    [exec] ("Symbole an/aus") { idesktoggle icons                 }
-    [exec] ("Dockausblendeautomatik an/aus") { $HOME/.fluxbox/scripts/toggledock }
-    [exec] ("Werkzeugleistenausblendeautomatik an/aus") {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] ("Bildschirme umschalten") { toggle-mx gkrellm                 }
+    [exec] (Conky an/aus) { conkytoggle.sh                    }
+    [exec] (iDesk an/aus) { idesktoggle idesk                 }
+    [exec] (Symbole an/aus) { idesktoggle icons                 }
+    [exec] (Dockausblendeautomatik an/aus) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Werkzeugleistenausblendeautomatik an/aus) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Bildschirme umschalten) { toggle-mx gkrellm                 }
     [separator]
-    [exec] ("Standard-Dock deaktivieren") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Standard-Dock deaktivieren) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

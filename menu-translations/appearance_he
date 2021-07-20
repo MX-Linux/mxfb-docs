@@ -8,7 +8,7 @@
         [exec] () {mx-dockmaker}
     [end]
     [exec] () {mx-idesktool}
-    [exec] ("סגנון") {gkrellm}
+    [exec] (סגנון) {gkrellm}
     [submenu] ()
         [stylesdir] (~/.fluxbox/styles)
         [separator]
@@ -16,8 +16,8 @@
     [end]
     [exec] () {lxappearance}
     [submenu] ()
-        [exec] ("כל היישומים") {toggletint2}
-        [exec] ("רקע") {toggletint2}
+        [exec] (כל היישומים) {toggletint2}
+        [exec] (רקע) {toggletint2}
     [end]
     [submenu] () 
     [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}

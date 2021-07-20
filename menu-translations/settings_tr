@@ -1,20 +1,20 @@
-[begin] ("Ayarlar")
+[begin] (Ayarlar)
     [exec] (About) {about-mx-fluxbox}
-    [exec] ("Yedekleme") {grsync}
-    [submenu] ("Yapılandır")
-        [exec] ("Uygulamalar") {xdg-open ~/.fluxbox/apps}
+    [exec] (Yedekleme) {grsync}
+    [submenu] (Yapılandır)
+        [exec] (Uygulamalar) {xdg-open ~/.fluxbox/apps}
         [exec] () {xdg-open ~/.fluxbox/init}
         [exec] () {xdg-open ~/.fluxbox/keys}
         [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
         [exec] () {xdg-open ~/.fluxbox/overlay}
-        [exec] ("Başlangıç") {featherpad ~/.fluxbox/startup}
-        [exec] ("Biçemler") {thunar ~/.fluxbox/styles/}
+        [exec] (Başlangıç) {featherpad ~/.fluxbox/startup}
+        [exec] (Biçemler) {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] ("Görüntü") 
+    [submenu] (Görüntü) 
     [exec] (Change) {arandr} 
-    [exec]("Yardım") {featherpad ~/.fluxbox/components/HELP_Display} 
+    [exec](Yardım) {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 
-    [submenu] ("Klavye")
+    [submenu] (Klavye)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
         [exec] (FR) {setxkbmap fr}
@@ -27,6 +27,6 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] ("Fluxbox")
+    [config] (Fluxbox)
     [exec] (Xfce) {xfce4-settings-manager}
 [end]

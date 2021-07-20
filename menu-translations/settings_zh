@@ -1,20 +1,20 @@
-[begin] ("设置")
+[begin] (设置)
     [exec] (About) {about-mx-fluxbox}
-    [exec] ("备份") {grsync}
-    [submenu] ("配置")
-        [exec] ("应用") {xdg-open ~/.fluxbox/apps}
-        [exec] ("初始程序") {xdg-open ~/.fluxbox/init}
-        [exec] ("密钥") {xdg-open ~/.fluxbox/keys}
+    [exec] (备份) {grsync}
+    [submenu] (配置)
+        [exec] (应用) {xdg-open ~/.fluxbox/apps}
+        [exec] (初始程序) {xdg-open ~/.fluxbox/init}
+        [exec] (密钥) {xdg-open ~/.fluxbox/keys}
         [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-        [exec] ("覆盖") {xdg-open ~/.fluxbox/overlay}
-        [exec] ("启动") {featherpad ~/.fluxbox/startup}
-        [exec] ("样式") {thunar ~/.fluxbox/styles/}
+        [exec] (覆盖) {xdg-open ~/.fluxbox/overlay}
+        [exec] (启动) {featherpad ~/.fluxbox/startup}
+        [exec] (样式) {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] ("显示") 
+    [submenu] (显示) 
     [exec] (Change) {arandr} 
-    [exec]("帮助") {featherpad ~/.fluxbox/components/HELP_Display} 
+    [exec](帮助) {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 
-    [submenu] ("键盘")
+    [submenu] (键盘)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
         [exec] (FR) {setxkbmap fr}
@@ -27,6 +27,6 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] ("Fluxbox")
+    [config] (Fluxbox)
     [exec] (Xfce) {xfce4-settings-manager}
 [end]

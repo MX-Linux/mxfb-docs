@@ -1,20 +1,20 @@
 [begin] (Fluxbox) 
     [exec] (About) {about-mx-fluxbox}
     [exec] (Alle apps) {rofi -show drun}
-    [exec] ("Browser") {firefox}
-    [exec] ("Email") {thunderbird}
+    [exec] (Browser) {firefox}
+    [exec] (Email) {thunderbird}
     [exec] (Bestandsbeheerder) {thunar $HOME/.fluxbox} 
-    [exec] ("Help") {thunar /usr/share/mxflux/help}
+    [exec] (Help) {thunar /usr/share/mxflux/help}
     [exec] (Muziek) {clementine}
     [exec] (Uitvoeren) {fbrun} 
-    [exec] ("Terminal") {xfce4-terminal} 
+    [exec] (Terminal) {xfce4-terminal} 
     [separator]
     [submenu] (Uiterlijk) 
-        [exec] ("Conky"){conky-manager2}
-        [submenu] ("Docks")
+        [exec] (Conky){conky-manager2}
+        [submenu] (Docks)
             [exec] (Standaard) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
-            [exec] ("Dockmaker") {mx-dockmaker}
+            [exec] (Dockmaker) {mx-dockmaker}
         [end]
         [exec] (Desktop iconen) {mx-idesktool}
         [exec] (Beeldschermen) {gkrellm}
@@ -26,7 +26,7 @@
         [exec] (Thema) {lxappearance}
         [submenu] (Gereedschapsbalk)
             [exec] (Fluxbox) {toggletint2}
-            [exec] ("Traditioneel") {toggletint2}
+            [exec] (Traditioneel) {toggletint2}
         [end]
         [submenu] (Desktopachtergrond)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
@@ -36,8 +36,8 @@
     [end]
     [submenu] (Instellingen)
         [submenu] (Configureer)
-            [exec] ("Apps") {xdg-open ~/.fluxbox/apps}
-            [exec] ("Init") {xdg-open ~/.fluxbox/init}
+            [exec] (Apps) {xdg-open ~/.fluxbox/apps}
+            [exec] (Init) {xdg-open ~/.fluxbox/init}
             [exec] (Toetsen) {xdg-open ~/.fluxbox/keys}
             [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
             [exec] (Overlapping) {xdg-open ~/.fluxbox/overlay}

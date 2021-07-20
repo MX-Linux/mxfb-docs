@@ -1,20 +1,20 @@
-[begin] ("Postavke")
+[begin] (Postavke)
     [exec] (About) {about-mx-fluxbox}
-    [exec] ("Sigurnosna kopija") {grsync}
-    [submenu] ("Konfiguriraj")
-        [exec] ("Aplikacije") {xdg-open ~/.fluxbox/apps}
+    [exec] (Sigurnosna kopija) {grsync}
+    [submenu] (Konfiguriraj)
+        [exec] (Aplikacije) {xdg-open ~/.fluxbox/apps}
         [exec] () {xdg-open ~/.fluxbox/init}
         [exec] () {xdg-open ~/.fluxbox/keys}
         [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
         [exec] () {xdg-open ~/.fluxbox/overlay}
         [exec] () {featherpad ~/.fluxbox/startup}
-        [exec] ("Stilovi") {thunar ~/.fluxbox/styles/}
+        [exec] (Stilovi) {thunar ~/.fluxbox/styles/}
     [end]
-    [submenu] ("Prikaži") 
+    [submenu] (Prikaži) 
     [exec] (Change) {arandr} 
-    [exec]("Pomoć") {featherpad ~/.fluxbox/components/HELP_Display} 
+    [exec](Pomoć) {featherpad ~/.fluxbox/components/HELP_Display} 
     [end] 
-    [submenu] ("Tipkovnica")
+    [submenu] (Tipkovnica)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
         [exec] (FR) {setxkbmap fr}
@@ -27,6 +27,6 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] ("Fluxbox")
+    [config] (Fluxbox)
     [exec] (Xfce) {xfce4-settings-manager}
 [end]

@@ -1,50 +1,50 @@
-[begin] ("Fluxbox") 
+[begin] (Fluxbox) 
     [exec] (About) {about-mx-fluxbox}
-    [exec] ("所有应用") {rofi -show drun}
-    [exec] ("浏览器") {firefox}
-    [exec] ("邮件") {thunderbird}
-    [exec] ("文件管理器") {thunar $HOME/.fluxbox} 
-    [exec] ("帮助") {thunar /usr/share/mxflux/help}
-    [exec] ("音乐") {clementine}
-    [exec] ("运行") {fbrun} 
-    [exec] ("终端") {xfce4-terminal} 
+    [exec] (所有应用) {rofi -show drun}
+    [exec] (浏览器) {firefox}
+    [exec] (邮件) {thunderbird}
+    [exec] (文件管理器) {thunar $HOME/.fluxbox} 
+    [exec] (帮助) {thunar /usr/share/mxflux/help}
+    [exec] (音乐) {clementine}
+    [exec] (运行) {fbrun} 
+    [exec] (终端) {xfce4-terminal} 
     [separator]
-    [submenu] ("外观") 
-        [exec] ("Conky"){conky-manager2}
-        [submenu] ("程序坞")
-            [exec] ("默认") {~/.fluxbox/scripts/DefaultDock.mxdk}
+    [submenu] (外观) 
+        [exec] (Conky){conky-manager2}
+        [submenu] (程序坞)
+            [exec] (默认) {~/.fluxbox/scripts/DefaultDock.mxdk}
             [separator]
-            [exec] ("造坞器") {mx-dockmaker}
+            [exec] (造坞器) {mx-dockmaker}
         [end]
-        [exec] ("桌面图标") {mx-idesktool}
-        [exec] ("显示器") {gkrellm}
-        [submenu] ("样式")
+        [exec] (桌面图标) {mx-idesktool}
+        [exec] (显示器) {gkrellm}
+        [submenu] (样式)
             [stylesdir] (~/.fluxbox/styles)
             [separator]
             [stylesdir] (/usr/share/fluxbox/styles) 
         [end]
-        [exec] ("主题") {lxappearance}
-        [submenu] ("工具栏")
-            [exec] ("Fluxbox") {toggletint2}
-            [exec] ("传统") {toggletint2}
+        [exec] (主题) {lxappearance}
+        [submenu] (工具栏)
+            [exec] (Fluxbox) {toggletint2}
+            [exec] (传统) {toggletint2}
         [end]
-        [submenu] ("壁纸")
+        [submenu] (壁纸)
             [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
             [separator]
             [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
         [end]
     [end]
-    [submenu] ("设置")
-        [submenu] ("配置")
-            [exec] ("应用") {xdg-open ~/.fluxbox/apps}
-            [exec] ("初始程序") {xdg-open ~/.fluxbox/init}
-            [exec] ("密钥") {xdg-open ~/.fluxbox/keys}
+    [submenu] (设置)
+        [submenu] (配置)
+            [exec] (应用) {xdg-open ~/.fluxbox/apps}
+            [exec] (初始程序) {xdg-open ~/.fluxbox/init}
+            [exec] (密钥) {xdg-open ~/.fluxbox/keys}
             [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] ("覆盖") {xdg-open ~/.fluxbox/overlay}
-            [exec] ("启动") {featherpad ~/.fluxbox/startup}
-            [exec] ("样式") {thunar ~/.fluxbox/styles/}
+            [exec] (覆盖) {xdg-open ~/.fluxbox/overlay}
+            [exec] (启动) {featherpad ~/.fluxbox/startup}
+            [exec] (样式) {thunar ~/.fluxbox/styles/}
         [end]
-        [submenu] ("键盘")
+        [submenu] (键盘)
             [exec] (DE) {setxkbmap de}
 			      [exec] (ES) {setxkbmap es} 
 			      [exec] (FR) {setxkbmap fr}
@@ -57,28 +57,28 @@
 			      [exec] (RU) {setxkbmap ru}
 			      [exec] (US) {setxkbmap us}
         [end]
-        [config] ("Fluxbox")
+        [config] (Fluxbox)
         [exec] (Xfce) {xfce4-settings-manager}
     [end] 
     [separator]
-    [submenu] ("视界外")
-            [exec] ("杀死程序坞进程") { killall wmalauncher               }
-    [exec] ("杀死一个窗口进程") { xkill                             }
+    [submenu] (视界外)
+            [exec] (杀死程序坞进程) { killall wmalauncher               }
+    [exec] (杀死一个窗口进程) { xkill                             }
     [separator]
-    [exec] ("切换 Conky") { conkytoggle.sh                    }
-    [exec] ("切换 iDesk") { idesktoggle idesk                 }
-    [exec] ("切换图标") { idesktoggle icons                 }
-    [exec] ("切换自动隐藏程序坞") { $HOME/.fluxbox/scripts/toggledock }
-    [exec] ("切换自动隐藏工具栏") {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] ("切换显示器") { toggle-mx gkrellm                 }
+    [exec] (切换 Conky) { conkytoggle.sh                    }
+    [exec] (切换 iDesk) { idesktoggle idesk                 }
+    [exec] (切换图标) { idesktoggle icons                 }
+    [exec] (切换自动隐藏程序坞) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (切换自动隐藏工具栏) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (切换显示器) { toggle-mx gkrellm                 }
     [separator]
-    [exec] ("禁用默认程序坞") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (禁用默认程序坞) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
     [end]
-    [submenu] ("离开")
-        [exec] ("刷新") { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] ("挂起") {sudo 'pm-suspend'}
-        [exit] ("注销") 
-        [exec] ("重启") {sudo /sbin/reboot} 
-        [exec] ("关机") {sudo /sbin/halt}
+    [submenu] (离开)
+        [exec] (刷新) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (挂起) {sudo 'pm-suspend'}
+        [exit] (注销) 
+        [exec] (重启) {sudo /sbin/reboot} 
+        [exec] (关机) {sudo /sbin/halt}
     [end]
 [end]

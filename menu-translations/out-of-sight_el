@@ -1,13 +1,13 @@
-[begin] ("Κρυμμένα") 
-    [exec] ("Kill dock") { killall wmalauncher               }
-    [exec] ("Kill a window") { xkill                             }
+[begin] (Κρυμμένα) 
+    [exec] (Kill dock) { killall wmalauncher               }
+    [exec] (Kill a window) { xkill                             }
     [separator]
-    [exec] ("Εναλλαγή conky") { conkytoggle.sh                    }
-    [exec] ("Εναλλαγή idesk") { idesktoggle idesk                 }
-    [exec] ("Εναλλαγή εικονιδίων") { idesktoggle icons                 }
-    [exec] ("Εναλλαγή autohide dock") { $HOME/.fluxbox/scripts/toggledock }
-    [exec] ("Εναλλαγή αυτόματη απόκρυψη γραμμής εργαλείων") {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] ("Εναλλαγή οθονών") { toggle-mx gkrellm                 }
+    [exec] (Εναλλαγή conky) { conkytoggle.sh                    }
+    [exec] (Εναλλαγή idesk) { idesktoggle idesk                 }
+    [exec] (Εναλλαγή εικονιδίων) { idesktoggle icons                 }
+    [exec] (Εναλλαγή autohide dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Εναλλαγή αυτόματη απόκρυψη γραμμής εργαλείων) {$HOME/.fluxbox/scripts/toggletoolbar}
+    [exec] (Εναλλαγή οθονών) { toggle-mx gkrellm                 }
     [separator]
-    [exec] ("Απενεργοποίηση προεπιλεγμένης dock") { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Απενεργοποίηση προεπιλεγμένης dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

@@ -1,25 +1,25 @@
-[begin] ("外観") 
-    [exec] ("コンキー"){conky-manager2}
-    [submenu] ("ドック")
+[begin] (外観) 
+    [exec] (コンキー){conky-manager2}
+    [submenu] (ドック)
         [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
         [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
-        [exec] ("既定") {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (既定) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
-        [exec] ("ドックメーカー") {mx-dockmaker}
+        [exec] (ドックメーカー) {mx-dockmaker}
     [end]
-    [exec] ("デスクトップアイコン") {mx-idesktool}
-    [exec] ("モニタ") {gkrellm}
-    [submenu] ("スタイル")
+    [exec] (デスクトップアイコン) {mx-idesktool}
+    [exec] (モニタ) {gkrellm}
+    [submenu] (スタイル)
         [stylesdir] (~/.fluxbox/styles)
         [separator]
         [stylesdir] (/usr/share/fluxbox/styles) 
     [end]
-    [exec] ("テーマ") {lxappearance}
-    [submenu] ("ツールバー")
-        [exec] ("Fluxbox") {toggletint2}
-        [exec] ("トラディショナル") {toggletint2}
+    [exec] (テーマ) {lxappearance}
+    [submenu] (ツールバー)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] (トラディショナル) {toggletint2}
     [end]
-    [submenu] ("壁紙") 
+    [submenu] (壁紙) 
     [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
     [separator]
     [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}

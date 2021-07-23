@@ -1,78 +1,33 @@
-[begin] (Fluxbox) 
-    [exec] (About) {about-mx-fluxbox}
-    [exec] (Όλες οι εφαρμογές) {rofi -show drun}
-    [exec] (Πρόγραμμα περιήγησης) {firefox}
-    [exec] (Ηλεκτρονικό ταχυδρομείο) {thunderbird}
+# the submenus can be found in /usr/share/mxflux/menu/
+
+[begin] (Fluxbox)
+	[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (Πρόσφατοι φάκελοι) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Ενημέρωση λίστας) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Πρόγραμμα περιήγησης) {sensible-browser}
+    [exec] (Ηλεκτρονικό ταχυδρομείο) {xdg-email}
     [exec] (Διαχείριση Αρχείων) {thunar $HOME/.fluxbox} 
     [exec] (Βοήθεια) {thunar /usr/share/mxflux/help}
     [exec] (Μουσική) {clementine}
     [exec] (Εκτέλεση) {fbrun} 
     [exec] (Τερματικό) {xfce4-terminal} 
     [separator]
-    [submenu] (Εμφάνιση) 
-        [exec] (Conky){conky-manager2}
-        [submenu] (Docks)
-            [exec] (Προεπιλογή) {~/.fluxbox/scripts/DefaultDock.mxdk}
-            [separator]
-            [exec] (Dockmaker) {mx-dockmaker}
-        [end]
-        [exec] (Εικονίδια επιφάνειας εργασίας) {mx-idesktool}
-        [exec] (Οθόνες) {gkrellm}
-        [submenu] (Στυλ)
-            [stylesdir] (~/.fluxbox/styles)
-            [separator]
-            [stylesdir] (/usr/share/fluxbox/styles) 
-        [end]
-        [exec] (Θέμα) {lxappearance}
-        [submenu] (Γραμμή εργαλείων)
-            [exec] (Fluxbox) {toggletint2}
-            [exec] (Παραδοσιακό) {toggletint2}
-        [end]
-        [submenu] (Φόντο)
-            [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
-            [separator]
-            [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
-        [end]
+    [submenu] (Εμφάνιση)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Ρυθμίσεις)
-        [submenu] (Ρύθμιση)
-            [exec] (Εφαρμογές) {xdg-open ~/.fluxbox/apps}
-            [exec] (Init) {xdg-open ~/.fluxbox/init}
-            [exec] (Κλειδιά) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Εκκίνηση) {featherpad ~/.fluxbox/startup}
-            [exec] (Στυλ) {thunar ~/.fluxbox/styles/}
-        [end]
-        [submenu] (Πληκτρολόγιο)
-            [exec] (DE) {setxkbmap de}
-			      [exec] (ES) {setxkbmap es} 
-			      [exec] (FR) {setxkbmap fr}
-			      [exec] (GB) {setxkbmap gb}
-			      [exec] (GR) {setxkbmap gr}
-			      [exec] (JA) {setxkbmap ja}
-			      [exec] (IT) {setxkbmap it}
-			      [exec] (PL) {setxkbmap pl}
-			      [exec] (PT) {setxkbmap pt}
-			      [exec] (RU) {setxkbmap ru}
-			      [exec] (US) {setxkbmap us}
-        [end]
-        [config] (Fluxbox)
-        [exec] (Xfce) {xfce4-settings-manager}
-    [end] 
-    [separator]
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
     [submenu] (Κρυμμένα)
-            [exec] (Kill dock) { killall wmalauncher               }
-    [exec] (Kill a window) { xkill                             }
-    [separator]
-    [exec] (Εναλλαγή conky) { conkytoggle.sh                    }
-    [exec] (Εναλλαγή idesk) { idesktoggle idesk                 }
-    [exec] (Εναλλαγή εικονιδίων) { idesktoggle icons                 }
-    [exec] (Εναλλαγή autohide dock) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Εναλλαγή αυτόματη απόκρυψη γραμμής εργαλείων) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Εναλλαγή οθονών) { toggle-mx gkrellm                 }
-    [separator]
-    [exec] (Απενεργοποίηση προεπιλεγμένης dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Εξοδος)
         [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }

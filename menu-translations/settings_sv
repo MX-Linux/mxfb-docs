@@ -1,19 +1,24 @@
 [begin] (Inställningar)
-    [exec] (About) {about-mx-fluxbox}
     [exec] (Backup) {grsync}
     [submenu] (Anpassa)
         [exec] (Appar) {xdg-open ~/.fluxbox/apps}
         [exec] (Init) {xdg-open ~/.fluxbox/init}
         [exec] (Tangenter) {xdg-open ~/.fluxbox/keys}
-        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [submenu] (Menyer) 
+           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Utseende) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Inställningar) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Dold) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
         [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Start) {featherpad ~/.fluxbox/startup}
+        [exec] (Start) {xdg-open ~/.fluxbox/startup}
         [exec] (Stilar) {thunar ~/.fluxbox/styles/}
+        [config] (Fönster)         
     [end]
-    [submenu] (Visa) 
-    [exec] (Change) {arandr} 
-    [exec](Hjälp) {featherpad ~/.fluxbox/components/HELP_Display} 
-    [end] 
+    [submenu] (Visa)
+    [exec] (Change) {arandr}
+    [exec](Hjälp) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
     [submenu] (Tangentbord)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
@@ -27,6 +32,4 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] (Fluxbox)
-    [exec] (Xfce) {xfce4-settings-manager}
 [end]

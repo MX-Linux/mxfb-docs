@@ -1,11 +1,18 @@
-mxfb-docs (21.02.20) UNRELEASED; urgency=medium
+mxfb-docs (21.07.23) mx; urgency=medium
+
+  * updated templates
+
+ -- Jerry Bond <jb@X1Cmx>  Thu, 22 Jul 2021 20:07:23 -0400
+
+mxfb-docs (21.07.22) mx; urgency=medium
 
   * Took out the MXFBPi docs for a separate repo
   * Added MX-21 menu items for translation
   * Added 3 new templates for submenus
   * revised R script to account for new submenus
+  * generated new set of localized menus
 
- -- Jerry Bond <jb@X1Cmx>  Fri, 14 May 2021 11:43:32 -0400
+ -- Jerry Bond <jb@X1Cmx>  Thu, 22 Jul 2021 16:23:20 -0400
 
 mxfb-docs (21.02.17) mx; urgency=medium
 

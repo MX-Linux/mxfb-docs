@@ -1,8 +1,6 @@
 [begin] (Εμφάνιση) 
     [exec] (Conky){conky-manager2}
     [submenu] (Docks)
-        [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
-        [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
         [exec] (Προεπιλογή) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
         [exec] (Dockmaker) {mx-dockmaker}
@@ -20,8 +18,11 @@
         [exec] (Παραδοσιακό) {toggletint2}
     [end]
     [submenu] (Φόντο) 
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+    [exec] (Γυρίζω) {mxfb-bg-rotate}
+    [exec] (Ξεχωριστό) {mxfb-separate-backgrounds}
+    [submenu] (Επιλογή)
+    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-fill}
     [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+    [wallpapers] (/usr/share/backgrounds) {feh --bg-fill}
     [end]
 [end]

@@ -1,8 +1,6 @@
 [begin] (外观) 
     [exec] (Conky){conky-manager2}
     [submenu] (程序坞)
-        [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
-        [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
         [exec] (默认) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
         [exec] (造坞器) {mx-dockmaker}
@@ -20,8 +18,11 @@
         [exec] (传统) {toggletint2}
     [end]
     [submenu] (壁纸) 
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+    [exec] (旋转) {mxfb-bg-rotate}
+    [exec] (独立) {mxfb-separate-backgrounds}
+    [submenu] (选择)
+    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-fill}
     [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+    [wallpapers] (/usr/share/backgrounds) {feh --bg-fill}
     [end]
 [end]

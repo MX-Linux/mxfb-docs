@@ -1,8 +1,6 @@
 [begin] (Appearance) 
     [exec] (Conky){conky-manager2}
     [submenu] (Docks)
-        [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
-        [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
         [exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
         [exec] (Dockmaker) {mx-dockmaker}
@@ -20,8 +18,11 @@
         [exec] (Traditional) {toggletint2}
     [end]
     [submenu] (Wallpaper) 
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+    [exec] (Rotate) {mxfb-bg-rotate}
+    [exec] (Separate) {mxfb-separate-backgrounds}
+    [submenu] (Select)
+    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-fill}
     [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+    [wallpapers] (/usr/share/backgrounds) {feh --bg-fill}
     [end]
 [end]

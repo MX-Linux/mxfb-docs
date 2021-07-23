@@ -1,19 +1,24 @@
 [begin] (Einstellungen)
-    [exec] (About) {about-mx-fluxbox}
     [exec] (Sicherung) {grsync}
     [submenu] (Konfiguration)
         [exec] (Programme) {xdg-open ~/.fluxbox/apps}
         [exec] (Init) {xdg-open ~/.fluxbox/init}
         [exec] (Tasten) {xdg-open ~/.fluxbox/keys}
-        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [submenu] (Menues) 
+           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Erscheinungsbild) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Einstellungen) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Verstecken) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
         [exec] (Einblendung) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Hochfahren) {featherpad ~/.fluxbox/startup}
+        [exec] (Hochfahren) {xdg-open ~/.fluxbox/startup}
         [exec] (Stile) {thunar ~/.fluxbox/styles/}
+        [config] (Fenster)         
     [end]
-    [submenu] (Bildschirm) 
-    [exec] (Change) {arandr} 
-    [exec](Hilfe) {featherpad ~/.fluxbox/components/HELP_Display} 
-    [end] 
+    [submenu] (Bildschirm)
+    [exec] (Change) {arandr}
+    [exec](Hilfe) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
     [submenu] (Tastatur)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
@@ -27,6 +32,4 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] (Fluxbox)
-    [exec] (Xfce) {xfce4-settings-manager}
 [end]

@@ -1,8 +1,6 @@
 [begin] (Utseende) 
     [exec] (Conky){conky-manager2}
     [submenu] (Samlevinduer)
-        [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
-        [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
         [exec] (Forvalg) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
         [exec] (Dockmaker) {mx-dockmaker}
@@ -20,8 +18,11 @@
         [exec] (Tradisjonell) {toggletint2}
     [end]
     [submenu] (Bakgrunnsbilde) 
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+    [exec] (Roter) {mxfb-bg-rotate}
+    [exec] (Separat) {mxfb-separate-backgrounds}
+    [submenu] (Velg)
+    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-fill}
     [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+    [wallpapers] (/usr/share/backgrounds) {feh --bg-fill}
     [end]
 [end]

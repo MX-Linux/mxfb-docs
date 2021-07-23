@@ -1,19 +1,24 @@
 [begin] (إعدادات)
-    [exec] (About) {about-mx-fluxbox}
     [exec] () {grsync}
     [submenu] (ضبط)
         [exec] (التطبيقات) {xdg-open ~/.fluxbox/apps}
         [exec] () {xdg-open ~/.fluxbox/init}
         [exec] (مفاتيح) {xdg-open ~/.fluxbox/keys}
-        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [submenu] (قائمة) 
+           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (مظهر) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (إعدادات) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
         [exec] () {xdg-open ~/.fluxbox/overlay}
-        [exec] (بدء) {featherpad ~/.fluxbox/startup}
+        [exec] (بدء) {xdg-open ~/.fluxbox/startup}
         [exec] (أنماط) {thunar ~/.fluxbox/styles/}
+        [config] ()         
     [end]
-    [submenu] () 
-    [exec] (Change) {arandr} 
-    [exec](مساعدة) {featherpad ~/.fluxbox/components/HELP_Display} 
-    [end] 
+    [submenu] ()
+    [exec] (Change) {arandr}
+    [exec](مساعدة) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
     [submenu] (لوحة)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
@@ -27,6 +32,4 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] (Fluxbox)
-    [exec] (Xfce) {xfce4-settings-manager}
 [end]

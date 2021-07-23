@@ -1,78 +1,33 @@
-[begin] (Fluxbox) 
-    [exec] (About) {about-mx-fluxbox}
-    [exec] (Wszystkie aplikacje) {rofi -show drun}
-    [exec] (Przeglądarka) {firefox}
-    [exec] (Email) {thunderbird}
+# the submenus can be found in /usr/share/mxflux/menu/
+
+[begin] (Fluxbox)
+	[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (Ostatnie pliki) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Aktualizuj listę) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Przeglądarka) {sensible-browser}
+    [exec] (Email) {xdg-email}
     [exec] (Menedżer plików) {thunar $HOME/.fluxbox} 
     [exec] (Pomoc) {thunar /usr/share/mxflux/help}
     [exec] (Muzyka) {clementine}
     [exec] (Uruchom) {fbrun} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Wygląd) 
-        [exec] (Conky){conky-manager2}
-        [submenu] (Doki)
-            [exec] (Domyślnie) {~/.fluxbox/scripts/DefaultDock.mxdk}
-            [separator]
-            [exec] (Dockmaker) {mx-dockmaker}
-        [end]
-        [exec] (Ikony pulpitu) {mx-idesktool}
-        [exec] (Monitory) {gkrellm}
-        [submenu] (Styl)
-            [stylesdir] (~/.fluxbox/styles)
-            [separator]
-            [stylesdir] (/usr/share/fluxbox/styles) 
-        [end]
-        [exec] (Motyw) {lxappearance}
-        [submenu] (Pasek narzędzi)
-            [exec] (Fluxbox) {toggletint2}
-            [exec] (Tradycyjny) {toggletint2}
-        [end]
-        [submenu] (Tapeta)
-            [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
-            [separator]
-            [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
-        [end]
+    [submenu] (Wygląd)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Ustawienia)
-        [submenu] (Skonfiguruj)
-            [exec] (Aplikacje) {xdg-open ~/.fluxbox/apps}
-            [exec] (Init) {xdg-open ~/.fluxbox/init}
-            [exec] (Klawisze) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Nakładka) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Startup) {featherpad ~/.fluxbox/startup}
-            [exec] (Style) {thunar ~/.fluxbox/styles/}
-        [end]
-        [submenu] (Klawiatura)
-            [exec] (DE) {setxkbmap de}
-			      [exec] (ES) {setxkbmap es} 
-			      [exec] (FR) {setxkbmap fr}
-			      [exec] (GB) {setxkbmap gb}
-			      [exec] (GR) {setxkbmap gr}
-			      [exec] (JA) {setxkbmap ja}
-			      [exec] (IT) {setxkbmap it}
-			      [exec] (PL) {setxkbmap pl}
-			      [exec] (PT) {setxkbmap pt}
-			      [exec] (RU) {setxkbmap ru}
-			      [exec] (US) {setxkbmap us}
-        [end]
-        [config] (Fluxbox)
-        [exec] (Xfce) {xfce4-settings-manager}
-    [end] 
-    [separator]
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
     [submenu] (Poza polem widzenia)
-            [exec] (Zabij dok) { killall wmalauncher               }
-    [exec] (Zabij okno) { xkill                             }
-    [separator]
-    [exec] (Przełącz conky) { conkytoggle.sh                    }
-    [exec] (Przełącz iDesk) { idesktoggle idesk                 }
-    [exec] (Przełącz ikony) { idesktoggle icons                 }
-    [exec] (Przełącz automatyczne ukrywanie doku) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Przełącz automatyczne ukrywanie paska narzędzi) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Przełącz monitory) { toggle-mx gkrellm                 }
-    [separator]
-    [exec] (Wyłącz domyślny dok) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Wyjdź)
         [exec] (Odśwież) { fluxbox-remote restart; idesktoggle idesk refresh }

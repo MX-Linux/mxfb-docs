@@ -1,19 +1,24 @@
 [begin] (Ρυθμίσεις)
-    [exec] (About) {about-mx-fluxbox}
     [exec] (Αντιγράφων ασφαλείας) {grsync}
     [submenu] (Ρύθμιση)
         [exec] (Εφαρμογές) {xdg-open ~/.fluxbox/apps}
         [exec] (Init) {xdg-open ~/.fluxbox/init}
         [exec] (Κλειδιά) {xdg-open ~/.fluxbox/keys}
-        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [submenu] (Μενού) 
+           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Εμφάνιση) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Ρυθμίσεις) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Κρυμμένα) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
         [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Εκκίνηση) {featherpad ~/.fluxbox/startup}
+        [exec] (Εκκίνηση) {xdg-open ~/.fluxbox/startup}
         [exec] (Στυλ) {thunar ~/.fluxbox/styles/}
+        [config] (Παράθυρο)         
     [end]
-    [submenu] (Οθόνη) 
-    [exec] (Change) {arandr} 
-    [exec](Βοήθεια) {featherpad ~/.fluxbox/components/HELP_Display} 
-    [end] 
+    [submenu] (Οθόνη)
+    [exec] (Change) {arandr}
+    [exec](Βοήθεια) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
     [submenu] (Πληκτρολόγιο)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
@@ -27,6 +32,4 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] (Fluxbox)
-    [exec] (Xfce) {xfce4-settings-manager}
 [end]

@@ -1,19 +1,24 @@
 [begin] (Ayarlar)
-    [exec] (About) {about-mx-fluxbox}
     [exec] (Yedekleme) {grsync}
     [submenu] (Yapılandır)
         [exec] (Uygulamalar) {xdg-open ~/.fluxbox/apps}
         [exec] () {xdg-open ~/.fluxbox/init}
         [exec] () {xdg-open ~/.fluxbox/keys}
-        [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
+        [submenu] (Menüler) 
+           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Görünüş) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Ayarlar) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Gözden uzak) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
         [exec] () {xdg-open ~/.fluxbox/overlay}
-        [exec] (Başlangıç) {featherpad ~/.fluxbox/startup}
+        [exec] (Başlangıç) {xdg-open ~/.fluxbox/startup}
         [exec] (Biçemler) {thunar ~/.fluxbox/styles/}
+        [config] (Pencere)         
     [end]
-    [submenu] (Görüntü) 
-    [exec] (Change) {arandr} 
-    [exec](Yardım) {featherpad ~/.fluxbox/components/HELP_Display} 
-    [end] 
+    [submenu] (Görüntü)
+    [exec] (Change) {arandr}
+    [exec](Yardım) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
     [submenu] (Klavye)
         [exec] (DE) {setxkbmap de}
         [exec] (ES) {setxkbmap es} 
@@ -27,6 +32,4 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [config] (Fluxbox)
-    [exec] (Xfce) {xfce4-settings-manager}
 [end]

@@ -1,8 +1,6 @@
 [begin] (外観) 
     [exec] (コンキー){conky-manager2}
     [submenu] (ドック)
-        [exec] (Work) {~/.fluxbox/scripts/Work.mxdk}
-        [exec] (MyDefault) {~/.fluxbox/scripts/MyDefaultDock.mxdk}
         [exec] (既定) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [separator]
         [exec] (ドックメーカー) {mx-dockmaker}
@@ -20,8 +18,11 @@
         [exec] (トラディショナル) {toggletint2}
     [end]
     [submenu] (壁紙) 
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+    [exec] (回転) {mxfb-bg-rotate}
+    [exec] (分割) {mxfb-separate-backgrounds}
+    [submenu] (選択)
+    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-fill}
     [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+    [wallpapers] (/usr/share/backgrounds) {feh --bg-fill}
     [end]
 [end]

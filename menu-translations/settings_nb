@@ -1,17 +1,17 @@
 [begin] (Innstillinger)
     [exec] (Reservekopi) {grsync}
     [submenu] (Oppsett)
-        [exec] (Programmer) {xdg-open ~/.fluxbox/apps}
-        [exec] (Initialisering) {xdg-open ~/.fluxbox/init}
-        [exec] (Taster) {xdg-open ~/.fluxbox/keys}
+        [exec] (Programmer) {exo-open ~/.fluxbox/apps}
+        [exec] (Initialisering) {exo-open ~/.fluxbox/init}
+        [exec] (Taster) {exo-open ~/.fluxbox/keys}
         [submenu] (Menyer) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Utseende) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Innstillinger) {exo-open ~/.fluxbox/submenus/settings}
          [exec] (Ute av syne) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (Legg over) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Oppstart) {xdg-open ~/.fluxbox/startup}
+        [exec] (Legg over) {exo-open ~/.fluxbox/overlay}
+        [exec] (Oppstart) {featherpad ~/.fluxbox/startup}
         [exec] (Stiler) {thunar ~/.fluxbox/styles/}
         [config] (Vindu)         
     [end]

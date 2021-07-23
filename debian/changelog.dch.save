@@ -1,14 +1,8 @@
-mxfb-docs (21.07.24) mx; urgency=medium
+mxfb-docs (21.07.23mx) UNRELEASED; urgency=medium
 
-  * corrected commands
+  * updated menu templates
 
- -- Jerry Bond <jb@X1Cmx>  Fri, 23 Jul 2021 14:02:28 -0400
-
-mxfb-docs (21.07.23) mx; urgency=medium
-
-  * updated templates
-
- -- Jerry Bond <jb@X1Cmx>  Thu, 22 Jul 2021 20:07:23 -0400
+ -- Jerry Bond <jb@X1Cmx>  Thu, 22 Jul 2021 20:05:46 -0400
 
 mxfb-docs (21.07.22) mx; urgency=medium
 

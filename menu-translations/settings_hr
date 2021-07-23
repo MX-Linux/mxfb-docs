@@ -1,17 +1,17 @@
 [begin] (Postavke)
     [exec] (Sigurnosna kopija) {grsync}
     [submenu] (Konfiguriraj)
-        [exec] (Aplikacije) {xdg-open ~/.fluxbox/apps}
-        [exec] () {xdg-open ~/.fluxbox/init}
-        [exec] () {xdg-open ~/.fluxbox/keys}
+        [exec] (Aplikacije) {exo-open ~/.fluxbox/apps}
+        [exec] () {exo-open ~/.fluxbox/init}
+        [exec] () {exo-open ~/.fluxbox/keys}
         [submenu] (Izbornici) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Izgled) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Postavke) {exo-open ~/.fluxbox/submenus/settings}
          [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] () {xdg-open ~/.fluxbox/overlay}
-        [exec] () {xdg-open ~/.fluxbox/startup}
+        [exec] () {exo-open ~/.fluxbox/overlay}
+        [exec] () {featherpad ~/.fluxbox/startup}
         [exec] (Stilovi) {thunar ~/.fluxbox/styles/}
         [config] (Prozor)         
     [end]

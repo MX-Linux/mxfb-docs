@@ -1,17 +1,17 @@
 [begin] (Setelan)
     [exec] () {grsync}
     [submenu] ()
-        [exec] () {xdg-open ~/.fluxbox/apps}
-        [exec] () {xdg-open ~/.fluxbox/init}
-        [exec] () {xdg-open ~/.fluxbox/keys}
+        [exec] () {exo-open ~/.fluxbox/apps}
+        [exec] () {exo-open ~/.fluxbox/init}
+        [exec] () {exo-open ~/.fluxbox/keys}
         [submenu] () 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Tampilan) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Setelan) {exo-open ~/.fluxbox/submenus/settings}
          [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] () {xdg-open ~/.fluxbox/overlay}
-        [exec] () {xdg-open ~/.fluxbox/startup}
+        [exec] () {exo-open ~/.fluxbox/overlay}
+        [exec] () {featherpad ~/.fluxbox/startup}
         [exec] () {thunar ~/.fluxbox/styles/}
         [config] ()         
     [end]

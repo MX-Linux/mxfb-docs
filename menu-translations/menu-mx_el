@@ -1,7 +1,7 @@
-# the submenus can be found in /usr/share/mxflux/menu/
+#the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-	[submenu] (All Apps)
+		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
             [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
@@ -13,12 +13,12 @@
 		[end]
 	[separator]
     [exec] (Πρόγραμμα περιήγησης) {sensible-browser}
-    [exec] (Ηλεκτρονικό ταχυδρομείο) {xdg-email}
-    [exec] (Διαχείριση Αρχείων) {thunar $HOME/.fluxbox} 
-    [exec] (Βοήθεια) {thunar /usr/share/mxflux/help}
+    [exec] (Ηλεκτρονικό ταχυδρομείο) {thunderbird}
+    [exec] (Διαχείριση Αρχείων) {exo-open $HOME/.fluxbox} 
+    [exec] (Βοήθεια) {exo-open /usr/share/mxflux/help}
     [exec] (Μουσική) {clementine}
     [exec] (Εκτέλεση) {fbrun} 
-    [exec] (Τερματικό) {xfce4-terminal} 
+    [exec] (Τερματικό) {roxterm} 
     [separator]
     [submenu] (Εμφάνιση)
     [include] (~/.fluxbox/submenus/appearance)

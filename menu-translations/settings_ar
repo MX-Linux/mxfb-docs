@@ -1,17 +1,17 @@
 [begin] (إعدادات)
     [exec] () {grsync}
     [submenu] (ضبط)
-        [exec] (التطبيقات) {xdg-open ~/.fluxbox/apps}
-        [exec] () {xdg-open ~/.fluxbox/init}
-        [exec] (مفاتيح) {xdg-open ~/.fluxbox/keys}
+        [exec] (التطبيقات) {exo-open ~/.fluxbox/apps}
+        [exec] () {exo-open ~/.fluxbox/init}
+        [exec] (مفاتيح) {exo-open ~/.fluxbox/keys}
         [submenu] (قائمة) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (مظهر) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (إعدادات) {exo-open ~/.fluxbox/submenus/settings}
          [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] () {xdg-open ~/.fluxbox/overlay}
-        [exec] (بدء) {xdg-open ~/.fluxbox/startup}
+        [exec] () {exo-open ~/.fluxbox/overlay}
+        [exec] (بدء) {featherpad ~/.fluxbox/startup}
         [exec] (أنماط) {thunar ~/.fluxbox/styles/}
         [config] ()         
     [end]

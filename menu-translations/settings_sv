@@ -1,17 +1,17 @@
 [begin] (Inställningar)
     [exec] (Backup) {grsync}
     [submenu] (Anpassa)
-        [exec] (Appar) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
-        [exec] (Tangenter) {xdg-open ~/.fluxbox/keys}
+        [exec] (Appar) {exo-open ~/.fluxbox/apps}
+        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [exec] (Tangenter) {exo-open ~/.fluxbox/keys}
         [submenu] (Menyer) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Utseende) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Inställningar) {exo-open ~/.fluxbox/submenus/settings}
          [exec] (Dold) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Start) {xdg-open ~/.fluxbox/startup}
+        [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
+        [exec] (Start) {featherpad ~/.fluxbox/startup}
         [exec] (Stilar) {thunar ~/.fluxbox/styles/}
         [config] (Fönster)         
     [end]

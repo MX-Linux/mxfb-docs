@@ -1,17 +1,17 @@
 [begin] (Ρυθμίσεις)
     [exec] (Αντιγράφων ασφαλείας) {grsync}
     [submenu] (Ρύθμιση)
-        [exec] (Εφαρμογές) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
-        [exec] (Κλειδιά) {xdg-open ~/.fluxbox/keys}
+        [exec] (Εφαρμογές) {exo-open ~/.fluxbox/apps}
+        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [exec] (Κλειδιά) {exo-open ~/.fluxbox/keys}
         [submenu] (Μενού) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Εμφάνιση) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Ρυθμίσεις) {exo-open ~/.fluxbox/submenus/settings}
          [exec] (Κρυμμένα) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Εκκίνηση) {xdg-open ~/.fluxbox/startup}
+        [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
+        [exec] (Εκκίνηση) {featherpad ~/.fluxbox/startup}
         [exec] (Στυλ) {thunar ~/.fluxbox/styles/}
         [config] (Παράθυρο)         
     [end]

@@ -1,7 +1,7 @@
-# the submenus can be found in /usr/share/mxflux/menu/
+#the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-	[submenu] (All Apps)
+		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
             [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
@@ -13,12 +13,12 @@
 		[end]
 	[separator]
     [exec] (Tarayıcı) {sensible-browser}
-    [exec] (Eposta) {xdg-email}
-    [exec] (Dosya yöneticisi) {thunar $HOME/.fluxbox} 
-    [exec] (Yardım) {thunar /usr/share/mxflux/help}
+    [exec] (Eposta) {thunderbird}
+    [exec] (Dosya yöneticisi) {exo-open $HOME/.fluxbox} 
+    [exec] (Yardım) {exo-open /usr/share/mxflux/help}
     [exec] (Müzik) {clementine}
     [exec] (Çalıştır) {fbrun} 
-    [exec] (Uçbirim) {xfce4-terminal} 
+    [exec] (Uçbirim) {roxterm} 
     [separator]
     [submenu] (Görünüş)
     [include] (~/.fluxbox/submenus/appearance)

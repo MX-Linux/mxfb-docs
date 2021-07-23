@@ -1,17 +1,17 @@
 [begin] (Ayarlar)
     [exec] (Yedekleme) {grsync}
     [submenu] (Yapılandır)
-        [exec] (Uygulamalar) {xdg-open ~/.fluxbox/apps}
-        [exec] () {xdg-open ~/.fluxbox/init}
-        [exec] () {xdg-open ~/.fluxbox/keys}
+        [exec] (Uygulamalar) {exo-open ~/.fluxbox/apps}
+        [exec] () {exo-open ~/.fluxbox/init}
+        [exec] () {exo-open ~/.fluxbox/keys}
         [submenu] (Menüler) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Görünüş) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Ayarlar) {exo-open ~/.fluxbox/submenus/settings}
          [exec] (Gözden uzak) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] () {xdg-open ~/.fluxbox/overlay}
-        [exec] (Başlangıç) {xdg-open ~/.fluxbox/startup}
+        [exec] () {exo-open ~/.fluxbox/overlay}
+        [exec] (Başlangıç) {featherpad ~/.fluxbox/startup}
         [exec] (Biçemler) {thunar ~/.fluxbox/styles/}
         [config] (Pencere)         
     [end]

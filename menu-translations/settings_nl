@@ -1,17 +1,17 @@
 [begin] (Instellingen)
     [exec] (Backup) {grsync}
     [submenu] (Configureer)
-        [exec] (Apps) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
-        [exec] (Toetsen) {xdg-open ~/.fluxbox/keys}
+        [exec] (Apps) {exo-open ~/.fluxbox/apps}
+        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [exec] (Toetsen) {exo-open ~/.fluxbox/keys}
         [submenu] (Menus) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Uiterlijk) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Instellingen) {exo-open ~/.fluxbox/submenus/settings}
          [exec] (Uit het zicht) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (Overlapping) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Opstarten) {xdg-open ~/.fluxbox/startup}
+        [exec] (Overlapping) {exo-open ~/.fluxbox/overlay}
+        [exec] (Opstarten) {featherpad ~/.fluxbox/startup}
         [exec] (Stijlen) {thunar ~/.fluxbox/styles/}
         [config] (Scherm)         
     [end]

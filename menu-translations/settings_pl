@@ -1,17 +1,17 @@
 [begin] (Ustawienia)
     [exec] (Kopia zapasowa) {grsync}
     [submenu] (Skonfiguruj)
-        [exec] (Aplikacje) {xdg-open ~/.fluxbox/apps}
-        [exec] (Init) {xdg-open ~/.fluxbox/init}
-        [exec] (Klawisze) {xdg-open ~/.fluxbox/keys}
+        [exec] (Aplikacje) {exo-open ~/.fluxbox/apps}
+        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [exec] (Klawisze) {exo-open ~/.fluxbox/keys}
         [submenu] (Menu) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Wygląd) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Ustawienia) {exo-open ~/.fluxbox/submenus/settings}
          [exec] (Poza polem widzenia) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (Nakładka) {xdg-open ~/.fluxbox/overlay}
-        [exec] (Startup) {xdg-open ~/.fluxbox/startup}
+        [exec] (Nakładka) {exo-open ~/.fluxbox/overlay}
+        [exec] (Startup) {featherpad ~/.fluxbox/startup}
         [exec] (Style) {thunar ~/.fluxbox/styles/}
         [config] (Okno)         
     [end]

@@ -1,17 +1,17 @@
 [begin] (設定)
     [exec] (バックアップ) {grsync}
     [submenu] (設定)
-        [exec] (アプリ) {xdg-open ~/.fluxbox/apps}
-        [exec] (初期化) {xdg-open ~/.fluxbox/init}
-        [exec] (キー) {xdg-open ~/.fluxbox/keys}
+        [exec] (アプリ) {exo-open ~/.fluxbox/apps}
+        [exec] (初期化) {exo-open ~/.fluxbox/init}
+        [exec] (キー) {exo-open ~/.fluxbox/keys}
         [submenu] (メニュー) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (外観) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (設定) {exo-open ~/.fluxbox/submenus/settings}
          [exec] (視界から消去) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (重ねて表示) {xdg-open ~/.fluxbox/overlay}
-        [exec] (起動) {xdg-open ~/.fluxbox/startup}
+        [exec] (重ねて表示) {exo-open ~/.fluxbox/overlay}
+        [exec] (起動) {featherpad ~/.fluxbox/startup}
         [exec] (スタイル) {thunar ~/.fluxbox/styles/}
         [config] (ウィンドウ)         
     [end]

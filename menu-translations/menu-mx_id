@@ -13,10 +13,9 @@
 		[end]
 	[separator]
     [exec] (Peramban) {sensible-browser}
-    [exec] (Email) {thunderbird}
     [exec] (Pengelola Berkas) {exo-open $HOME/.fluxbox} 
     [exec] (Bantuan) {exo-open /usr/share/mxflux/help}
-    [exec] (Musik) {clementine}
+    [exec] (Musik) {deadbeef}
     [exec] (Jalankan) {fbrun} 
     [exec] (Terminal) {roxterm} 
     [separator]

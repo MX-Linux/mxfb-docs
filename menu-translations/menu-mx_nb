@@ -13,10 +13,9 @@
 		[end]
 	[separator]
     [exec] (Nettleser) {sensible-browser}
-    [exec] (E-post) {thunderbird}
     [exec] (Filbehandler) {exo-open $HOME/.fluxbox} 
     [exec] (Hjelp) {exo-open /usr/share/mxflux/help}
-    [exec] (Musikk) {clementine}
+    [exec] (Musikk) {deadbeef}
     [exec] (Kjør) {fbrun} 
     [exec] (Terminal) {roxterm} 
     [separator]

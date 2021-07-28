@@ -13,10 +13,9 @@
 		[end]
 	[separator]
     [exec] () {sensible-browser}
-    [exec] () {thunderbird}
     [exec] (עזרה) {exo-open $HOME/.fluxbox} 
     [exec] () {exo-open /usr/share/mxflux/help}
-    [exec] () {clementine}
+    [exec] () {deadbeef}
     [exec] () {fbrun} 
     [exec] () {roxterm} 
     [separator]

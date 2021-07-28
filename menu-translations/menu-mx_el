@@ -13,10 +13,9 @@
 		[end]
 	[separator]
     [exec] (Πρόγραμμα περιήγησης) {sensible-browser}
-    [exec] (Ηλεκτρονικό ταχυδρομείο) {thunderbird}
     [exec] (Διαχείριση Αρχείων) {exo-open $HOME/.fluxbox} 
     [exec] (Βοήθεια) {exo-open /usr/share/mxflux/help}
-    [exec] (Μουσική) {clementine}
+    [exec] (Μουσική) {deadbeef}
     [exec] (Εκτέλεση) {fbrun} 
     [exec] (Τερματικό) {roxterm} 
     [separator]

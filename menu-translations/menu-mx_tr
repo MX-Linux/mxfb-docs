@@ -13,10 +13,9 @@
 		[end]
 	[separator]
     [exec] (Tarayıcı) {sensible-browser}
-    [exec] (Eposta) {thunderbird}
     [exec] (Dosya yöneticisi) {exo-open $HOME/.fluxbox} 
     [exec] (Yardım) {exo-open /usr/share/mxflux/help}
-    [exec] (Müzik) {clementine}
+    [exec] (Müzik) {deadbeef}
     [exec] (Çalıştır) {fbrun} 
     [exec] (Uçbirim) {roxterm} 
     [separator]

@@ -13,10 +13,9 @@
 		[end]
 	[separator]
     [exec] (Navegador de Internet) {sensible-browser}
-    [exec] (E-mail) {thunderbird}
     [exec] (Gerenciador de Arquivos) {exo-open $HOME/.fluxbox} 
     [exec] (Ajuda) {exo-open /usr/share/mxflux/help}
-    [exec] (Áudio) {clementine}
+    [exec] (Áudio) {deadbeef}
     [exec] (Executar) {fbrun} 
     [exec] (Terminal) {roxterm} 
     [separator]

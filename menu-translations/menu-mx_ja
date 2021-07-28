@@ -13,10 +13,9 @@
 		[end]
 	[separator]
     [exec] (ブラウザ) {sensible-browser}
-    [exec] (電子メール) {thunderbird}
     [exec] (ファイルマネージャ) {exo-open $HOME/.fluxbox} 
     [exec] (ヘルプ) {exo-open /usr/share/mxflux/help}
-    [exec] (音楽) {clementine}
+    [exec] (音楽) {deadbeef}
     [exec] (実行) {fbrun} 
     [exec] (端末) {roxterm} 
     [separator]

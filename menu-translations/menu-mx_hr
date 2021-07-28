@@ -13,10 +13,9 @@
 		[end]
 	[separator]
     [exec] (Preglednik) {sensible-browser}
-    [exec] (Email) {thunderbird}
     [exec] (Upravitelj datotekama) {exo-open $HOME/.fluxbox} 
     [exec] (Pomoć) {exo-open /usr/share/mxflux/help}
-    [exec] (Glazba) {clementine}
+    [exec] (Glazba) {deadbeef}
     [exec] () {fbrun} 
     [exec] (Terminal) {roxterm} 
     [separator]

@@ -1,3 +1,11 @@
+mxfb-docs (21.07.28) mx; urgency=medium
+
+  * added first draft of Help for MX-21
+  * updated translations 
+  * ready for packaging
+
+ -- Jerry Bond <jb@X1Cmx>  Wed, 28 Jul 2021 21:00:38 -0400
+
 mxfb-docs (21.07.24) mx; urgency=medium
 
   * corrected commands

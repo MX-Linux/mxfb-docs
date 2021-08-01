@@ -1,3 +1,9 @@
+mxfb-docs (21.07.29) UNRELEASED; urgency=medium
+
+  * added toggle autohide panel to outofsight template
+
+ -- Jerry Bond <jb@X1Cmx>  Sun, 01 Aug 2021 11:28:07 -0400
+
 mxfb-docs (21.07.28) mx; urgency=medium
 
   * added first draft of Help for MX-21

@@ -7,6 +7,7 @@
     [exec] (Toggle icons         ) { idesktoggle icons                 }
     [exec] (Toggle autohide dock ) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
     [exec] (Toggle monitors      ) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Disable default dock ) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

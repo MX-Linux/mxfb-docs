@@ -1,6 +1,9 @@
 mxfb-docs (21.07.29) UNRELEASED; urgency=medium
 
   * added toggle autohide panel to outofsight template
+  * generated new translations with new menu entry
+  * removed existing Help translations and sources
+  * added draft of new Help document
 
  -- Jerry Bond <jb@X1Cmx>  Sun, 01 Aug 2021 11:28:07 -0400
 

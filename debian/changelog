@@ -1,12 +1,19 @@
-mxfb-docs (21.07.30) UNRELEASED; urgency=medium
+mxfb-docs (21.08.04) UNRELEASED; urgency=medium
+
+  * added files for auto language adjustment
+
+ -- Jerry Bond <jb@X1Cmx>  Sun, 08 Aug 2021 11:42:21 -0400
+
+mxfb-docs (21.08.03) mx; urgency=medium
 
   * added toggle autohide panel to outofsight template
   * generated new translations with new menu entry
   * removed existing Help translations and sources
   * added draft of new Help document
   * added 2 items to menus
+  * corrected minot probs on Help translations
 
- -- Jerry Bond <jb@X1Cmx>  Tue, 03 Aug 2021 05:27:52 -0400
+ -- Jerry Bond <jb@X1Cmx>  Tue, 03 Aug 2021 17:13:49 -0400
 
 mxfb-docs (21.07.28) mx; urgency=medium
 

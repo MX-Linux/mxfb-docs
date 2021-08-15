@@ -1,8 +1,9 @@
-mxfb-docs (21.08.04) UNRELEASED; urgency=medium
+mxfb-docs (21.08.11) mx; urgency=medium
 
   * added files for auto language adjustment
+  * ready for packaging
 
- -- Jerry Bond <jb@X1Cmx>  Sun, 08 Aug 2021 11:42:21 -0400
+ -- Jerry Bond <jb@X1Cmx>  Wed, 11 Aug 2021 13:36:49 -0400
 
 mxfb-docs (21.08.03) mx; urgency=medium
 

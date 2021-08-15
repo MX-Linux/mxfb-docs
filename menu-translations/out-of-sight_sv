@@ -7,7 +7,7 @@
     [exec] (Växla ikoner) { idesktoggle icons                 }
     [exec] (Växla auto-dold docka) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Växla auto-dolt verktygsfält) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
+     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
     [exec] (Växla skärmar) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Avaktivera standard-docka) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

@@ -7,7 +7,7 @@
     [exec] (切换图标) { idesktoggle icons                 }
     [exec] (切换自动隐藏程序坞) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (切换自动隐藏工具栏) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
+     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
     [exec] (切换显示器) { toggle-mx gkrellm                 }
     [separator]
     [exec] (禁用默认程序坞) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

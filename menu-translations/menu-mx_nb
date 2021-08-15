@@ -16,7 +16,8 @@
     [exec] (Filbehandler) {exo-open $HOME/.fluxbox} 
     [exec] (Hjelp) {exo-open /usr/share/mxflux/help}
     [exec] (Musikk) {deadbeef}
-    [exec] (Kjør) {fbrun} 
+    [exec] (Kjør) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Utseende)

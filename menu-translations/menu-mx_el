@@ -16,7 +16,8 @@
     [exec] (Διαχείριση Αρχείων) {exo-open $HOME/.fluxbox} 
     [exec] (Βοήθεια) {exo-open /usr/share/mxflux/help}
     [exec] (Μουσική) {deadbeef}
-    [exec] (Εκτέλεση) {fbrun} 
+    [exec] (Εκτέλεση) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Τερματικό) {roxterm} 
     [separator]
     [submenu] (Εμφάνιση)

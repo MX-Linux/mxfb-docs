@@ -7,7 +7,7 @@
     [exec] (Simgeleri değiştir) { idesktoggle icons                 }
     [exec] (Paneli otomatik gizlemeyi açıp kapama) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Araç çubuğunu otomatik gizlemeyi açıp kapama) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
+     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
     [exec] () { toggle-mx gkrellm                 }
     [separator]
     [exec] (Öntanımlı panel devre dışı) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

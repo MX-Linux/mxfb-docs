@@ -7,7 +7,7 @@
     [exec] (Εναλλαγή εικονιδίων) { idesktoggle icons                 }
     [exec] (Εναλλαγή autohide dock) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Εναλλαγή αυτόματη απόκρυψη γραμμής εργαλείων) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
+     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
     [exec] (Εναλλαγή οθονών) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Απενεργοποίηση προεπιλεγμένης dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

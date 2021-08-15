@@ -16,7 +16,8 @@
     [exec] (مدير الملفات) {exo-open $HOME/.fluxbox} 
     [exec] (مساعدة) {exo-open /usr/share/mxflux/help}
     [exec] (موسيقى) {deadbeef}
-    [exec] (تشغيل) {fbrun} 
+    [exec] (تشغيل) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (طرفية) {roxterm} 
     [separator]
     [submenu] (مظهر)

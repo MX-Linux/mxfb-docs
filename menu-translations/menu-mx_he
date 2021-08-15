@@ -16,7 +16,8 @@
     [exec] (עזרה) {exo-open $HOME/.fluxbox} 
     [exec] () {exo-open /usr/share/mxflux/help}
     [exec] () {deadbeef}
-    [exec] () {fbrun} 
+    [exec] () {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] () {roxterm} 
     [separator]
     [submenu] ()

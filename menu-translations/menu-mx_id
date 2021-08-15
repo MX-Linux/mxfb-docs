@@ -16,7 +16,8 @@
     [exec] (Pengelola Berkas) {exo-open $HOME/.fluxbox} 
     [exec] (Bantuan) {exo-open /usr/share/mxflux/help}
     [exec] (Musik) {deadbeef}
-    [exec] (Jalankan) {fbrun} 
+    [exec] (Jalankan) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Tampilan)

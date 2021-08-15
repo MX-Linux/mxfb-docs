@@ -20,9 +20,5 @@
     [submenu] (Fond d'écran) 
     [exec] (Rotation) {mxfb-bg-rotate}
     [exec] (Séparer) {mxfb-separate-backgrounds}
-    [submenu] (Sélectionner)
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-fill}
-    [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-fill}
-    [end]
+    [exec] (Sélectionner) {nitrogen}
 [end]

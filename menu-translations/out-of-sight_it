@@ -7,7 +7,7 @@
     [exec] (Interruttore icone) { idesktoggle icons                 }
     [exec] (Interruttore nascondi automaticamente il dock) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Interruttore nascondi automaticamente la barra degli strumenti) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
+     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
     [exec] (Interruttore schermi) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Disabilita dock di default) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

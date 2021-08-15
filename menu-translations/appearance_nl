@@ -20,9 +20,5 @@
     [submenu] (Desktopachtergrond) 
     [exec] (Draaien) {mxfb-bg-rotate}
     [exec] (Scheiden) {mxfb-separate-backgrounds}
-    [submenu] (Selecteer)
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-fill}
-    [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-fill}
-    [end]
+    [exec] (Selecteer) {nitrogen}
 [end]

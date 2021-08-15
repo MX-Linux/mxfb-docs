@@ -20,9 +20,5 @@
     [submenu] (壁纸) 
     [exec] (旋转) {mxfb-bg-rotate}
     [exec] (独立) {mxfb-separate-backgrounds}
-    [submenu] (选择)
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-fill}
-    [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-fill}
-    [end]
+    [exec] (选择) {nitrogen}
 [end]

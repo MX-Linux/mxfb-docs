@@ -7,7 +7,7 @@
     [exec] (Ligar/Desligar os Ícones) { idesktoggle icons                 }
     [exec] (Exibir/Ocultar a Doca) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Exibir/Ocultar a Barra de Ferramentas) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
+     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
     [exec] (Ligar/Desligar os Monitores) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Desativar a Doca Padrão) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

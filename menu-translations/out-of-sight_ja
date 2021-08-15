@@ -7,7 +7,7 @@
     [exec] (アイコンの切り換え) { idesktoggle icons                 }
     [exec] (ドックを自動的に隠す機能の切り換え) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (ツールバーを自動的に隠す機能の切り換え) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
+     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
     [exec] (モニタの切り換え) { toggle-mx gkrellm                 }
     [separator]
     [exec] (標準ドックの無効化) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

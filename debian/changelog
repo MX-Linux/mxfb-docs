@@ -1,3 +1,9 @@
+mxfb-docs (21.08.14) mx; urgency=medium
+
+  * changed template to match menu change
+
+ -- Jerry Bond <jb@X1Cmx>  Sat, 14 Aug 2021 20:05:02 -0400
+
 mxfb-docs (21.08.11) mx; urgency=medium
 
   * added files for auto language adjustment

@@ -1,8 +1,9 @@
-mxfb-docs (21.08.16) UNRELEASED; urgency=medium
+mxfb-docs (21.08.17) UNRELEASED; urgency=medium
 
   * added All apps entries
+  * added tint2 dock to menu and template
 
- -- Jerry Bond <jb@X1Cmx>  Mon, 16 Aug 2021 07:09:30 -0400
+ -- Jerry Bond <jb@X1Cmx>  Sun, 29 Aug 2021 12:10:22 -0400
 
 mxfb-docs (21.08.14) mx; urgency=medium
 

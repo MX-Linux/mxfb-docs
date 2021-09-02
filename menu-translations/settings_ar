@@ -1,13 +1,13 @@
-[begin] (إعدادات)
+[begin] ()
     [exec] () {grsync}
     [submenu] (ضبط)
         [exec] (التطبيقات) {exo-open ~/.fluxbox/apps}
         [exec] () {exo-open ~/.fluxbox/init}
         [exec] (مفاتيح) {exo-open ~/.fluxbox/keys}
         [submenu] (قائمة) 
-           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] (مظهر) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] (إعدادات) {exo-open ~/.fluxbox/submenus/settings}
+           [exec] () {exo-open ~/.fluxbox/submenus/settings}
          [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] () {exo-open ~/.fluxbox/overlay}
@@ -16,7 +16,7 @@
         [config] ()         
     [end]
     [submenu] ()
-    [exec] (Change) {arandr}
+    [exec] () {arandr}
     [exec](مساعدة) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (لوحة)

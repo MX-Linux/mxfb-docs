@@ -1,14 +1,14 @@
-[begin] (Inställningar)
+[begin] ()
     [exec] (Backup) {grsync}
     [submenu] (Anpassa)
         [exec] (Appar) {exo-open ~/.fluxbox/apps}
         [exec] (Init) {exo-open ~/.fluxbox/init}
         [exec] (Tangenter) {exo-open ~/.fluxbox/keys}
         [submenu] (Menyer) 
-           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] (Utseende) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] (Inställningar) {exo-open ~/.fluxbox/submenus/settings}
-         [exec] (Dold) {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] () {exo-open ~/.fluxbox/submenus/settings}
+         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
         [exec] (Start) {featherpad ~/.fluxbox/startup}
@@ -16,7 +16,7 @@
         [config] (Fönster)         
     [end]
     [submenu] (Visa)
-    [exec] (Change) {arandr}
+    [exec] () {arandr}
     [exec](Hjälp) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Tangentbord)

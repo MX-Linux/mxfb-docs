@@ -1,14 +1,14 @@
-[begin] (Paramètres)
+[begin] ()
     [exec] (Backup) {grsync}
     [submenu] (Configure)
         [exec] (Apps) {exo-open ~/.fluxbox/apps}
         [exec] (Init) {exo-open ~/.fluxbox/init}
         [exec] (Keys) {exo-open ~/.fluxbox/keys}
         [submenu] (Menus) 
-           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] (Apparence) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] (Paramètres) {exo-open ~/.fluxbox/submenus/settings}
-         [exec] (Masquer) {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] () {exo-open ~/.fluxbox/submenus/settings}
+         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
         [exec] (Startup) {featherpad ~/.fluxbox/startup}
@@ -16,7 +16,7 @@
         [config] (Fenêtre)         
     [end]
     [submenu] (Affichage)
-    [exec] (Change) {arandr}
+    [exec] () {arandr}
     [exec](Aide) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Clavier)

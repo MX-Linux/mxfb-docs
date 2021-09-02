@@ -5,7 +5,7 @@
         [exec] () {exo-open ~/.fluxbox/init}
         [exec] () {exo-open ~/.fluxbox/keys}
         [submenu] () 
-           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] () {exo-open ~/.fluxbox/submenus/appearance}
            [exec] () {exo-open ~/.fluxbox/submenus/settings}
          [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
@@ -16,7 +16,7 @@
         [config] ()         
     [end]
     [submenu] ()
-    [exec] (Change) {arandr}
+    [exec] () {arandr}
     [exec]() {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] ()

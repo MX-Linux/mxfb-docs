@@ -1,4 +1,4 @@
-[begin] (Cambiar la vista) 
+[begin] () 
     [exec] (Matar la Barra de iconos) { killall wmalauncher               }
     [exec] (Matar una ventana) { xkill                             }
     [separator]

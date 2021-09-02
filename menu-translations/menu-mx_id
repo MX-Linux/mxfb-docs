@@ -14,16 +14,16 @@
 	[separator]
     [exec] (Peramban) {sensible-browser}
     [exec] (Pengelola Berkas) {exo-open $HOME/.fluxbox} 
-    [exec] (Bantuan) {exo-open /usr/share/mxflux/help}
+    [exec] (Bantuan) {mxfb-help}
     [exec] (Musik) {deadbeef}
     [exec] (Jalankan) {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Tampilan)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] (Setelan)
+    [submenu] ()
     [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()

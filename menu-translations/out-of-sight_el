@@ -1,4 +1,4 @@
-[begin] (Κρυμμένα) 
+[begin] () 
     [exec] (Kill dock) { killall wmalauncher               }
     [exec] (Kill a window) { xkill                             }
     [separator]

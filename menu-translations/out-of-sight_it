@@ -1,4 +1,4 @@
-[begin] (Fuori dalla vista) 
+[begin] () 
     [exec] (Termina dock) { killall wmalauncher               }
     [exec] (Termina una finestra) { xkill                             }
     [separator]

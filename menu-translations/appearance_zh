@@ -2,6 +2,7 @@
     [exec] (Conky){conky-manager2}
     [submenu] (程序坞)
         [exec] (默认) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] (造坞器) {mx-dockmaker}
     [end]
@@ -20,5 +21,5 @@
     [submenu] (壁纸) 
     [exec] (旋转) {mxfb-bg-rotate}
     [exec] (独立) {mxfb-separate-backgrounds}
-    [exec] (选择) {nitrogen}
+    [exec] () {nitrogen}
 [end]

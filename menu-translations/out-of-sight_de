@@ -1,4 +1,4 @@
-[begin] (Verstecken) 
+[begin] () 
     [exec] (Dock abschießen) { killall wmalauncher               }
     [exec] (Fenster abschießen) { xkill                             }
     [separator]

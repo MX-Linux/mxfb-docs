@@ -1,4 +1,4 @@
-[begin] (Ocultar) 
+[begin] () 
     [exec] (Aniquilar a Doca) { killall wmalauncher               }
     [exec] (Aniquilar a Janela) { xkill                             }
     [separator]

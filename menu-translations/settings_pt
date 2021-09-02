@@ -1,14 +1,14 @@
-[begin] (Configurações)
+[begin] ()
     [exec] (Cópia de Segurança) {grsync}
     [submenu] (Configurar)
         [exec] (Aplicativos) {exo-open ~/.fluxbox/apps}
         [exec] (Iniciar) {exo-open ~/.fluxbox/init}
         [exec] (Teclas) {exo-open ~/.fluxbox/keys}
         [submenu] (Menus) 
-           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] (Aparência) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] (Configurações) {exo-open ~/.fluxbox/submenus/settings}
-         [exec] (Ocultar) {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] () {exo-open ~/.fluxbox/submenus/settings}
+         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (Sobreposição) {exo-open ~/.fluxbox/overlay}
         [exec] (Iniciar) {featherpad ~/.fluxbox/startup}
@@ -16,7 +16,7 @@
         [config] (Janela)         
     [end]
     [submenu] (Exibição)
-    [exec] (Change) {arandr}
+    [exec] () {arandr}
     [exec](Ajuda) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Teclado)

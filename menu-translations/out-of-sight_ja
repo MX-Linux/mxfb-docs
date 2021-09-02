@@ -1,4 +1,4 @@
-[begin] (視界から消去) 
+[begin] () 
     [exec] (ドックの停止) { killall wmalauncher               }
     [exec] (ウィンドウの終了) { xkill                             }
     [separator]

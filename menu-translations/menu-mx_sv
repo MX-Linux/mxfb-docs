@@ -14,19 +14,19 @@
 	[separator]
     [exec] (Webbläsare) {sensible-browser}
     [exec] (Filhanterare) {exo-open $HOME/.fluxbox} 
-    [exec] (Hjälp) {exo-open /usr/share/mxflux/help}
+    [exec] (Hjälp) {mxfb-help}
     [exec] (Musik) {deadbeef}
     [exec] (Kör) {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Utseende)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] (Inställningar)
+    [submenu] ()
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] (Dold)
+    [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Avsluta)

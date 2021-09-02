@@ -2,6 +2,7 @@
     [exec] (Conky){conky-manager2}
     [submenu] (Dock)
         [exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] (Crea dock) {mx-dockmaker}
     [end]
@@ -20,5 +21,5 @@
     [submenu] (Immagine scrivania) 
     [exec] (Ruota) {mxfb-bg-rotate}
     [exec] (Separa) {mxfb-separate-backgrounds}
-    [exec] (Seleziona) {nitrogen}
+    [exec] () {nitrogen}
 [end]

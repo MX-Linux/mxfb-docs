@@ -1,4 +1,4 @@
-[begin] (Dold) 
+[begin] () 
     [exec] (Stänga docka) { killall wmalauncher               }
     [exec] (Stänga ett fönster) { xkill                             }
     [separator]

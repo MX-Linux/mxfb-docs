@@ -1,14 +1,14 @@
-[begin] (设置)
+[begin] ()
     [exec] (备份) {grsync}
     [submenu] (配置)
         [exec] (应用) {exo-open ~/.fluxbox/apps}
         [exec] (初始程序) {exo-open ~/.fluxbox/init}
         [exec] (密钥) {exo-open ~/.fluxbox/keys}
         [submenu] (菜单) 
-           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] (外观) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] (设置) {exo-open ~/.fluxbox/submenus/settings}
-         [exec] (视界外) {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] () {exo-open ~/.fluxbox/submenus/settings}
+         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (覆盖) {exo-open ~/.fluxbox/overlay}
         [exec] (启动) {featherpad ~/.fluxbox/startup}
@@ -16,7 +16,7 @@
         [config] (窗口)         
     [end]
     [submenu] (显示)
-    [exec] (Change) {arandr}
+    [exec] () {arandr}
     [exec](帮助) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (键盘)

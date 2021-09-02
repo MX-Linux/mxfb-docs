@@ -2,6 +2,7 @@
     [exec] (كونكي){conky-manager2}
     [submenu] (شرائطالتطبيقات)
         [exec] (افتراضي) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] (معدّلشريط التطبيقات) {mx-dockmaker}
     [end]

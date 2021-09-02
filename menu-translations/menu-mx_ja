@@ -14,19 +14,19 @@
 	[separator]
     [exec] (ブラウザ) {sensible-browser}
     [exec] (ファイルマネージャ) {exo-open $HOME/.fluxbox} 
-    [exec] (ヘルプ) {exo-open /usr/share/mxflux/help}
+    [exec] (ヘルプ) {mxfb-help}
     [exec] (音楽) {deadbeef}
     [exec] (実行) {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (端末) {roxterm} 
     [separator]
     [submenu] (外観)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] (設定)
+    [submenu] ()
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] (視界から消去)
+    [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (終了)

@@ -14,19 +14,19 @@
 	[separator]
     [exec] (Nettleser) {sensible-browser}
     [exec] (Filbehandler) {exo-open $HOME/.fluxbox} 
-    [exec] (Hjelp) {exo-open /usr/share/mxflux/help}
+    [exec] (Hjelp) {mxfb-help}
     [exec] (Musikk) {deadbeef}
     [exec] (Kjør) {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Utseende)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] (Innstillinger)
+    [submenu] ()
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] (Ute av syne)
+    [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Forlat)

@@ -14,19 +14,19 @@
 	[separator]
     [exec] (Tarayıcı) {sensible-browser}
     [exec] (Dosya yöneticisi) {exo-open $HOME/.fluxbox} 
-    [exec] (Yardım) {exo-open /usr/share/mxflux/help}
+    [exec] (Yardım) {mxfb-help}
     [exec] (Müzik) {deadbeef}
     [exec] (Çalıştır) {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Uçbirim) {roxterm} 
     [separator]
     [submenu] (Görünüş)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] (Ayarlar)
+    [submenu] ()
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] (Gözden uzak)
+    [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Ayrıl)

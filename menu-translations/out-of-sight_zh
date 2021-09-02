@@ -1,4 +1,4 @@
-[begin] (视界外) 
+[begin] () 
     [exec] (杀死程序坞进程) { killall wmalauncher               }
     [exec] (杀死一个窗口进程) { xkill                             }
     [separator]

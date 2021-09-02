@@ -1,13 +1,13 @@
-[begin] (Postavke)
+[begin] ()
     [exec] (Sigurnosna kopija) {grsync}
     [submenu] (Konfiguriraj)
         [exec] (Aplikacije) {exo-open ~/.fluxbox/apps}
         [exec] () {exo-open ~/.fluxbox/init}
         [exec] () {exo-open ~/.fluxbox/keys}
         [submenu] (Izbornici) 
-           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] (Izgled) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] (Postavke) {exo-open ~/.fluxbox/submenus/settings}
+           [exec] () {exo-open ~/.fluxbox/submenus/settings}
          [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] () {exo-open ~/.fluxbox/overlay}
@@ -16,7 +16,7 @@
         [config] (Prozor)         
     [end]
     [submenu] (Prikaži)
-    [exec] (Change) {arandr}
+    [exec] () {arandr}
     [exec](Pomoć) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Tipkovnica)

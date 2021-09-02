@@ -1,4 +1,4 @@
-[begin] (Gözden uzak) 
+[begin] () 
     [exec] (Paneli yoket) { killall wmalauncher               }
     [exec] () { xkill                             }
     [separator]

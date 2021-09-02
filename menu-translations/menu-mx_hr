@@ -14,16 +14,16 @@
 	[separator]
     [exec] (Preglednik) {sensible-browser}
     [exec] (Upravitelj datotekama) {exo-open $HOME/.fluxbox} 
-    [exec] (Pomoć) {exo-open /usr/share/mxflux/help}
+    [exec] (Pomoć) {mxfb-help}
     [exec] (Glazba) {deadbeef}
     [exec] () {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Izgled)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] (Postavke)
+    [submenu] ()
     [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()

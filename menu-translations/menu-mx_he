@@ -14,10 +14,10 @@
 	[separator]
     [exec] () {sensible-browser}
     [exec] (עזרה) {exo-open $HOME/.fluxbox} 
-    [exec] () {exo-open /usr/share/mxflux/help}
+    [exec] () {mxfb-help}
     [exec] () {deadbeef}
     [exec] () {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] () {roxterm} 
     [separator]
     [submenu] ()

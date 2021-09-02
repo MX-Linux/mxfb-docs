@@ -1,4 +1,4 @@
-[begin] (Poza polem widzenia) 
+[begin] () 
     [exec] (Zabij dok) { killall wmalauncher               }
     [exec] (Zabij okno) { xkill                             }
     [separator]

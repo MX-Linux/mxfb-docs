@@ -14,7 +14,7 @@
 	[separator]
     [exec] (Browser) {sensible-browser}
     [exec] (File manager) {exo-open $HOME/.fluxbox} 
-    [exec] (Help) {exo-open /usr/share/mxflux/help}
+    [exec] (Help) {mxfb-help}
     [exec] (Music) {deadbeef}
     [exec] (Run) {fbrun}
     [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 

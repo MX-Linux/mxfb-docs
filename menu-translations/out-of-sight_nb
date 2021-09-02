@@ -1,4 +1,4 @@
-[begin] (Ute av syne) 
+[begin] () 
     [exec] (Tvangsavslutt samlevindu) { killall wmalauncher               }
     [exec] (Tvangsavslutt vindu) { xkill                             }
     [separator]

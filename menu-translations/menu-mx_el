@@ -14,19 +14,19 @@
 	[separator]
     [exec] (Πρόγραμμα περιήγησης) {sensible-browser}
     [exec] (Διαχείριση Αρχείων) {exo-open $HOME/.fluxbox} 
-    [exec] (Βοήθεια) {exo-open /usr/share/mxflux/help}
+    [exec] (Βοήθεια) {mxfb-help}
     [exec] (Μουσική) {deadbeef}
     [exec] (Εκτέλεση) {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Τερματικό) {roxterm} 
     [separator]
     [submenu] (Εμφάνιση)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] (Ρυθμίσεις)
+    [submenu] ()
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] (Κρυμμένα)
+    [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Εξοδος)

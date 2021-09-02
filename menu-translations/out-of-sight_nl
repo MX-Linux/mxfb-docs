@@ -1,4 +1,4 @@
-[begin] (Uit het zicht) 
+[begin] () 
     [exec] (Beëindig dock) { killall wmalauncher               }
     [exec] (Beëindig venster) { xkill                             }
     [separator]

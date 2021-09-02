@@ -14,19 +14,19 @@
 	[separator]
     [exec] (Browser) {sensible-browser}
     [exec] (Dateiverwaltung) {exo-open $HOME/.fluxbox} 
-    [exec] (Hilfe) {exo-open /usr/share/mxflux/help}
+    [exec] (Hilfe) {mxfb-help}
     [exec] (Musik) {deadbeef}
     [exec] (Ausführen) {fbrun}
-    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Erscheinungsbild)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] (Einstellungen)
+    [submenu] ()
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] (Verstecken)
+    [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Verlassen)

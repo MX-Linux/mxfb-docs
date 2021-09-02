@@ -9,7 +9,7 @@ File manager,مدير الملفات, Dateiverwaltung,Διαχείριση Αρ�
 Help,مساعدة, Hilfe,Βοήθεια ,Ayuda, Aide,,Pomoć,Help,Bantuan,Aiuto, ヘルプ,Hjelp, Help,Pomoc, Ajuda, Hjälp,Yardım, 帮助
 Music,موسيقى, Musik,Μουσική,Música, Musique,,Glazba,Music,Musik, Musica, 音楽,Musikk,Muziek,Muzyka, Áudio, Musik,Müzik, 音乐
 Run,تشغيل, Ausführen,Εκτέλεση ,Ejecutar, Exécuter,,,Run,Jalankan,Esegui, 実行,Kjør,Uitvoeren,Uruchom, Executar, Kör,Çalıştır, 运行
-Settings manager,,,,,,,,,,,,,,,,,,
+Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager,Settings manager
 Terminal,طرفية, Terminal,Τερματικό ,Terminal, Terminal,, Terminal,Terminal,Terminal, Terminale, 端末,Terminal, Terminal, Terminal, Terminal, Terminal,Uçbirim, 终端
 Appearance,مظهر, Erscheinungsbild,Εμφάνιση,Apariencia, Apparence,,Izgled,Appearance,Tampilan,Aspetto, 外観,Utseende,Uiterlijk,Wygląd, Aparência,Utseende,Görünüş, 外观
 Conky,كونكي, Conky, Conky, Conky, Conky,, Conky,Conky,Conky, Conky, コンキー, Conky, Conky, Conky, Conky, Conky, Conky, Conky
@@ -63,3 +63,4 @@ Suspend,تعليق, Schlafmodus,Αναστολή,Suspender, Suspendre,,,Suspend,
 Logout,تسجيل, Abmelden,Αποσύνδεση,Cerrar sesión, Déconnexion,, Odjava,Logout,, Logout, ログアウト,Logg ut,Afmelden,Wyloguj, Sair da Sessão, Logga ut,Oturumu Kapat, 注销
 Reboot,إعادة, Neustart,Επανεκκίνηση,Reiniciar, Redémarrer,,,Reboot,,Riavvia, 再起動,Start på nytt,Herstarten,Uruchom ponownie, Reiniciar, Starta om,Yeniden Başlat, 重启
 Shutdown,إيقاف, Ausschalten,Τερματισμός,Apagar, Arrêter,, Isključi,Shutdown,,Spegni, シャットダウン,Slå av,Afsluiten,Wyłącz, Desligar, Stäng av,Bilgisayarı Kapat, 关机
+Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Tint2,Växla auto-dolt verktygsfält,Tint2,Tint2

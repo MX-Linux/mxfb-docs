@@ -2,6 +2,7 @@
     [exec] (){conky-manager2}
     [submenu] ()
         [exec] () {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] () {mx-dockmaker}
     [end]

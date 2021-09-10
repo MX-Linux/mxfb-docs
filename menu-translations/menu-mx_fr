@@ -16,23 +16,23 @@
     [exec] (Gestionnaire de fichiers) {exo-open $HOME/.fluxbox} 
     [exec] (Aide) {mxfb-help}
     [exec] (Musique) {deadbeef}
-    [exec] (Exécuter) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Démarrer) {fbrun}
+    [exec] (Gestionnaire des paramètres) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Apparence)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Paramètres)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] ()
+    [submenu] (Masquer)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Quitter)
-        [exec] (Rafraichir) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] (Suspendre) {sudo 'pm-suspend'}
-        [exit] (Déconnexion) 
+        [exec] (Rafraîchir) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Mettre en Veille) {sudo 'pm-suspend'}
+        [exit] (A la déconnexion) 
         [exec] (Redémarrer) {sudo /sbin/reboot} 
         [exec] (Arrêter) {sudo /sbin/halt}
     [end]

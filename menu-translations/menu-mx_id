@@ -23,7 +23,7 @@
     [submenu] (Tampilan)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Setelan)
     [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()

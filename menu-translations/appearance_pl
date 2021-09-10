@@ -1,10 +1,10 @@
 [begin] (Wygląd) 
     [exec] (Conky){conky-manager2}
-    [submenu] (Doki)
-        [exec] (Domyślnie) {~/.fluxbox/scripts/DefaultDock.mxdk}
+    [submenu] (Doki pulpitu)
+        [exec] (Ustawienia domyślne) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
-        [exec] (Dockmaker) {mx-dockmaker}
+        [exec] (Twórz i edytuj dok) {mx-dockmaker}
     [end]
     [exec] (Ikony pulpitu) {mx-idesktool}
     [exec] (Monitory) {gkrellm}
@@ -20,6 +20,6 @@
     [end]
     [submenu] (Tapeta) 
     [exec] (Obróć) {mxfb-bg-rotate}
-    [exec] (Oddziel) {mxfb-separate-backgrounds}
-    [exec] () {nitrogen}
+    [exec] (Rozdziel) {mxfb-separate-backgrounds}
+    [exec] (Wybierz) {nitrogen}
 [end]

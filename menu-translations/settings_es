@@ -1,22 +1,22 @@
-[begin] ()
-    [exec] (Copia de seguridad) {grsync}
+[begin] (Configuración)
+    [exec] (Respaldo) {grsync}
     [submenu] (Configurar)
         [exec] (Aplicaciones) {exo-open ~/.fluxbox/apps}
         [exec] (Init) {exo-open ~/.fluxbox/init}
-        [exec] (Atajos de teclado) {exo-open ~/.fluxbox/keys}
+        [exec] (Teclas) {exo-open ~/.fluxbox/keys}
         [submenu] (Menús) 
-           [exec] () {exo-open ~/.fluxbox/menu-mx}
-           [exec] (Apariencia) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] () {exo-open ~/.fluxbox/submenus/settings}
-         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Aparencia) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Configuración) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (No visible) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (Capa) {exo-open ~/.fluxbox/overlay}
+        [exec] (Cubrir) {exo-open ~/.fluxbox/overlay}
         [exec] (Inicio) {featherpad ~/.fluxbox/startup}
-        [exec] (Diseños) {thunar ~/.fluxbox/styles/}
+        [exec] (Estilos) {thunar ~/.fluxbox/styles/}
         [config] (Ventana)         
     [end]
     [submenu] (Pantalla)
-    [exec] () {arandr}
+    [exec] (Cambiar) {arandr}
     [exec](Ayuda) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Teclado)

@@ -1,22 +1,22 @@
-[begin] ()
-    [exec] (Cópia de Segurança) {grsync}
+[begin] (Definições)
+    [exec] (Cópia Seg) {grsync}
     [submenu] (Configurar)
-        [exec] (Aplicativos) {exo-open ~/.fluxbox/apps}
-        [exec] (Iniciar) {exo-open ~/.fluxbox/init}
-        [exec] (Teclas) {exo-open ~/.fluxbox/keys}
+        [exec] (Aplicações [apps]) {exo-open ~/.fluxbox/apps}
+        [exec] (Sessão [init]) {exo-open ~/.fluxbox/init}
+        [exec] (Atalhos [keys]) {exo-open ~/.fluxbox/keys}
         [submenu] (Menus) 
-           [exec] () {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Principais) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Aparência) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] () {exo-open ~/.fluxbox/submenus/settings}
-         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] (Definições) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Ocultar) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (Sobreposição) {exo-open ~/.fluxbox/overlay}
-        [exec] (Iniciar) {featherpad ~/.fluxbox/startup}
-        [exec] (Estilo) {thunar ~/.fluxbox/styles/}
+        [exec] (Cobertura [overlay]) {exo-open ~/.fluxbox/overlay}
+        [exec] (Arranque [startup]) {featherpad ~/.fluxbox/startup}
+        [exec] (Estilos [styles]) {thunar ~/.fluxbox/styles/}
         [config] (Janela)         
     [end]
-    [submenu] (Exibição)
-    [exec] () {arandr}
+    [submenu] (Ecrã)
+    [exec] (Alterar) {arandr}
     [exec](Ajuda) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Teclado)

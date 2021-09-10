@@ -6,33 +6,33 @@
             [separator]
             [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
    [end]
-	[submenu] (Son Kullanılan Dosyalar) 
+	[submenu] (En Son Dosyalar) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Güncelleme listesi) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Tarayıcı) {sensible-browser}
-    [exec] (Dosya yöneticisi) {exo-open $HOME/.fluxbox} 
+    [exec] () {exo-open $HOME/.fluxbox} 
     [exec] (Yardım) {mxfb-help}
     [exec] (Müzik) {deadbeef}
     [exec] (Çalıştır) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Uçbirim) {roxterm} 
     [separator]
     [submenu] (Görünüş)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Ayarlar)
     [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
-    [submenu] (Ayrıl)
+    [submenu] ()
         [exec] (Yenile) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Askıya al) {sudo 'pm-suspend'}
-        [exit] (Oturumu Kapat) 
+        [exit] (Oturumu kapat) 
         [exec] (Yeniden Başlat) {sudo /sbin/reboot} 
         [exec] (Bilgisayarı Kapat) {sudo /sbin/halt}
     [end]

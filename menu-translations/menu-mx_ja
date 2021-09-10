@@ -6,27 +6,27 @@
             [separator]
             [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
    [end]
-	[submenu] (最近開いたファイル) 
+	[submenu] (最近のファイル) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (一覧の更新) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (更新リスト) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (ブラウザ) {sensible-browser}
     [exec] (ファイルマネージャ) {exo-open $HOME/.fluxbox} 
     [exec] (ヘルプ) {mxfb-help}
-    [exec] (音楽) {deadbeef}
+    [exec] (ミュージック) {deadbeef}
     [exec] (実行) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (端末) {roxterm} 
+    [exec] (設定マネージャ) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (ターミナル) {roxterm} 
     [separator]
     [submenu] (外観)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (設定)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] ()
+    [submenu] (視界の外)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (終了)

@@ -1,6 +1,6 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
+[begin] ()
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
@@ -9,28 +9,28 @@
 	[submenu] (最近文件) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (更新列表) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (浏览器) {sensible-browser}
-    [exec] (文件管理器) {exo-open $HOME/.fluxbox} 
+    [exec] () {exo-open $HOME/.fluxbox} 
     [exec] (帮助) {mxfb-help}
     [exec] (音乐) {deadbeef}
     [exec] (运行) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (终端) {roxterm} 
     [separator]
     [submenu] (外观)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (设置)
     [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
-    [submenu] (离开)
-        [exec] (刷新) { fluxbox-remote restart; idesktoggle idesk refresh }
+    [submenu] ()
+        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (挂起) {sudo 'pm-suspend'}
         [exit] (注销) 
         [exec] (重启) {sudo /sbin/reboot} 

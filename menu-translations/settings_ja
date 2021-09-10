@@ -1,22 +1,22 @@
-[begin] ()
+[begin] (設定)
     [exec] (バックアップ) {grsync}
     [submenu] (設定)
         [exec] (アプリ) {exo-open ~/.fluxbox/apps}
-        [exec] (初期化) {exo-open ~/.fluxbox/init}
+        [exec] () {exo-open ~/.fluxbox/init}
         [exec] (キー) {exo-open ~/.fluxbox/keys}
         [submenu] (メニュー) 
-           [exec] () {exo-open ~/.fluxbox/menu-mx}
+           [exec] (メイン) {exo-open ~/.fluxbox/menu-mx}
            [exec] (外観) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] () {exo-open ~/.fluxbox/submenus/settings}
-         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] (設定) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (視界の外) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (重ねて表示) {exo-open ~/.fluxbox/overlay}
         [exec] (起動) {featherpad ~/.fluxbox/startup}
         [exec] (スタイル) {thunar ~/.fluxbox/styles/}
-        [config] (ウィンドウ)         
+        [config] (画面)         
     [end]
     [submenu] (ディスプレイ)
-    [exec] () {arandr}
+    [exec] (変更) {arandr}
     [exec](ヘルプ) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (キーボード)

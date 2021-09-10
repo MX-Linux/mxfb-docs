@@ -1,14 +1,14 @@
-[begin] () 
-    [exec] (Matar la Barra de iconos) { killall wmalauncher               }
+[begin] (No visible) 
+    [exec] (Matar un dock) { killall wmalauncher               }
     [exec] (Matar una ventana) { xkill                             }
     [separator]
-    [exec] (Ver/ocultar conky) { conkytoggle.sh                    }
-    [exec] (Reiniciar iDesk) { idesktoggle idesk                 }
-    [exec] (Ver/ocultar iconos) { idesktoggle icons                 }
-    [exec] (Ver/ocultar la Barra de iconos) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Ver/ocultar la Barra de herramientas) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Ver/ocultar los monitores) { toggle-mx gkrellm                 }
+    [exec] (Alternar conky) { conkytoggle.sh                    }
+    [exec] (Alternar iDesk) { idesktoggle idesk                 }
+    [exec] (Alternar iconos) { idesktoggle icons                 }
+    [exec] (Alternar auto ocultar dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Alternar auto ocultar barra de herramientas) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Alternar auto ocultar panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Alternar monitores) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Desactivar la Barra de iconos por defecto) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Deshabilitar dock predeterminado) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

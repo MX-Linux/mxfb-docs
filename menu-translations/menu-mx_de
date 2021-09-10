@@ -6,34 +6,34 @@
             [separator]
             [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
    [end]
-	[submenu] (Letztverwendete Dateien) 
+	[submenu] (Neueste Dateien) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Liste aktualisieren) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update-Liste) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Browser) {sensible-browser}
-    [exec] (Dateiverwaltung) {exo-open $HOME/.fluxbox} 
+    [exec] (Dateimanager) {exo-open $HOME/.fluxbox} 
     [exec] (Hilfe) {mxfb-help}
     [exec] (Musik) {deadbeef}
     [exec] (Ausführen) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Einstellungsmanager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Erscheinungsbild)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Einstellungen)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] ()
+    [submenu] (Verstecken)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Verlassen)
         [exec] (Aktualisieren) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] (Schlafmodus) {sudo 'pm-suspend'}
-        [exit] (Abmelden) 
+        [exec] (Bereitschaft) {sudo 'pm-suspend'}
+        [exit] (Logout) 
         [exec] (Neustart) {sudo /sbin/reboot} 
-        [exec] (Ausschalten) {sudo /sbin/halt}
+        [exec] (Herunterfahren) {sudo /sbin/halt}
     [end]
 [end]

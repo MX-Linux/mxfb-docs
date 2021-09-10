@@ -1,7 +1,7 @@
 [begin] (Aspetto) 
     [exec] (Conky){conky-manager2}
-    [submenu] (Dock)
-        [exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
+    [submenu] (Barre Dock)
+        [exec] (Predefinito) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] (Crea dock) {mx-dockmaker}
@@ -18,8 +18,8 @@
         [exec] (Fluxbox) {toggletint2}
         [exec] (Tradizionale) {toggletint2}
     [end]
-    [submenu] (Immagine scrivania) 
+    [submenu] (Wallpaper) 
     [exec] (Ruota) {mxfb-bg-rotate}
     [exec] (Separa) {mxfb-separate-backgrounds}
-    [exec] () {nitrogen}
+    [exec] (Seleziona) {nitrogen}
 [end]

@@ -9,7 +9,7 @@
 	[submenu] (Senaste filer) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Uppdatera lista) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Uppdateringslista) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Webbläsare) {sensible-browser}
@@ -17,21 +17,21 @@
     [exec] (Hjälp) {mxfb-help}
     [exec] (Musik) {deadbeef}
     [exec] (Kör) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Inställningshanterare) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Utseende)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Inställningar)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] ()
+    [submenu] (Dold)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Avsluta)
         [exec] (Förnya) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] (Upphör) {sudo 'pm-suspend'}
+        [exec] (Vänteläge) {sudo 'pm-suspend'}
         [exit] (Logga ut) 
         [exec] (Starta om) {sudo /sbin/reboot} 
         [exec] (Stäng av) {sudo /sbin/halt}

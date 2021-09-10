@@ -1,22 +1,22 @@
-[begin] ()
-    [exec] (Αντιγράφων ασφαλείας) {grsync}
+[begin] (Ρυθμίσεις)
+    [exec] (Backup) {grsync}
     [submenu] (Ρύθμιση)
         [exec] (Εφαρμογές) {exo-open ~/.fluxbox/apps}
-        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [exec] (Αρχικοποίηση) {exo-open ~/.fluxbox/init}
         [exec] (Κλειδιά) {exo-open ~/.fluxbox/keys}
         [submenu] (Μενού) 
-           [exec] () {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Κύριa) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Εμφάνιση) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] () {exo-open ~/.fluxbox/submenus/settings}
-         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] (Ρυθμίσεις) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Εκτός οπτικού πεδίου) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
-        [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
+        [exec] (Επικάλυμμα) {exo-open ~/.fluxbox/overlay}
         [exec] (Εκκίνηση) {featherpad ~/.fluxbox/startup}
-        [exec] (Στυλ) {thunar ~/.fluxbox/styles/}
+        [exec] (Styles) {thunar ~/.fluxbox/styles/}
         [config] (Παράθυρο)         
     [end]
     [submenu] (Οθόνη)
-    [exec] () {arandr}
+    [exec] (Αλλαγή) {arandr}
     [exec](Βοήθεια) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Πληκτρολόγιο)

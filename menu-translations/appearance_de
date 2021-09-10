@@ -4,9 +4,9 @@
         [exec] (Standard) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
-        [exec] (Dockersteller) {mx-dockmaker}
+        [exec] (Dock-Ersteller) {mx-dockmaker}
     [end]
-    [exec] (Arbeitsflächensymbole) {mx-idesktool}
+    [exec] (Desktop-Symbole) {mx-idesktool}
     [exec] (Monitore) {gkrellm}
     [submenu] (Stil)
         [stylesdir] (~/.fluxbox/styles)
@@ -14,12 +14,12 @@
         [stylesdir] (/usr/share/fluxbox/styles) 
     [end]
     [exec] (Thema) {lxappearance}
-    [submenu] (Werkzeugleiste)
+    [submenu] (Toolbar)
         [exec] (Fluxbox) {toggletint2}
-        [exec] (Herkömmlich) {toggletint2}
+        [exec] (Traditionell) {toggletint2}
     [end]
     [submenu] (Hintergrund) 
     [exec] (Drehen) {mxfb-bg-rotate}
     [exec] (Trennen) {mxfb-separate-backgrounds}
-    [exec] () {nitrogen}
+    [exec] (Auswählen) {nitrogen}
 [end]

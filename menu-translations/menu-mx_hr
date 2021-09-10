@@ -1,6 +1,6 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
+[begin] (Flubox)
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
@@ -13,27 +13,27 @@
 		[end]
 	[separator]
     [exec] (Preglednik) {sensible-browser}
-    [exec] (Upravitelj datotekama) {exo-open $HOME/.fluxbox} 
+    [exec] () {exo-open $HOME/.fluxbox} 
     [exec] (Pomoć) {mxfb-help}
     [exec] (Glazba) {deadbeef}
     [exec] () {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminal) {roxterm} 
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminál) {roxterm} 
     [separator]
     [submenu] (Izgled)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Postavke)
     [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
-    [submenu] (Napusti)
+    [submenu] ()
         [exec] (Osvježi) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] () {sudo 'pm-suspend'}
-        [exit] (Odjava) 
-        [exec] () {sudo /sbin/reboot} 
-        [exec] (Isključi) {sudo /sbin/halt}
+        [exec] (Uspání) {sudo 'pm-suspend'}
+        [exit] () 
+        [exec] (Restartování) {sudo /sbin/reboot} 
+        [exec] (Vypnutí) {sudo /sbin/halt}
     [end]
 [end]

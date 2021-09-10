@@ -9,27 +9,27 @@
 	[submenu] (Πρόσφατοι φάκελοι) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Ενημέρωση λίστας) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Ανανέωση λίστας) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
-    [exec] (Πρόγραμμα περιήγησης) {sensible-browser}
-    [exec] (Διαχείριση Αρχείων) {exo-open $HOME/.fluxbox} 
+    [exec] (Περιήγηση ιστού) {sensible-browser}
+    [exec] (Διαχειρηστής αρχείων) {exo-open $HOME/.fluxbox} 
     [exec] (Βοήθεια) {mxfb-help}
     [exec] (Μουσική) {deadbeef}
     [exec] (Εκτέλεση) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Διαχειριστής ρυθμίσεων) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Τερματικό) {roxterm} 
     [separator]
     [submenu] (Εμφάνιση)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Ρυθμίσεις)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] ()
+    [submenu] (Εκτός οπτικού πεδίου)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
-    [submenu] (Εξοδος)
+    [submenu] (Αποχώρηση)
         [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Αναστολή) {sudo 'pm-suspend'}
         [exit] (Αποσύνδεση) 

@@ -1,0 +1,14 @@
+[begin] () 
+    [exec] (Asgjësoje panelin) { killall wmalauncher               }
+    [exec] (Asgjësoni një dritare) { xkill                             }
+    [separator]
+    [exec] () { conkytoggle.sh                    }
+    [exec] () { idesktoggle idesk                 }
+    [exec] () { idesktoggle icons                 }
+    [exec] () { $HOME/.fluxbox/scripts/toggledock }
+    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] () { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Çaktivizo panelin parazgjedhje) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

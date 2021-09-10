@@ -1,14 +1,14 @@
-[begin] () 
-    [exec] (Aniquilar a Doca) { killall wmalauncher               }
-    [exec] (Aniquilar a Janela) { xkill                             }
+[begin] (Ocultar) 
+    [exec] (Aniquilar doca) { killall wmalauncher               }
+    [exec] (Aniquilar janela) { xkill                             }
     [separator]
-    [exec] (Ligar/Desligar o Conky) { conkytoggle.sh                    }
-    [exec] (Ligar/Desligar o iDesk) { idesktoggle idesk                 }
-    [exec] (Ligar/Desligar os Ícones) { idesktoggle icons                 }
-    [exec] (Exibir/Ocultar a Doca) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Exibir/Ocultar a Barra de Ferramentas) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Ligar/Desligar os Monitores) { toggle-mx gkrellm                 }
+    [exec] (Conky (lig/deslig)) { conkytoggle.sh                    }
+    [exec] (iDesk (lig/deslig)) { idesktoggle idesk                 }
+    [exec] (Ícones (lig/deslig)) { idesktoggle icons                 }
+    [exec] (Auto-ocultar doca (lig/deslig)) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Auto-ocultar barra (lig/deslig)) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Auto-ocultar painel (lig/deslig)) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Auto-ocultar monitores (lig/deslig)) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Desativar a Doca Padrão) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Desactivar a doca predefinida) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

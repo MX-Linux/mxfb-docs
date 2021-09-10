@@ -17,23 +17,23 @@
     [exec] (Hjelp) {mxfb-help}
     [exec] (Musikk) {deadbeef}
     [exec] (Kjør) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Behandle innstillinger) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Utseende)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Innstillinger)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] ()
+    [submenu] (Ute av syne)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Forlat)
         [exec] (Oppdater) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Hvilemodus) {sudo 'pm-suspend'}
-        [exit] (Logg ut) 
-        [exec] (Start på nytt) {sudo /sbin/reboot} 
-        [exec] (Slå av) {sudo /sbin/halt}
+        [exit] (Utlogging) 
+        [exec] (Omstart) {sudo /sbin/reboot} 
+        [exec] (Avslutter) {sudo /sbin/halt}
     [end]
 [end]

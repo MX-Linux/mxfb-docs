@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] () 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Prehliadač) {sensible-browser}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [exec] (Pomoc) {mxfb-help}
+    [exec] (Hudba) {deadbeef}
+    [exec] (Spustiť) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminál) {roxterm} 
+    [separator]
+    [submenu] (Vzhľad)
+    [include] (~/.fluxbox/submenus/appearance)
+    [end]
+    [submenu] (Nastavenia)
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
+    [submenu] ()
+        [include] (~/.fluxbox/submenus/out-of-sight)
+    [end]
+    [submenu] ()
+        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Uspať) {sudo 'pm-suspend'}
+        [exit] (Zvuk pri odhlásení) 
+        [exec] (Reštartovať) {sudo /sbin/reboot} 
+        [exec] (Vypnúť) {sudo /sbin/halt}
+    [end]
+[end]

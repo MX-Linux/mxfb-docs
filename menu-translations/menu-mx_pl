@@ -17,22 +17,22 @@
     [exec] (Pomoc) {mxfb-help}
     [exec] (Muzyka) {deadbeef}
     [exec] (Uruchom) {fbrun}
-    [exec] (Settings manager) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Menedżer ustawień) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Wygląd)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
-    [submenu] ()
+    [submenu] (Ustawienia)
     [include] (~/.fluxbox/submenus/settings)
     [end]
-    [submenu] ()
+    [submenu] (Poza polem widzenia)
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Wyjdź)
         [exec] (Odśwież) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Wstrzymaj) {sudo 'pm-suspend'}
-        [exit] (Wyloguj) 
+        [exit] (Wylogowanie) 
         [exec] (Uruchom ponownie) {sudo /sbin/reboot} 
         [exec] (Wyłącz) {sudo /sbin/halt}
     [end]

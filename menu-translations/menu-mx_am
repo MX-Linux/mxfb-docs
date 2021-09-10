@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] () 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (መቃኛ) {sensible-browser}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [exec] (እርዳታ) {mxfb-help}
+    [exec] (ሙዚቃ) {deadbeef}
+    [exec] (ማስኬጃ) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (ተርሚናል) {roxterm} 
+    [separator]
+    [submenu] (አቀራረብ)
+    [include] (~/.fluxbox/submenus/appearance)
+    [end]
+    [submenu] (ማሰናጃ)
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
+    [submenu] ()
+        [include] (~/.fluxbox/submenus/out-of-sight)
+    [end]
+    [submenu] ()
+        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (ማገጃ) {sudo 'pm-suspend'}
+        [exit] (መውጫ) 
+        [exec] (ዳግም ማስጀመሪያ) {sudo /sbin/reboot} 
+        [exec] (ማጥፊያ) {sudo /sbin/halt}
+    [end]
+[end]

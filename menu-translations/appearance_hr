@@ -7,15 +7,15 @@
         [exec] () {mx-dockmaker}
     [end]
     [exec] (Ikone radne površine) {mx-idesktool}
-    [exec] (Monitori) {gkrellm}
+    [exec] () {gkrellm}
     [submenu] (Stil)
         [stylesdir] (~/.fluxbox/styles)
         [separator]
         [stylesdir] (/usr/share/fluxbox/styles) 
     [end]
     [exec] (Tema) {lxappearance}
-    [submenu] (Alatna traka)
-        [exec] (Fluxbox) {toggletint2}
+    [submenu] ()
+        [exec] (Flubox) {toggletint2}
         [exec] () {toggletint2}
     [end]
     [submenu] (Tapeta) 

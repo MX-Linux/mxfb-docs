@@ -1,4 +1,4 @@
-[begin] () 
+[begin] (視界の外) 
     [exec] (ドックの停止) { killall wmalauncher               }
     [exec] (ウィンドウの終了) { xkill                             }
     [separator]
@@ -7,8 +7,8 @@
     [exec] (アイコンの切り換え) { idesktoggle icons                 }
     [exec] (ドックを自動的に隠す機能の切り換え) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (ツールバーを自動的に隠す機能の切り換え) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (モニタの切り換え) { toggle-mx gkrellm                 }
+     [exec] (パネルを自動的に隠す機能の切り換え) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (モニタの切り替え) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (標準ドックの無効化) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (既定ドックの無効化) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

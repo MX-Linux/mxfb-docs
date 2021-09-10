@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (Kartela së fundi) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Përditësoje listën) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Shfletues) {sensible-browser}
+    [exec] (Përgjegjës kartelash) {exo-open $HOME/.fluxbox} 
+    [exec] (Ndihmë) {mxfb-help}
+    [exec] (Muzikë) {deadbeef}
+    [exec] (Xhiroje) {fbrun}
+    [exec] (Përgjegjës rregullimesh) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminal) {roxterm} 
+    [separator]
+    [submenu] (Dukje)
+    [include] (~/.fluxbox/submenus/appearance)
+    [end]
+    [submenu] (Rregullime)
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
+    [submenu] ()
+        [include] (~/.fluxbox/submenus/out-of-sight)
+    [end]
+    [submenu] (Braktise)
+        [exec] (Rifreskoje) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Pezulloje) {sudo 'pm-suspend'}
+        [exit] (Dalje) 
+        [exec] (Rinise) {sudo /sbin/reboot} 
+        [exec] (Fike) {sudo /sbin/halt}
+    [end]
+[end]

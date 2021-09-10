@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (Fitxers recents) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Navegador) {sensible-browser}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [exec] (Ajuda) {mxfb-help}
+    [exec] (Música) {deadbeef}
+    [exec] (Executa) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminal) {roxterm} 
+    [separator]
+    [submenu] (Aspecte)
+    [include] (~/.fluxbox/submenus/appearance)
+    [end]
+    [submenu] (Paràmetres)
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
+    [submenu] ()
+        [include] (~/.fluxbox/submenus/out-of-sight)
+    [end]
+    [submenu] ()
+        [exec] (Refresca) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Suspèn) {sudo 'pm-suspend'}
+        [exit] (Sortida) 
+        [exec] (Reinicia) {sudo /sbin/reboot} 
+        [exec] (Atura) {sudo /sbin/halt}
+    [end]
+[end]

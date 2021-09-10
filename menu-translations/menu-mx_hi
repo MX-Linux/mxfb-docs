@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (फ्लक्सबॉक्स)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (हालिया फाइलें) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (ब्राउज़र) {sensible-browser}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [exec] (सहायता) {mxfb-help}
+    [exec] (संगीत) {deadbeef}
+    [exec] (निष्पादन) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (टर्मिनल) {roxterm} 
+    [separator]
+    [submenu] (स्वरूप)
+    [include] (~/.fluxbox/submenus/appearance)
+    [end]
+    [submenu] (सेटिंग्स)
+    [include] (~/.fluxbox/submenus/settings)
+    [end]
+    [submenu] ()
+        [include] (~/.fluxbox/submenus/out-of-sight)
+    [end]
+    [submenu] ()
+        [exec] (रिफ्रेश) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (स्थगित करें) {sudo 'pm-suspend'}
+        [exit] (लॉगआउट) 
+        [exec] (पुनः आरंभ करें) {sudo /sbin/reboot} 
+        [exec] (बंद करें) {sudo /sbin/halt}
+    [end]
+[end]

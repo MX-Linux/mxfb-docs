@@ -1,22 +1,22 @@
-[begin] ()
+[begin] (Ustawienia)
     [exec] (Kopia zapasowa) {grsync}
     [submenu] (Skonfiguruj)
-        [exec] (Aplikacje) {exo-open ~/.fluxbox/apps}
+        [exec] (Okna aplikacji) {exo-open ~/.fluxbox/apps}
         [exec] (Init) {exo-open ~/.fluxbox/init}
-        [exec] (Klawisze) {exo-open ~/.fluxbox/keys}
+        [exec] (Klawisze skrótów) {exo-open ~/.fluxbox/keys}
         [submenu] (Menu) 
-           [exec] () {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Główne) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Wygląd) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] () {exo-open ~/.fluxbox/submenus/settings}
-         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] (Ustawienia) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Poza polem widzenia) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (Nakładka) {exo-open ~/.fluxbox/overlay}
-        [exec] (Startup) {featherpad ~/.fluxbox/startup}
+        [exec] (Autostart) {featherpad ~/.fluxbox/startup}
         [exec] (Style) {thunar ~/.fluxbox/styles/}
         [config] (Okno)         
     [end]
-    [submenu] (Wyświetlacz)
-    [exec] () {arandr}
+    [submenu] (Ekran)
+    [exec] (Zmień) {arandr}
     [exec](Pomoc) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Klawiatura)

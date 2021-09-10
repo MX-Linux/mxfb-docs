@@ -1,13 +1,13 @@
 [begin] (外观) 
     [exec] (Conky){conky-manager2}
     [submenu] (程序坞)
-        [exec] (默认) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (缺省) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
-        [exec] (造坞器) {mx-dockmaker}
+        [exec] () {mx-dockmaker}
     [end]
     [exec] (桌面图标) {mx-idesktool}
-    [exec] (显示器) {gkrellm}
+    [exec] () {gkrellm}
     [submenu] (样式)
         [stylesdir] (~/.fluxbox/styles)
         [separator]
@@ -15,11 +15,11 @@
     [end]
     [exec] (主题) {lxappearance}
     [submenu] (工具栏)
-        [exec] (Fluxbox) {toggletint2}
-        [exec] (传统) {toggletint2}
+        [exec] () {toggletint2}
+        [exec] () {toggletint2}
     [end]
     [submenu] (壁纸) 
-    [exec] (旋转) {mxfb-bg-rotate}
-    [exec] (独立) {mxfb-separate-backgrounds}
+    [exec] () {mxfb-bg-rotate}
+    [exec] () {mxfb-separate-backgrounds}
     [exec] () {nitrogen}
 [end]

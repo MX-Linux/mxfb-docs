@@ -21,13 +21,13 @@
     [exec] (Terminál) {roxterm} 
     [separator]
     [submenu] (Izgled)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (~/.fluxbox/submenus/appearance_hr)
     [end]
     [submenu] (Postavke)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (~/.fluxbox/submenus/settings_hr)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (~/.fluxbox/submenus/out-of-sight_hr)
     [end]
     [submenu] ()
         [exec] (Osvježi) { fluxbox-remote restart; idesktoggle idesk refresh }

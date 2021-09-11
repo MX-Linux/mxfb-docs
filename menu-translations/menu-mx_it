@@ -21,13 +21,13 @@
     [exec] (Terminale) {roxterm} 
     [separator]
     [submenu] (Aspetto)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (~/.fluxbox/submenus/appearance_it)
     [end]
     [submenu] (Impostazioni)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (~/.fluxbox/submenus/settings_it)
     [end]
     [submenu] (Fuori dal campo visivo)
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (~/.fluxbox/submenus/out-of-sight_it)
     [end]
     [submenu] (Abbandona)
         [exec] (Aggiorna) { fluxbox-remote restart; idesktoggle idesk refresh }

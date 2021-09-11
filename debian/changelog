@@ -2,6 +2,7 @@ mxfb-docs (21.09.04) UNRELEASED; urgency=medium
 
   * downloaded new Transifex files
   * generated revised menus
+  * added language codes to submenu titles
 
  -- Jerry Bond <jb@X1Cmx>  Fri, 10 Sep 2021 13:37:04 -0400
 

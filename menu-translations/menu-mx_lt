@@ -21,13 +21,13 @@
     [exec] (Terminalas) {roxterm} 
     [separator]
     [submenu] (Išvaizda)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (~/.fluxbox/submenus/appearance_lt)
     [end]
     [submenu] (Nuostatos)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (~/.fluxbox/submenus/settings_lt)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (~/.fluxbox/submenus/out-of-sight_lt)
     [end]
     [submenu] ()
         [exec] (Įkelti iš naujo) { fluxbox-remote restart; idesktoggle idesk refresh }

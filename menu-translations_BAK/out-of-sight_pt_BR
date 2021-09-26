@@ -1,0 +1,14 @@
+[begin] (Ocultar) 
+    [exec] (Aniquilar a Doca) { killall wmalauncher               }
+    [exec] (Aniquilar a Janela) { xkill                             }
+    [separator]
+    [exec] (Ligar/Desligar o Conky) { conkytoggle.sh                    }
+    [exec] (Ligar/Desligar o iDesk) { idesktoggle idesk                 }
+    [exec] (Ligar/Desligar os Ícones) { idesktoggle icons                 }
+    [exec] (Ligar/Desligar o Auto-Ocultar da Doca) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Ligar/Desligar o Auto-Ocultar da Barra de Ferramentas) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Ligar/Desligar o Auto-Ocultar do Painel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Ligar/Desligar os Monitores) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Desativar a Doca Padrão) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

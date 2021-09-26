@@ -1,0 +1,25 @@
+[begin] (מראה) 
+    [exec] (){conky-manager2}
+    [submenu] ()
+        [exec] (ברירת מחדל) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
+        [separator]
+        [exec] () {mx-dockmaker}
+    [end]
+    [exec] () {mx-idesktool}
+    [exec] () {gkrellm}
+    [submenu] ()
+        [stylesdir] (~/.fluxbox/styles)
+        [separator]
+        [stylesdir] (/usr/share/fluxbox/styles) 
+    [end]
+    [exec] (ערכת נושא) {lxappearance}
+    [submenu] ()
+        [exec] (Fluxbox) {toggletint2}
+        [exec] () {toggletint2}
+    [end]
+    [submenu] () 
+    [exec] () {mxfb-bg-rotate}
+    [exec] () {mxfb-separate-backgrounds}
+    [exec] () {nitrogen}
+[end]

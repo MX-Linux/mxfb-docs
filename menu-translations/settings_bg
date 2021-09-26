@@ -1,10 +1,10 @@
 [begin] (Настройки)
-    [exec] () {grsync}
-    [submenu] ()
-        [exec] () {exo-open ~/.fluxbox/apps}
-        [exec] () {exo-open ~/.fluxbox/init}
-        [exec] () {exo-open ~/.fluxbox/keys}
-        [submenu] () 
+    [exec] (Резервно копие) {grsync}
+    [submenu] (Конфигуриране на)
+        [exec] (Приложения) {exo-open ~/.fluxbox/apps}
+        [exec] (Иницииране на) {exo-open ~/.fluxbox/init}
+        [exec] (Ключове) {exo-open ~/.fluxbox/keys}
+        [submenu] (Менюта) 
            [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] () {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Настройки) {exo-open ~/.fluxbox/submenus/settings}

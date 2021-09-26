@@ -21,13 +21,13 @@
     [exec] (Термінал) {roxterm} 
     [separator]
     [submenu] ()
-    [include] (~/.fluxbox/submenus/appearance_uk)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Параметри)
-    [include] (~/.fluxbox/submenus/settings_uk)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight_uk)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] ()
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }

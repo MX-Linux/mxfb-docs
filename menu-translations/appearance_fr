@@ -9,9 +9,12 @@
     [exec] (Icônes du bureau) {mx-idesktool}
     [exec] (Moniteurs) {gkrellm}
     [submenu] (Style)
-        [stylesdir] (~/.fluxbox/styles)
-        [separator]
-        [stylesdir] (/usr/share/fluxbox/styles) 
+    	[Exec] (— OVERLAY —)
+    	[Exec] (Border) {mxfb-borders}
+    	[Exec] (Top) {mxfb-top}
+    	[Exec] (— TOOLBAR, MENU —)
+         	[stylesdir] (~/.fluxbox/styles)
+        	[stylesdir] (/usr/share/fluxbox/styles) 
     [end]
     [exec] (Thème) {lxappearance}
     [submenu] (Barre d'outils)

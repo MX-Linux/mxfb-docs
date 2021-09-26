@@ -1,0 +1,25 @@
+[begin] (Apariencia) 
+    [exec] (Conky){conky-manager2}
+    [submenu] (Docas)
+        [exec] (Predeterminado) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
+        [separator]
+        [exec] () {mx-dockmaker}
+    [end]
+    [exec] (Iconas do dispositivo) {mx-idesktool}
+    [exec] () {gkrellm}
+    [submenu] (Estilo)
+        [stylesdir] (~/.fluxbox/styles)
+        [separator]
+        [stylesdir] (/usr/share/fluxbox/styles) 
+    [end]
+    [exec] (Tema) {lxappearance}
+    [submenu] (Barra de ferramentas)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] () {toggletint2}
+    [end]
+    [submenu] (Imaxe de fondo) 
+    [exec] () {mxfb-bg-rotate}
+    [exec] () {mxfb-separate-backgrounds}
+    [exec] (Seleccionar) {nitrogen}
+[end]

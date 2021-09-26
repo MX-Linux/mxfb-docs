@@ -1,14 +1,14 @@
 [begin] () 
-    [exec] () { killall wmalauncher               }
-    [exec] () { xkill                             }
+    [exec] (Kill dock) { killall wmalauncher               }
+    [exec] (Tapa ikkuna) { xkill                             }
     [separator]
-    [exec] () { conkytoggle.sh                    }
-    [exec] () { idesktoggle idesk                 }
-    [exec] () { idesktoggle icons                 }
-    [exec] () { $HOME/.fluxbox/scripts/toggledock }
-    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] () { toggle-mx gkrellm                 }
+    [exec] (Toggle conky) { conkytoggle.sh                    }
+    [exec] (Vaihda iDesk) { idesktoggle idesk                 }
+    [exec] (Vaihda kuvakkeita) { idesktoggle icons                 }
+    [exec] (Toggle autohide dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Vaihda näyttöjä) { toggle-mx gkrellm                 }
     [separator]
-    [exec] () { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Poista oletustelakka käytöstä) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

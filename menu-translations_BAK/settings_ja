@@ -1,0 +1,35 @@
+[begin] (設定)
+    [exec] (バックアップ) {grsync}
+    [submenu] (設定)
+        [exec] (アプリ) {exo-open ~/.fluxbox/apps}
+        [exec] () {exo-open ~/.fluxbox/init}
+        [exec] (キー) {exo-open ~/.fluxbox/keys}
+        [submenu] (メニュー) 
+           [exec] (メイン) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (外観) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (設定) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (視界の外) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (重ねて表示) {exo-open ~/.fluxbox/overlay}
+        [exec] (起動) {featherpad ~/.fluxbox/startup}
+        [exec] (スタイル) {thunar ~/.fluxbox/styles/}
+        [config] (画面)         
+    [end]
+    [submenu] (ディスプレイ)
+    [exec] (変更) {arandr}
+    [exec](ヘルプ) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
+    [submenu] (キーボード)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+[end]

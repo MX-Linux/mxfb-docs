@@ -1,0 +1,14 @@
+[begin] (Ute av syne) 
+    [exec] (Tvangsavslutt samlevindu) { killall wmalauncher               }
+    [exec] (Tvangsavslutt vindu) { xkill                             }
+    [separator]
+    [exec] (Veksle conky) { conkytoggle.sh                    }
+    [exec] (Veksle iDesk) { idesktoggle idesk                 }
+    [exec] (Veksle ikoner) { idesktoggle icons                 }
+    [exec] (Veksle autoskjuling av samlevindu) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Veksle autoskjuling av verktøylinje) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Veksle autoskjuling av panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Veksle skjermer) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Slå av forvalgt samlevindu) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

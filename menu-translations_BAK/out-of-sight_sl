@@ -1,0 +1,14 @@
+[begin] (Izven vidnega) 
+    [exec] (Ukini sidrišče) { killall wmalauncher               }
+    [exec] (Ukini okno) { xkill                             }
+    [separator]
+    [exec] (Preklopi Conky) { conkytoggle.sh                    }
+    [exec] (Preklopi iDesk) { idesktoggle idesk                 }
+    [exec] (Preklopi ikone) { idesktoggle icons                 }
+    [exec] (Preklopi samodejno skirvanje sidrišča) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Preklopi samodejno skrivanje orodne vrstice) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Preklopi samodejno skirvanje panoja) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Preklop zaslonov) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Onemogoči privzeto sidrišče) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

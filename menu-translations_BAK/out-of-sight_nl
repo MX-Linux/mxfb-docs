@@ -1,0 +1,14 @@
+[begin] (Uit het zicht) 
+    [exec] (Beëindig dock) { killall wmalauncher               }
+    [exec] (Beëindig venster) { xkill                             }
+    [separator]
+    [exec] (Wissel conky) { conkytoggle.sh                    }
+    [exec] (Wissel iDesk) { idesktoggle idesk                 }
+    [exec] (Wissel iconen) { idesktoggle icons                 }
+    [exec] (Wissel automatisch dock verbergen) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Wissel automatisch gereedschapsbalk verbergen) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Wissel automatisch gereedschapsbalk verbergen) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Wissel beeldschermen) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Standaard dock uitschakelen) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

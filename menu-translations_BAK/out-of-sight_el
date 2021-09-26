@@ -1,0 +1,14 @@
+[begin] (Εκτός οπτικού πεδίου) 
+    [exec] (Καταστροφή Dock) { killall wmalauncher               }
+    [exec] (Καταστροφή ενός παραθύρου) { xkill                             }
+    [separator]
+    [exec] (Εναλλαγή conky) { conkytoggle.sh                    }
+    [exec] (Εναλλαγή iDesk) { idesktoggle idesk                 }
+    [exec] (Εναλλαγή εικονιδίων) { idesktoggle icons                 }
+    [exec] (Εναλλαγή αυτόματης απόκρυψης dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Εναλλαγή αυτόματης απόκρυψης toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Εναλλαγή αυτόματης απόκρυψης panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Εναλλαγή οθονών) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Απενεργοποίηση προκαθορισμένου dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

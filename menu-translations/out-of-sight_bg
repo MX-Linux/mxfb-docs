@@ -1,14 +1,14 @@
 [begin] () 
-    [exec] () { killall wmalauncher               }
-    [exec] () { xkill                             }
+    [exec] (Док за убиване) { killall wmalauncher               }
+    [exec] (Избиване на прозорец) { xkill                             }
     [separator]
-    [exec] () { conkytoggle.sh                    }
-    [exec] () { idesktoggle idesk                 }
-    [exec] () { idesktoggle icons                 }
-    [exec] () { $HOME/.fluxbox/scripts/toggledock }
-    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] () { toggle-mx gkrellm                 }
+    [exec] (Превключване на conky) { conkytoggle.sh                    }
+    [exec] (Превключване на iDesk) { idesktoggle idesk                 }
+    [exec] (Превключване на икони) { idesktoggle icons                 }
+    [exec] (Превключване на автоматично скриване на док) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Превключване на автоматичното скриване на лентата с инструменти) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Превключване на автоматично скриване на панела) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Превключване на мониторите) { toggle-mx gkrellm                 }
     [separator]
-    [exec] () { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Деактивиране на док по подразбиране) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

@@ -1,0 +1,35 @@
+[begin] (Rregullime)
+    [exec] (Kopjeruaje) {grsync}
+    [submenu] (Formësojeni)
+        [exec] (Aplikacione) {exo-open ~/.fluxbox/apps}
+        [exec] () {exo-open ~/.fluxbox/init}
+        [exec] (Taste) {exo-open ~/.fluxbox/keys}
+        [submenu] (Menu) 
+           [exec] (Kryesorja) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Dukje) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Rregullime) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] () {exo-open ~/.fluxbox/overlay}
+        [exec] (Nisje) {featherpad ~/.fluxbox/startup}
+        [exec] (Stile) {thunar ~/.fluxbox/styles/}
+        [config] (Dritare)         
+    [end]
+    [submenu] (Ekran)
+    [exec] (Ndryshojeni) {arandr}
+    [exec](Ndihmë) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
+    [submenu] (Tastierë)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+[end]

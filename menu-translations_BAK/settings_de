@@ -1,0 +1,35 @@
+[begin] (Einstellungen)
+    [exec] (Backup) {grsync}
+    [submenu] (Konfigurieren)
+        [exec] (Apps) {exo-open ~/.fluxbox/apps}
+        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [exec] (Tasten) {exo-open ~/.fluxbox/keys}
+        [submenu] (Menüs) 
+           [exec] (Haupt) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Erscheinungsbild) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Einstellungen) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Verstecken) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (Überlagerung) {exo-open ~/.fluxbox/overlay}
+        [exec] (Systemstart) {featherpad ~/.fluxbox/startup}
+        [exec] (Styles) {thunar ~/.fluxbox/styles/}
+        [config] (Fenster)         
+    [end]
+    [submenu] (Bildschirm)
+    [exec] (Ändern) {arandr}
+    [exec](Hilfe) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
+    [submenu] (Tastatur)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+[end]

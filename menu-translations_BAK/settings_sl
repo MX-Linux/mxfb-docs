@@ -1,0 +1,35 @@
+[begin] (Nastavitve)
+    [exec] (Varnostna kopija) {grsync}
+    [submenu] (Nastavi)
+        [exec] (Aplikacije) {exo-open ~/.fluxbox/apps}
+        [exec] (Inicializacija) {exo-open ~/.fluxbox/init}
+        [exec] (Tipke) {exo-open ~/.fluxbox/keys}
+        [submenu] (Meniji) 
+           [exec] (Glavni) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Izgled) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Nastavitve) {exo-open ~/.fluxbox/submenus/settings}
+         [exec] (Izven vidnega) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (Prekrivanje) {exo-open ~/.fluxbox/overlay}
+        [exec] (Zagon) {featherpad ~/.fluxbox/startup}
+        [exec] (Stili) {thunar ~/.fluxbox/styles/}
+        [config] (Okno)         
+    [end]
+    [submenu] (Zaslon)
+    [exec] (Spremeni) {arandr}
+    [exec](Pomoč) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    [end]
+    [submenu] (Tipkovnica)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+[end]

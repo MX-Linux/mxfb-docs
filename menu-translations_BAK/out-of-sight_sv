@@ -1,0 +1,14 @@
+[begin] (Dold) 
+    [exec] (Stäng docka) { killall wmalauncher               }
+    [exec] (Stänga ett fönster) { xkill                             }
+    [separator]
+    [exec] (Växla conky) { conkytoggle.sh                    }
+    [exec] (Växla iDesk) { idesktoggle idesk                 }
+    [exec] (Växla ikoner) { idesktoggle icons                 }
+    [exec] (Växla auto-dold docka) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Växla auto-dolt verktygsfält) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Växla auto-dold panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Växla skärmar) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Avaktivera standard-docka) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

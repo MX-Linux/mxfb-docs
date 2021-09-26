@@ -1,0 +1,25 @@
+[begin] (Aspecte) 
+    [exec] (Conky){conky-manager2}
+    [submenu] (Docks)
+        [exec] (Per defecte) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
+        [separator]
+        [exec] () {mx-dockmaker}
+    [end]
+    [exec] (Icones de l'esriptori) {mx-idesktool}
+    [exec] () {gkrellm}
+    [submenu] (Estil)
+        [stylesdir] (~/.fluxbox/styles)
+        [separator]
+        [stylesdir] (/usr/share/fluxbox/styles) 
+    [end]
+    [exec] (Tema) {lxappearance}
+    [submenu] (Barra d'eines)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] () {toggletint2}
+    [end]
+    [submenu] (Empaperat) 
+    [exec] () {mxfb-bg-rotate}
+    [exec] () {mxfb-separate-backgrounds}
+    [exec] (Selecciona) {nitrogen}
+[end]

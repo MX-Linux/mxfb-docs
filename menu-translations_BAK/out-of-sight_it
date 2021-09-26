@@ -1,0 +1,14 @@
+[begin] (Fuori dal campo visivo) 
+    [exec] (Termina dock) { killall wmalauncher               }
+    [exec] (Termina una finestra) { xkill                             }
+    [separator]
+    [exec] (Interruttore conky) { conkytoggle.sh                    }
+    [exec] (Interruttore iDesk) { idesktoggle idesk                 }
+    [exec] (Interruttore icone) { idesktoggle icons                 }
+    [exec] (Interruttore nascondi automaticamente il dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Interruttore nascondi automaticamente la barra degli strumenti) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Interruttore nascondi automaticamente pannello) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Interruttore schermi) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Disabilita dock di default) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

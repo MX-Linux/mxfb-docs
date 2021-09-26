@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (En Son Dosyalar) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Tarayıcı) {sensible-browser}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [exec] (Yardım) {mxfb-help}
+    [exec] (Müzik) {deadbeef}
+    [exec] (Çalıştır) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Uçbirim) {roxterm} 
+    [separator]
+    [submenu] (Görünüş)
+    [include] (~/.fluxbox/submenus/appearance_tr)
+    [end]
+    [submenu] (Ayarlar)
+    [include] (~/.fluxbox/submenus/settings_tr)
+    [end]
+    [submenu] ()
+        [include] (~/.fluxbox/submenus/out-of-sight_tr)
+    [end]
+    [submenu] ()
+        [exec] (Yenile) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Askıya al) {sudo 'pm-suspend'}
+        [exit] (Oturumu kapat) 
+        [exec] (Yeniden Başlat) {sudo /sbin/reboot} 
+        [exec] (Bilgisayarı Kapat) {sudo /sbin/halt}
+    [end]
+[end]

@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (Недавние файлы) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Браузер) {sensible-browser}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [exec] (Справка) {mxfb-help}
+    [exec] (Музыка) {deadbeef}
+    [exec] (Выполнить) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Терминал) {roxterm} 
+    [separator]
+    [submenu] (Внешний вид)
+    [include] (~/.fluxbox/submenus/appearance_ru)
+    [end]
+    [submenu] (Настройки)
+    [include] (~/.fluxbox/submenus/settings_ru)
+    [end]
+    [submenu] ()
+        [include] (~/.fluxbox/submenus/out-of-sight_ru)
+    [end]
+    [submenu] ()
+        [exec] (Обновить) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Ждущий режим) {sudo 'pm-suspend'}
+        [exit] (Выход) 
+        [exec] (Перезагрузка) {sudo /sbin/reboot} 
+        [exec] (Выключение) {sudo /sbin/halt}
+    [end]
+[end]

@@ -1,14 +1,14 @@
 [begin] () 
-    [exec] () { killall wmalauncher               }
-    [exec] () { xkill                             }
+    [exec] (Kill dock) { killall wmalauncher               }
+    [exec] (Zabít okno) { xkill                             }
     [separator]
-    [exec] () { conkytoggle.sh                    }
-    [exec] () { idesktoggle idesk                 }
-    [exec] () { idesktoggle icons                 }
-    [exec] () { $HOME/.fluxbox/scripts/toggledock }
-    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] () { toggle-mx gkrellm                 }
+    [exec] (Přepnout conky) { conkytoggle.sh                    }
+    [exec] (Přepnout iDesk) { idesktoggle idesk                 }
+    [exec] (Přepnout ikony) { idesktoggle icons                 }
+    [exec] (Přepnout automatické skrytí doku) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Přepnout automatické skrytí panelu nástrojů) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Přepnout automatické skrytí panelu) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Přepnout monitory) { toggle-mx gkrellm                 }
     [separator]
-    [exec] () { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Zakázat výchozí dok) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

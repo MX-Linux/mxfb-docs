@@ -21,15 +21,15 @@
     [exec] (Terminál) {roxterm} 
     [separator]
     [submenu] (Vzhled)
-    [include] (~/.fluxbox/submenus/appearance_cs)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Nastavení)
-    [include] (~/.fluxbox/submenus/settings_cs)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight_cs)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
-    [submenu] ()
+    [submenu] (Ponechat)
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Suspendovat) {sudo 'pm-suspend'}
         [exit] (Odhlášení) 

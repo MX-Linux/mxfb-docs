@@ -1,0 +1,14 @@
+[begin] (Poza polem widzenia) 
+    [exec] (Usuń dok) { killall wmalauncher               }
+    [exec] (Zakończ proces dla wybranego okna) { xkill                             }
+    [separator]
+    [exec] (Pokaż/ukryj conky) { conkytoggle.sh                    }
+    [exec] (Pokaż/ukryj iDesk) { idesktoggle idesk                 }
+    [exec] (Pokaż/ukryj ikony) { idesktoggle icons                 }
+    [exec] (Przełącz automatyczne ukrywanie doku) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Przełącz automatyczne ukrywanie paska narzędz) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Przełącz automatyczne ukrywanie panelu) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Przełącz monitory) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Wyłącz domyślny dok) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

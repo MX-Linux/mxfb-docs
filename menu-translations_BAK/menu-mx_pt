@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (Ficheiros recentes) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Actualizar a lista) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Navegador) {sensible-browser}
+    [exec] (Ficheiros) {exo-open $HOME/.fluxbox} 
+    [exec] (Ajuda) {mxfb-help}
+    [exec] (Música) {deadbeef}
+    [exec] (Executar) {fbrun}
+    [exec] (Definições) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminal) {roxterm} 
+    [separator]
+    [submenu] (Aparência)
+    [include] (~/.fluxbox/submenus/appearance_pt)
+    [end]
+    [submenu] (Definições)
+    [include] (~/.fluxbox/submenus/settings_pt)
+    [end]
+    [submenu] (Ocultar)
+        [include] (~/.fluxbox/submenus/out-of-sight_pt)
+    [end]
+    [submenu] (Sair)
+        [exec] (Refrescar) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Suspender) {sudo 'pm-suspend'}
+        [exit] (Terminar) 
+        [exec] (Reiniciar) {sudo /sbin/reboot} 
+        [exec] (Desligar) {sudo /sbin/halt}
+    [end]
+[end]

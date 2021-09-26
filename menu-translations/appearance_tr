@@ -9,9 +9,12 @@
     [exec] (Masaüstü simgeleri) {mx-idesktool}
     [exec] () {gkrellm}
     [submenu] (Biçem)
-        [stylesdir] (~/.fluxbox/styles)
-        [separator]
-        [stylesdir] (/usr/share/fluxbox/styles) 
+    	[Exec] (— OVERLAY —)
+    	[Exec] (Border) {mxfb-borders}
+    	[Exec] (Top) {mxfb-top}
+    	[Exec] (— TOOLBAR, MENU —)
+         	[stylesdir] (~/.fluxbox/styles)
+        	[stylesdir] (/usr/share/fluxbox/styles) 
     [end]
     [exec] (Tema) {lxappearance}
     [submenu] (Araç çubuğu)

@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (Πρόσφατοι φάκελοι) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Ανανέωση λίστας) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (Περιήγηση ιστού) {sensible-browser}
+    [exec] (Διαχειρηστής αρχείων) {exo-open $HOME/.fluxbox} 
+    [exec] (Βοήθεια) {mxfb-help}
+    [exec] (Μουσική) {deadbeef}
+    [exec] (Εκτέλεση) {fbrun}
+    [exec] (Διαχειριστής ρυθμίσεων) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Τερματικό) {roxterm} 
+    [separator]
+    [submenu] (Εμφάνιση)
+    [include] (~/.fluxbox/submenus/appearance_el)
+    [end]
+    [submenu] (Ρυθμίσεις)
+    [include] (~/.fluxbox/submenus/settings_el)
+    [end]
+    [submenu] (Εκτός οπτικού πεδίου)
+        [include] (~/.fluxbox/submenus/out-of-sight_el)
+    [end]
+    [submenu] (Αποχώρηση)
+        [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Αναστολή) {sudo 'pm-suspend'}
+        [exit] (Αποσύνδεση) 
+        [exec] (Επανεκκίνηση) {sudo /sbin/reboot} 
+        [exec] (Τερματισμός) {sudo /sbin/halt}
+    [end]
+[end]

@@ -21,13 +21,13 @@
     [exec] (ተርሚናል) {roxterm} 
     [separator]
     [submenu] (አቀራረብ)
-    [include] (~/.fluxbox/submenus/appearance_am)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (ማሰናጃ)
-    [include] (~/.fluxbox/submenus/settings_am)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight_am)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] ()
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }

@@ -1,0 +1,14 @@
+[begin] (Cambiar la vista) 
+    [exec] (Matar la barra de iconos) { killall wmalauncher               }
+    [exec] (Matar una ventana) { xkill                             }
+    [separator]
+    [exec] (Ver/ocultar conky) { conkytoggle.sh                    }
+    [exec] (Ver/ocultar iDesk) { idesktoggle idesk                 }
+    [exec] (Ver/ocultar iconos) { idesktoggle icons                 }
+    [exec] (Activar la ocultación automática de la barra de iconos) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Activar la ocultación automática de la barra de herramientas) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Activar la ocultación automática del panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Ver/ocultar monitores) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Desactivar la barra de iconos por defecto) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+[end]

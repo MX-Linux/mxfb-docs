@@ -1,0 +1,39 @@
+#the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] ()
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
+   [end]
+	[submenu] (最近文件) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[end]
+	[separator]
+    [exec] (浏览器) {sensible-browser}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [exec] (帮助) {mxfb-help}
+    [exec] (音乐) {deadbeef}
+    [exec] (运行) {fbrun}
+    [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (终端) {roxterm} 
+    [separator]
+    [submenu] (外观)
+    [include] (~/.fluxbox/submenus/appearance_zh)
+    [end]
+    [submenu] (设置)
+    [include] (~/.fluxbox/submenus/settings_zh)
+    [end]
+    [submenu] ()
+        [include] (~/.fluxbox/submenus/out-of-sight_zh)
+    [end]
+    [submenu] ()
+        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (挂起) {sudo 'pm-suspend'}
+        [exit] (注销) 
+        [exec] (重启) {sudo /sbin/reboot} 
+        [exec] (关机) {sudo /sbin/halt}
+    [end]
+[end]

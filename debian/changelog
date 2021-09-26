@@ -1,4 +1,4 @@
-mxfb-docs (21.09.07) UNRELEASED; urgency=medium
+mxfb-docs (21.09.08) UNRELEASED; urgency=medium
 
   * downloaded new Transifex files
   * generated revised menus
@@ -6,8 +6,9 @@ mxfb-docs (21.09.07) UNRELEASED; urgency=medium
   * updated default desktop image
   * filled in missing menu items from DeepL
   * finished new help doc and trans"
+  * added expanded Style entry
 
- -- Jerry Bond <jb@X1Cmx>  Fri, 24 Sep 2021 17:32:16 -0400
+ -- Jerry Bond <jb@X1Cmx>  Sun, 26 Sep 2021 11:07:46 -0400
 
 mxfb-docs (21.09.03) mx; urgency=medium
 

@@ -1,4 +1,4 @@
 menu-translations/* usr/share/mxflux/menu-translations
 help/* usr/share/mxflux/help
 components/mxfb-help /usr/bin
-components/mxfbhelp.desktop /usr/share/applications
+components/mxfb-help.desktop /usr/share/applications

@@ -1,14 +1,14 @@
 [begin] () 
-    [exec] () { killall wmalauncher               }
-    [exec] () { xkill                             }
+    [exec] (Nužudymo dokas) { killall wmalauncher               }
+    [exec] (Nužudyti langą) { xkill                             }
     [separator]
-    [exec] () { conkytoggle.sh                    }
-    [exec] () { idesktoggle idesk                 }
-    [exec] () { idesktoggle icons                 }
-    [exec] () { $HOME/.fluxbox/scripts/toggledock }
-    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] () { toggle-mx gkrellm                 }
+    [exec] (Perjungti conky) { conkytoggle.sh                    }
+    [exec] (Perjungti iDesk) { idesktoggle idesk                 }
+    [exec] (Perjungti piktogramas) { idesktoggle icons                 }
+    [exec] (Perjungti automatiškai paslėpti doką) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Perjungti automatinį įrankių juostos paslėpimą) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Perjungti automatinį skydelio paslėpimą) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Perjungti monitorius) { toggle-mx gkrellm                 }
     [separator]
-    [exec] () { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Išjungti numatytąjį doką) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

@@ -1,10 +1,10 @@
 [begin] (Nastavení)
-    [exec] (Zálohování) {grsync}
-    [submenu] ()
-        [exec] () {exo-open ~/.fluxbox/apps}
-        [exec] () {exo-open ~/.fluxbox/init}
-        [exec] () {exo-open ~/.fluxbox/keys}
-        [submenu] () 
+    [exec] (Záloha) {grsync}
+    [submenu] (Konfigurace)
+        [exec] (Aplikace) {exo-open ~/.fluxbox/apps}
+        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [exec] (Klíče) {exo-open ~/.fluxbox/keys}
+        [submenu] (Menu) 
            [exec] (Hlavní) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Vzhled) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Nastavení) {exo-open ~/.fluxbox/submenus/settings}

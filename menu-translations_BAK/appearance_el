@@ -9,9 +9,12 @@
     [exec] (Εικονίδια επιφάνειας εργασίας) {mx-idesktool}
     [exec] (Οθόνες) {gkrellm}
     [submenu] (Στυλ)
-        [stylesdir] (~/.fluxbox/styles)
-        [separator]
-        [stylesdir] (/usr/share/fluxbox/styles) 
+    	[Exec] (— OVERLAY —)
+    	[Exec] (Border) {mxfb-borders}
+    	[Exec] (Top) {mxfb-top}
+    	[Exec] (— TOOLBAR, MENU —)
+         	[stylesdir] (~/.fluxbox/styles)
+        	[stylesdir] (/usr/share/fluxbox/styles) 
     [end]
     [exec] (Θέμα) {lxappearance}
     [submenu] (Γραμμή εργαλείων)

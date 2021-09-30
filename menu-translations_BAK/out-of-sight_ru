@@ -1,14 +1,14 @@
 [begin] () 
-    [exec] () { killall wmalauncher               }
-    [exec] () { xkill                             }
+    [exec] (Убить док) { killall wmalauncher               }
+    [exec] (Убить окно) { xkill                             }
     [separator]
-    [exec] () { conkytoggle.sh                    }
-    [exec] () { idesktoggle idesk                 }
-    [exec] () { idesktoggle icons                 }
-    [exec] () { $HOME/.fluxbox/scripts/toggledock }
-    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] () { toggle-mx gkrellm                 }
+    [exec] (Переключить conky) { conkytoggle.sh                    }
+    [exec] (Переключить iDesk) { idesktoggle idesk                 }
+    [exec] (Переключить значки) { idesktoggle icons                 }
+    [exec] (Переключить автоскрытие дока) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (Переключить автоскрытие панели инструментов) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (Переключить автоскрытие панели) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Переключить мониторы) { toggle-mx gkrellm                 }
     [separator]
-    [exec] () { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Отключить док по умолчанию) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

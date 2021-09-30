@@ -1,14 +1,14 @@
 [begin] () 
-    [exec] () { killall wmalauncher               }
-    [exec] () { xkill                             }
+    [exec] (杀死船坞) { killall wmalauncher               }
+    [exec] (杀死一个窗口) { xkill                             }
     [separator]
-    [exec] () { conkytoggle.sh                    }
-    [exec] () { idesktoggle idesk                 }
-    [exec] () { idesktoggle icons                 }
-    [exec] () { $HOME/.fluxbox/scripts/toggledock }
-    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] () { toggle-mx gkrellm                 }
+    [exec] (切换康基) { conkytoggle.sh                    }
+    [exec] (切换iDesk) { idesktoggle idesk                 }
+    [exec] (切换图标) { idesktoggle icons                 }
+    [exec] (切换自动隐藏Dock) { $HOME/.fluxbox/scripts/toggledock }
+    [exec] (切换自动隐藏工具条) {$HOME/.fluxbox/scripts/toggletoolbar}
+     [exec] (切换自动隐藏面板) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (切换显示器) { toggle-mx gkrellm                 }
     [separator]
-    [exec] () { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (禁用默认底座) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
 [end]

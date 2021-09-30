@@ -21,13 +21,13 @@
     [exec] (Τερματικό) {roxterm} 
     [separator]
     [submenu] (Εμφάνιση)
-    [include] (~/.fluxbox/submenus/appearance_el)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Ρυθμίσεις)
-    [include] (~/.fluxbox/submenus/settings_el)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] (Εκτός οπτικού πεδίου)
-        [include] (~/.fluxbox/submenus/out-of-sight_el)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Αποχώρηση)
         [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }

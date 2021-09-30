@@ -21,15 +21,15 @@
     [exec] (终端) {roxterm} 
     [separator]
     [submenu] (外观)
-    [include] (~/.fluxbox/submenus/appearance_zh)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (设置)
-    [include] (~/.fluxbox/submenus/settings_zh)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight_zh)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
-    [submenu] ()
+    [submenu] (离开)
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (挂起) {sudo 'pm-suspend'}
         [exit] (注销) 

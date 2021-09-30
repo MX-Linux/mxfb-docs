@@ -21,15 +21,15 @@
     [exec] (Pääte) {roxterm} 
     [separator]
     [submenu] (Ulkoasu)
-    [include] (~/.fluxbox/submenus/appearance_fi)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Asetukset)
-    [include] (~/.fluxbox/submenus/settings_fi)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight_fi)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
-    [submenu] ()
+    [submenu] (Jätä)
         [exec] (Virkistä) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Keskeytä) {sudo 'pm-suspend'}
         [exit] (Kirjaudu ulos) 

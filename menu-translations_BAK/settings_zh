@@ -1,10 +1,10 @@
 [begin] (设置)
     [exec] () {grsync}
     [submenu] (配置)
-        [exec] () {exo-open ~/.fluxbox/apps}
-        [exec] () {exo-open ~/.fluxbox/init}
-        [exec] () {exo-open ~/.fluxbox/keys}
-        [submenu] () 
+        [exec] (应用) {exo-open ~/.fluxbox/apps}
+        [exec] (啟動) {exo-open ~/.fluxbox/init}
+        [exec] (钥匙) {exo-open ~/.fluxbox/keys}
+        [submenu] (菜单) 
            [exec] () {exo-open ~/.fluxbox/menu-mx}
            [exec] (外观) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (设置) {exo-open ~/.fluxbox/submenus/settings}

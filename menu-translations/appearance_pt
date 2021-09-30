@@ -11,6 +11,7 @@
     [submenu] (Estilo)
     	[Exec] (— OVERLAY —)
     	[Exec] (Border) {mxfb-borders}
+    	[Exec] (Menu font) {mxfb-menufont}
     	[Exec] (Top) {mxfb-top}
     	[Exec] (— TOOLBAR, MENU —)
          	[stylesdir] (~/.fluxbox/styles)

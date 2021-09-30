@@ -21,15 +21,15 @@
     [exec] (Терминал) {roxterm} 
     [separator]
     [submenu] ()
-    [include] (~/.fluxbox/submenus/appearance_bg)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Настройки)
-    [include] (~/.fluxbox/submenus/settings_bg)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight_bg)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
-    [submenu] ()
+    [submenu] (Оставете)
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Приспиване) {sudo 'pm-suspend'}
         [exit] () 

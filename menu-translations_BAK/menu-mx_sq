@@ -21,13 +21,13 @@
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Dukje)
-    [include] (~/.fluxbox/submenus/appearance_sq)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Rregullime)
-    [include] (~/.fluxbox/submenus/settings_sq)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight_sq)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Braktise)
         [exec] (Rifreskoje) { fluxbox-remote restart; idesktoggle idesk refresh }

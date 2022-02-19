@@ -7,7 +7,8 @@
     [exec] (Εναλλαγή εικονιδίων) { idesktoggle icons                 }
     [exec] (Εναλλαγή αυτόματης απόκρυψης dock) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Εναλλαγή αυτόματης απόκρυψης toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Εναλλαγή αυτόματης απόκρυψης panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Εναλλαγή αυτόματης απόκρυψης panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
     [exec] (Εναλλαγή οθονών) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Απενεργοποίηση προκαθορισμένου dock) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

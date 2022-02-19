@@ -16,7 +16,7 @@
         [config] (Dritare)         
     [end]
     [submenu] (Ekran)
-    [exec] (Ndryshojeni) {arandr}
+    [exec] (Ndryshojeni) {sudo arandr}
     [exec](Ndihmë) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] (Tastierë)
@@ -32,4 +32,7 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
+    [submenu] (Touchscreen)
+    [exec] (Special dock) {tint2 ~/.config/tint2/touchscreen/touch-dock-tint2rc}
+    [exec] (Special panel) {tint2 ~/.config/tint2/touchscreen/touch-tint2rc}
 [end]

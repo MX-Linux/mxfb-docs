@@ -1,11 +1,7 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-		[submenu] (All Apps)
-            [include] (~/.fluxbox/submenus/full_menu)
-            [separator]
-            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
-   [end]
+	[exec] () {rofi -show drun}
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
@@ -13,13 +9,13 @@
 		[end]
 	[separator]
     [exec] (وب بروزر) {sensible-browser}
-    [exec] () {exo-open $HOME/.fluxbox} 
-    [exec] (راهنما) {mxfb-help}
+    [exec] () {thunar} 
+    [exec] (راهنما) {thunar /usr/share/mxflux/help/}
     [exec] () {deadbeef}
     [exec] (راه اندازی) {fbrun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (پایانه) {roxterm} 
-    [separator]
+    [exec] (پایانه) {xfce4-terminal} 
+        [separator]
     [submenu] ()
     [include] (~/.fluxbox/submenus/appearance)
     [end]
@@ -33,7 +29,6 @@
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (معلق کردن) {sudo 'pm-suspend'}
         [exit] () 
-        [exec] (اندازی مجدد) {sudo /sbin/reboot} 
         [exec] () {sudo /sbin/halt}
     [end]
 [end]

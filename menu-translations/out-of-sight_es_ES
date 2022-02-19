@@ -7,7 +7,8 @@
     [exec] (Ver/ocultar iconos) { idesktoggle icons                 }
     [exec] (Activar la ocultación automática de la barra de iconos) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Activar la ocultación automática de la barra de herramientas) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Activar la ocultación automática del panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Activar la ocultación automática del panel) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
     [exec] (Ver/ocultar monitores) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Desactivar la barra de iconos por defecto) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

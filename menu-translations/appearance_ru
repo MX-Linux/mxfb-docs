@@ -1,6 +1,11 @@
 [begin] (Внешний вид) 
     [exec] (Conky){conky-manager2}
     [submenu] (Док панели)
+			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
+			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
+			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
+			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
+			[exec] (По умолчанию) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (По умолчанию) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]

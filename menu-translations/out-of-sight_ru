@@ -7,7 +7,8 @@
     [exec] (Переключить значки) { idesktoggle icons                 }
     [exec] (Переключить автоскрытие дока) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Переключить автоскрытие панели инструментов) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Переключить автоскрытие панели) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Переключить автоскрытие панели) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
     [exec] (Переключить мониторы) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Отключить док по умолчанию) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

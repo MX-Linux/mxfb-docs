@@ -7,7 +7,8 @@
     [exec] (Ícones (lig/deslig)) { idesktoggle icons                 }
     [exec] (Auto-ocultar doca (lig/deslig)) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Auto-ocultar barra (lig/deslig)) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Auto-ocultar painel (lig/deslig)) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Auto-ocultar painel (lig/deslig)) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
     [exec] (Auto-ocultar monitores (lig/deslig)) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Desactivar a doca predefinida) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

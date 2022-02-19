@@ -1,11 +1,7 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-		[submenu] (All Apps)
-            [include] (~/.fluxbox/submenus/full_menu)
-            [separator]
-            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
-   [end]
+	[exec] (Kaikki sovellukset) {rofi -show drun}
 	[submenu] (Viimeaikaiset tiedostot) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
@@ -13,13 +9,13 @@
 		[end]
 	[separator]
     [exec] (Nettiselaimella) {sensible-browser}
-    [exec] () {exo-open $HOME/.fluxbox} 
-    [exec] (Ohje) {mxfb-help}
+    [exec] () {thunar} 
+    [exec] (Ohje) {thunar /usr/share/mxflux/help/}
     [exec] (Musiikki) {deadbeef}
     [exec] (Suorita) {fbrun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Pääte) {roxterm} 
-    [separator]
+    [exec] (Pääte) {xfce4-terminal} 
+        [separator]
     [submenu] (Ulkoasu)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
@@ -33,7 +29,6 @@
         [exec] (Virkistä) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Keskeytä) {sudo 'pm-suspend'}
         [exit] (Kirjaudu ulos) 
-        [exec] (Käynnistä uudelleen) {sudo /sbin/reboot} 
         [exec] (Sammuta) {sudo /sbin/halt}
     [end]
 [end]

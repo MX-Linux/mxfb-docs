@@ -1,6 +1,11 @@
 [begin] (Udseende) 
     [exec] (){conky-manager2}
     [submenu] (Dokke)
+			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
+			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
+			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
+			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
+			[exec] (Standard) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Standard) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]

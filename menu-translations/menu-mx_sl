@@ -1,11 +1,7 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-		[submenu] (All Apps)
-            [include] (~/.fluxbox/submenus/full_menu)
-            [separator]
-            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
-   [end]
+	[exec] (Vsi programi) {rofi -show drun}
 	[submenu] (Nedavne datoteke) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
@@ -13,13 +9,13 @@
 		[end]
 	[separator]
     [exec] (Brskalnik) {sensible-browser}
-    [exec] (Upravljalnik datotek) {exo-open $HOME/.fluxbox} 
-    [exec] (Pomoč) {mxfb-help}
+    [exec] (Upravljalnik datotek) {thunar} 
+    [exec] (Pomoč) {thunar /usr/share/mxflux/help/}
     [exec] (Glasba) {deadbeef}
     [exec] (Zaženi) {fbrun}
     [exec] (Upravljalnik nastavitev) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminal) {roxterm} 
-    [separator]
+    [exec] (Terminal) {xfce4-terminal} 
+        [separator]
     [submenu] (Izgled)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
@@ -33,7 +29,6 @@
         [exec] (Osveži) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Začasno ustavi) {sudo 'pm-suspend'}
         [exit] (Odjava) 
-        [exec] (Ponovni zagon) {sudo /sbin/reboot} 
         [exec] (Izklop) {sudo /sbin/halt}
     [end]
 [end]

@@ -1,11 +1,7 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-		[submenu] (All Apps)
-            [include] (~/.fluxbox/submenus/full_menu)
-            [separator]
-            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
-   [end]
+	[exec] (Alla program) {rofi -show drun}
 	[submenu] (Senaste filer) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
@@ -13,13 +9,13 @@
 		[end]
 	[separator]
     [exec] (Webbläsare) {sensible-browser}
-    [exec] (Filhanterare) {exo-open $HOME/.fluxbox} 
-    [exec] (Hjälp) {mxfb-help}
+    [exec] (Filhanterare) {thunar} 
+    [exec] (Hjälp) {thunar /usr/share/mxflux/help/}
     [exec] (Musik) {deadbeef}
     [exec] (Kör) {fbrun}
     [exec] (Inställningshanterare) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminal) {roxterm} 
-    [separator]
+    [exec] (Terminal) {xfce4-terminal} 
+        [separator]
     [submenu] (Utseende)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
@@ -33,7 +29,6 @@
         [exec] (Förnya) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Vänteläge) {sudo 'pm-suspend'}
         [exit] (Logga ut) 
-        [exec] (Starta om) {sudo /sbin/reboot} 
         [exec] (Stäng av) {sudo /sbin/halt}
     [end]
 [end]

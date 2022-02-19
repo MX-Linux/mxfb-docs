@@ -1,6 +1,11 @@
 [begin] (Tampilan) 
     [exec] (Conky){conky-manager2}
     [submenu] (Docks)
+			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
+			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
+			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
+			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
+			[exec] (Setelan Bawaan) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Setelan Bawaan) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]

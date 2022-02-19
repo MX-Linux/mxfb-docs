@@ -1,6 +1,11 @@
 [begin] (外観) 
     [exec] (Conky){conky-manager2}
     [submenu] (ドック)
+			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
+			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
+			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
+			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
+			[exec] (既定) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (既定) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]

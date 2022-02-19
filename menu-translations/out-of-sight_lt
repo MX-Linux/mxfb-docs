@@ -7,7 +7,8 @@
     [exec] (Perjungti piktogramas) { idesktoggle icons                 }
     [exec] (Perjungti automatiškai paslėpti doką) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Perjungti automatinį įrankių juostos paslėpimą) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Perjungti automatinį skydelio paslėpimą) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Perjungti automatinį skydelio paslėpimą) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
     [exec] (Perjungti monitorius) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Išjungti numatytąjį doką) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

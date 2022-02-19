@@ -7,7 +7,8 @@
     [exec] (Pokaż/ukryj ikony) { idesktoggle icons                 }
     [exec] (Przełącz automatyczne ukrywanie doku) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Przełącz automatyczne ukrywanie paska narzędz) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Przełącz automatyczne ukrywanie panelu) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Przełącz automatyczne ukrywanie panelu) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
     [exec] (Przełącz monitory) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Wyłącz domyślny dok) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

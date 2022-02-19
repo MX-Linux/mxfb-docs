@@ -1,11 +1,7 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] ()
-		[submenu] (All Apps)
-            [include] (~/.fluxbox/submenus/full_menu)
-            [separator]
-            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
-   [end]
+	[exec] () {rofi -show drun}
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
@@ -13,13 +9,13 @@
 		[end]
 	[separator]
     [exec] (Интернет браузър) {sensible-browser}
-    [exec] () {exo-open $HOME/.fluxbox} 
-    [exec] (Помощ) {mxfb-help}
+    [exec] () {thunar} 
+    [exec] (Помощ) {thunar /usr/share/mxflux/help/}
     [exec] () {deadbeef}
     [exec] (Изпълни) {fbrun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Терминал) {roxterm} 
-    [separator]
+    [exec] (Терминал) {xfce4-terminal} 
+        [separator]
     [submenu] ()
     [include] (~/.fluxbox/submenus/appearance)
     [end]
@@ -33,7 +29,6 @@
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Приспиване) {sudo 'pm-suspend'}
         [exit] () 
-        [exec] (Рестартиране) {sudo /sbin/reboot} 
         [exec] (Изключване) {sudo /sbin/halt}
     [end]
 [end]

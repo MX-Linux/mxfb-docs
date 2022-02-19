@@ -1,11 +1,7 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Fluxbox)
-		[submenu] (All Apps)
-            [include] (~/.fluxbox/submenus/full_menu)
-            [separator]
-            [exec] (Update Menu)  {/usr/bin/mxfb-menu-generator}
-   [end]
+	[exec] (Visos programos) {rofi -show drun}
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
@@ -13,13 +9,13 @@
 		[end]
 	[separator]
     [exec] (Naršyklė) {sensible-browser}
-    [exec] () {exo-open $HOME/.fluxbox} 
-    [exec] (Žinynas) {mxfb-help}
+    [exec] () {thunar} 
+    [exec] (Žinynas) {thunar /usr/share/mxflux/help/}
     [exec] (Muzika) {deadbeef}
     [exec] (Vykdyti) {fbrun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminalas) {roxterm} 
-    [separator]
+    [exec] (Terminalas) {xfce4-terminal} 
+        [separator]
     [submenu] (Išvaizda)
     [include] (~/.fluxbox/submenus/appearance)
     [end]
@@ -33,7 +29,6 @@
         [exec] (Įkelti iš naujo) { fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Pristabdyti) {sudo 'pm-suspend'}
         [exit] (Atsijungimas) 
-        [exec] (Paleisti iš naujo) {sudo /sbin/reboot} 
         [exec] (Išjungti) {sudo /sbin/halt}
     [end]
 [end]

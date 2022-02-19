@@ -7,7 +7,8 @@
     [exec] (Preklopi ikone) { idesktoggle icons                 }
     [exec] (Preklopi samodejno skirvanje sidrišča) { $HOME/.fluxbox/scripts/toggledock }
     [exec] (Preklopi samodejno skrivanje orodne vrstice) {$HOME/.fluxbox/scripts/toggletoolbar}
-     [exec] (Preklopi samodejno skirvanje panoja) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Preklopi samodejno skirvanje panoja) {$HOME/.fluxbox/scripts/toggletint2}
+    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
     [exec] (Preklop zaslonov) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Onemogoči privzeto sidrišče) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }

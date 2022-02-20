@@ -1,3 +1,10 @@
+mxfb-docs (22.02.19) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * revised mxfb-help to work with mxrpi
+
+ -- Jerry Bond <jb@mx>  Sun, 20 Feb 2022 11:37:23 -0500
+
 mxfb-docs (21.09.30) mx; urgency=medium
 
   * downloaded new Transifex files

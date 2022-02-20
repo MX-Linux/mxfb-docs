@@ -1,7 +1,8 @@
 #!/bin/bash
 
 FILE="/usr/share/mxflux/help/mxfl-docs"
-if [ -n $(grep Raspbian /etc/os-release) ]; then
+test="$(grep Raspbian /etc/os-release)"
+if [ -n "$test" ]; then
 	FILE="/usr/share/mxflux/help/MXRPi2-Manual"
 fi
 lang_check=$(echo $LANG|cut -d_ -f1)

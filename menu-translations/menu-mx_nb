@@ -17,13 +17,13 @@
     [exec] (Terminal) {xfce4-terminal} 
         [separator]
     [submenu] (Utseende)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (/usr/share/mxflux/menu/menu-translations/appearance_nb)
     [end]
     [submenu] (Innstillinger)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (/usr/share/mxflux/menu/menu-translations/settings_nb)
     [end]
     [submenu] (Ute av syne)
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu/menu-translations/out-of-sight_nb)
     [end]
     [submenu] (Forlat)
         [exec] (Oppdater) { fluxbox-remote restart; idesktoggle idesk refresh }

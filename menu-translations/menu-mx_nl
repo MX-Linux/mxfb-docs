@@ -17,13 +17,13 @@
     [exec] (Terminalvenster) {xfce4-terminal} 
         [separator]
     [submenu] (Uiterlijk)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (/usr/share/mxflux/menu/menu-translations/appearance_nl)
     [end]
     [submenu] (Instellingen)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (/usr/share/mxflux/menu/menu-translations/settings_nl)
     [end]
     [submenu] (Uit het zicht)
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu/menu-translations/out-of-sight_nl)
     [end]
     [submenu] (Verlaten)
         [exec] (Verversen) { fluxbox-remote restart; idesktoggle idesk refresh }

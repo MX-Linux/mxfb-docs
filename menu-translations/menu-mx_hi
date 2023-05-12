@@ -17,13 +17,13 @@
     [exec] (टर्मिनल) {xfce4-terminal} 
         [separator]
     [submenu] (स्वरूप)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (/usr/share/mxflux/menu-translations/appearance_hi)
     [end]
     [submenu] (सेटिंग्स)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (/usr/share/mxflux/menu-translations/settings_hi)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_hi)
     [end]
     [submenu] ()
         [exec] (रिफ्रेश) { fluxbox-remote restart; idesktoggle idesk refresh }

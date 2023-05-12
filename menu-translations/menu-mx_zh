@@ -17,13 +17,13 @@
     [exec] (终端) {xfce4-terminal} 
         [separator]
     [submenu] (外观)
-    [include] (/usr/share/mxflux/menu/menu-translations/appearance_zh)
+    [include] (/usr/share/mxflux/menu-translations/appearance_zh)
     [end]
     [submenu] (设置)
-    [include] (/usr/share/mxflux/menu/menu-translations/settings_zh)
+    [include] (/usr/share/mxflux/menu-translations/settings_zh)
     [end]
     [submenu] ()
-        [include] (/usr/share/mxflux/menu/menu-translations/out-of-sight_zh)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_zh)
     [end]
     [submenu] (离开)
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }

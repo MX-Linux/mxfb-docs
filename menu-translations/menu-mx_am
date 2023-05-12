@@ -17,13 +17,13 @@
     [exec] (ተርሚናል) {xfce4-terminal} 
         [separator]
     [submenu] (አቀራረብ)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (/usr/share/mxflux/menu-translations/appearance_am)
     [end]
     [submenu] (ማሰናጃ)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (/usr/share/mxflux/menu-translations/settings_am)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_am)
     [end]
     [submenu] ()
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }

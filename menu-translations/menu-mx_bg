@@ -17,13 +17,13 @@
     [exec] (Терминал) {xfce4-terminal} 
         [separator]
     [submenu] ()
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (/usr/share/mxflux/menu-translations/appearance_bg)
     [end]
     [submenu] (Настройки)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (/usr/share/mxflux/menu-translations/settings_bg)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_bg)
     [end]
     [submenu] (Оставете)
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }

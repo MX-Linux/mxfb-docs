@@ -17,13 +17,13 @@
     [exec] (Terminal) {xfce4-terminal} 
         [separator]
     [submenu] (Tampilan)
-    [include] (/usr/share/mxflux/menu/menu-translations/appearance_id)
+    [include] (/usr/share/mxflux/menu-translations/appearance_id)
     [end]
     [submenu] (Setelan)
-    [include] (/usr/share/mxflux/menu/menu-translations/settings_id)
+    [include] (/usr/share/mxflux/menu-translations/settings_id)
     [end]
     [submenu] ()
-        [include] (/usr/share/mxflux/menu/menu-translations/out-of-sight_id)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_id)
     [end]
     [submenu] ()
         [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }

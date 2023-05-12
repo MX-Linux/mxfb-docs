@@ -17,13 +17,13 @@
     [exec] (Pääte) {xfce4-terminal} 
         [separator]
     [submenu] (Ulkoasu)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (/usr/share/mxflux/menu-translations/appearance_fi)
     [end]
     [submenu] (Asetukset)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (/usr/share/mxflux/menu-translations/settings_fi)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_fi)
     [end]
     [submenu] (Jätä)
         [exec] (Virkistä) { fluxbox-remote restart; idesktoggle idesk refresh }

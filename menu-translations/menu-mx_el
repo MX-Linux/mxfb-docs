@@ -17,13 +17,13 @@
     [exec] (Τερματικό) {xfce4-terminal} 
         [separator]
     [submenu] (Εμφάνιση)
-    [include] (/usr/share/mxflux/menu/menu-translations/appearance_el)
+    [include] (/usr/share/mxflux/menu-translations/appearance_el)
     [end]
     [submenu] (Ρυθμίσεις)
-    [include] (/usr/share/mxflux/menu/menu-translations/settings_el)
+    [include] (/usr/share/mxflux/menu-translations/settings_el)
     [end]
     [submenu] (Εκτός οπτικού πεδίου)
-        [include] (/usr/share/mxflux/menu/menu-translations/out-of-sight_el)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_el)
     [end]
     [submenu] (Αποχώρηση)
         [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }

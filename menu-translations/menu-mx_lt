@@ -17,13 +17,13 @@
     [exec] (Terminalas) {xfce4-terminal} 
         [separator]
     [submenu] (Išvaizda)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (/usr/share/mxflux/menu-translations/appearance_lt)
     [end]
     [submenu] (Nuostatos)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (/usr/share/mxflux/menu-translations/settings_lt)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_lt)
     [end]
     [submenu] (Palikti)
         [exec] (Įkelti iš naujo) { fluxbox-remote restart; idesktoggle idesk refresh }

@@ -1,11 +1,13 @@
-mxfb-docs (23.05.02mx23+nmu3) UNRELEASED; urgency=medium
+mxfb-docs (23.05.02mx23+nmu4) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * added translations of draft Manual
   * corrected links to submenus in translated menu-mx
   * corrected corrections
+  * updated translation templates, added links to spreadsheet
+  * generated translated menus for mx-23
 
- -- Jerry <jb@mx>  Fri, 12 May 2023 06:19:47 -0400
+ -- Jerry <jb@mx>  Tue, 16 May 2023 13:46:37 -0400
 
 mxfb-docs (23.05.02mx23) mx; urgency=medium
 

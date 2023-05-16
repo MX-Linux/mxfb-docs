@@ -5,11 +5,10 @@
     [exec] (コンキーの切り換え) { conkytoggle.sh                    }
     [exec] (iDesk の切り換え) { idesktoggle idesk                 }
     [exec] (アイコンの切り換え) { idesktoggle icons                 }
-    [exec] (ドックを自動的に隠す機能の切り換え) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (ツールバーを自動的に隠す機能の切り換え) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (パネルを自動的に隠す機能の切り換え) {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
+    [exec] (ドックを自動的に隠す機能の切り換え) { toggledock }
+    [exec] (ツールバーを自動的に隠す機能の切り換え) { toggletoolbar}
+     [exec] (パネルを自動的に隠す機能の切り換え) { toggletint2}
     [exec] (モニタの切り替え) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (既定ドックの無効化) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (既定ドックの無効化) { killall wmalauncher && dfltdck_kill }
 [end]

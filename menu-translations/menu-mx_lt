@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (Visos programos) {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Naršyklė) {sensible-browser}
-    [exec] () {thunar} 
-    [exec] (Žinynas) {thunar /usr/share/mxflux/help/}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (Žinynas) {mxfb-help}
     [exec] (Muzika) {deadbeef}
-    [exec] (Vykdyti) {fbrun}
+    [exec] (Vykdyti) {mxfb-rofirun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminalas) {xfce4-terminal} 
-        [separator]
+    [exec] (Terminalas) {roxterm} 
+    [separator]
     [submenu] (Išvaizda)
     [include] (/usr/share/mxflux/menu-translations/appearance_lt)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_lt)
     [end]
     [submenu] (Palikti)
-        [exec] (Įkelti iš naujo) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Įkelti iš naujo) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Pristabdyti) {sudo 'pm-suspend'}
         [exit] (Atsijungimas) 
+        [exec] (Paleisti iš naujo) {sudo /sbin/reboot} 
         [exec] (Išjungti) {sudo /sbin/halt}
     [end]
 [end]

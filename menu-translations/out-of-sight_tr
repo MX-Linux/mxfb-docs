@@ -1,15 +1,14 @@
-[begin] () 
+[begin] (Gizle) 
     [exec] () { killall wmalauncher               }
     [exec] () { xkill                             }
     [separator]
     [exec] () { conkytoggle.sh                    }
     [exec] () { idesktoggle idesk                 }
     [exec] () { idesktoggle icons                 }
-    [exec] () { $HOME/.fluxbox/scripts/toggledock }
-    [exec] () {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] () {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
+    [exec] () { toggledock }
+    [exec] () { toggletoolbar}
+     [exec] () { toggletint2}
     [exec] () { toggle-mx gkrellm                 }
     [separator]
-    [exec] () { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] () { killall wmalauncher && dfltdck_kill }
 [end]

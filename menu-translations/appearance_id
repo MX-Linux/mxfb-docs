@@ -1,30 +1,17 @@
 [begin] (Tampilan) 
     [exec] (Conky){conky-manager2}
     [submenu] (Docks)
-			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
-			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
-			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
-			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
-			[exec] (Setelan Bawaan) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Setelan Bawaan) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Ikon Desktop) {mx-idesktool}
+    [Exec] () {mxfb-menufont} 
     [exec] (Layar) {gkrellm}
-    [submenu] (Gaya)
-    	[Exec] (— OVERLAY —)
-    	[Exec] (Border) {mxfb-borders}
-    	[Exec] (Menu font) {mxfb-menufont}
-    	[Exec] (Top) {mxfb-top}
-    	[Exec] (— TOOLBAR, MENU —)
-         	[stylesdir] (~/.fluxbox/styles)
-        	[stylesdir] (/usr/share/fluxbox/styles) 
-    [end]
-    [exec] (Tema) {lxappearance}
+  	[Exec] (Tema) {mx-tweak --theme}
     [submenu] (Bilah Alat)
-        [exec] (Fluxbox) {toggletint2}
+        [exec] () {toggletint2}
         [exec] () {toggletint2}
     [end]
     [submenu] (Pantalla) 

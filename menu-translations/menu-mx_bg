@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] ()
-	[exec] () {rofi -show drun}
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Интернет браузър) {sensible-browser}
-    [exec] () {thunar} 
-    [exec] (Помощ) {thunar /usr/share/mxflux/help/}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (Помощ) {mxfb-help}
     [exec] () {deadbeef}
-    [exec] (Изпълни) {fbrun}
+    [exec] (Изпълни) {mxfb-rofirun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Терминал) {xfce4-terminal} 
-        [separator]
+    [exec] (Терминал) {roxterm} 
+    [separator]
     [submenu] ()
     [include] (/usr/share/mxflux/menu-translations/appearance_bg)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_bg)
     [end]
     [submenu] (Оставете)
-        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] () { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Приспиване) {sudo 'pm-suspend'}
         [exit] () 
+        [exec] (Рестартиране) {sudo /sbin/reboot} 
         [exec] (Изключване) {sudo /sbin/halt}
     [end]
 [end]

@@ -8,7 +8,7 @@
            [exec] (Ana) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Görünüş) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Ayarlar) {exo-open ~/.fluxbox/submenus/settings}
-         [exec] () {exo-open ~/.fluxbox/submenus/out-of-sight}
+         [exec] (Gizle) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] () {exo-open ~/.fluxbox/overlay}
         [exec] (Başlangıç) {featherpad ~/.fluxbox/startup}
@@ -16,7 +16,7 @@
         [config] (Pencere)         
     [end]
     [submenu] (Görüntü)
-    [exec] () {sudo arandr}
+    [exec] () {arandr}
     [exec](Yardım) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] ()
@@ -32,7 +32,4 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [submenu] (Touchscreen)
-    [exec] (Special dock) {tint2 ~/.config/tint2/touchscreen/touch-dock-tint2rc}
-    [exec] (Special panel) {tint2 ~/.config/tint2/touchscreen/touch-tint2rc}
 [end]

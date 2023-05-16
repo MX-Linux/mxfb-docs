@@ -1,28 +1,15 @@
 [begin] (外观) 
     [exec] (Conky){conky-manager2}
     [submenu] (程序坞)
-			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
-			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
-			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
-			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
-			[exec] (缺省) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (缺省) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] () {mx-dockmaker}
     [end]
     [exec] (桌面图标) {mx-idesktool}
+    [Exec] () {mxfb-menufont} 
     [exec] () {gkrellm}
-    [submenu] (样式)
-    	[Exec] (— OVERLAY —)
-    	[Exec] (Border) {mxfb-borders}
-    	[Exec] (Menu font) {mxfb-menufont}
-    	[Exec] (Top) {mxfb-top}
-    	[Exec] (— TOOLBAR, MENU —)
-         	[stylesdir] (~/.fluxbox/styles)
-        	[stylesdir] (/usr/share/fluxbox/styles) 
-    [end]
-    [exec] (主题) {lxappearance}
+  	[Exec] (主题) {mx-tweak --theme}
     [submenu] (工具栏)
         [exec] () {toggletint2}
         [exec] () {toggletint2}

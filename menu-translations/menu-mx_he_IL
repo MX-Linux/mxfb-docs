@@ -1,34 +1,46 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (כל היישומים) {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (דפדפן) {sensible-browser}
-    [exec] () {thunar} 
-    [exec] (עזרה) {thunar /usr/share/mxflux/help/}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (עזרה) {mxfb-help}
     [exec] () {deadbeef}
-    [exec] () {fbrun}
+    [exec] () {mxfb-rofirun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] () {xfce4-terminal} 
-        [separator]
+    [exec] () {roxterm} 
+    [separator]
     [submenu] (מראה)
-    [include] (/usr/share/mxflux/menu-translations/appearance_he)
+    [include] (/usr/share/mxflux/menu-translations/appearance_he_IL)
     [end]
     [submenu] (הגדרות)
-    [include] (/usr/share/mxflux/menu-translations/settings_he)
+    [include] (/usr/share/mxflux/menu-translations/settings_he_IL)
     [end]
     [submenu] ()
-        [include] (/usr/share/mxflux/menu-translations/out-of-sight_he)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_he_IL)
     [end]
     [submenu] ()
-        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] () { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (השהיה) {sudo 'pm-suspend'}
         [exit] (יציאה) 
+        [exec] (אתחול) {sudo /sbin/reboot} 
         [exec] (כיבוי) {sudo /sbin/halt}
     [end]
 [end]

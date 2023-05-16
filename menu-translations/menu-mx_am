@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] () {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (መቃኛ) {sensible-browser}
-    [exec] () {thunar} 
-    [exec] (እርዳታ) {thunar /usr/share/mxflux/help/}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (እርዳታ) {mxfb-help}
     [exec] (ሙዚቃ) {deadbeef}
-    [exec] (ማስኬጃ) {fbrun}
+    [exec] (ማስኬጃ) {mxfb-rofirun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (ተርሚናል) {xfce4-terminal} 
-        [separator]
+    [exec] (ተርሚናል) {roxterm} 
+    [separator]
     [submenu] (አቀራረብ)
     [include] (/usr/share/mxflux/menu-translations/appearance_am)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_am)
     [end]
     [submenu] ()
-        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] () { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (ማገጃ) {sudo 'pm-suspend'}
         [exit] (መውጫ) 
+        [exec] (ዳግም ማስጀመሪያ) {sudo /sbin/reboot} 
         [exec] (ማጥፊያ) {sudo /sbin/halt}
     [end]
 [end]

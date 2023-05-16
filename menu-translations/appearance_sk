@@ -1,30 +1,17 @@
 [begin] (Vzhľad) 
     [exec] (){conky-manager2}
     [submenu] (Dokovacie panely)
-			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
-			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
-			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
-			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
-			[exec] (Predvolené) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Predvolené) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] () {mx-dockmaker}
     [end]
     [exec] () {mx-idesktool}
+    [Exec] () {mxfb-menufont} 
     [exec] () {gkrellm}
+  	[Exec] (Motív) {mx-tweak --theme}
     [submenu] ()
-    	[Exec] (— OVERLAY —)
-    	[Exec] (Border) {mxfb-borders}
-    	[Exec] (Menu font) {mxfb-menufont}
-    	[Exec] (Top) {mxfb-top}
-    	[Exec] (— TOOLBAR, MENU —)
-         	[stylesdir] (~/.fluxbox/styles)
-        	[stylesdir] (/usr/share/fluxbox/styles) 
-    [end]
-    [exec] (Motív) {lxappearance}
-    [submenu] ()
-        [exec] (Fluxbox) {toggletint2}
+        [exec] () {toggletint2}
         [exec] () {toggletint2}
     [end]
     [submenu] (Pozadie) 

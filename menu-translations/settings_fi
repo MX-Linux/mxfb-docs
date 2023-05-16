@@ -16,7 +16,7 @@
         [config] (Ikkuna)         
     [end]
     [submenu] (Näyttö)
-    [exec] () {sudo arandr}
+    [exec] () {arandr}
     [exec](Ohje) {xdg-open /usr/share/mxflux/help/HELP_Display}
     [end]
     [submenu] ()
@@ -32,7 +32,4 @@
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
     [end]
-    [submenu] (Touchscreen)
-    [exec] (Special dock) {tint2 ~/.config/tint2/touchscreen/touch-dock-tint2rc}
-    [exec] (Special panel) {tint2 ~/.config/tint2/touchscreen/touch-tint2rc}
 [end]

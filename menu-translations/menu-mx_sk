@@ -1,34 +1,46 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (Všetky aplikácie) {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Prehliadač) {sensible-browser}
-    [exec] () {thunar} 
-    [exec] (Pomoc) {thunar /usr/share/mxflux/help/}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (Pomoc) {mxfb-help}
     [exec] (Hudba) {deadbeef}
-    [exec] (Spustiť) {fbrun}
+    [exec] (Spustiť) {mxfb-rofirun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminál) {xfce4-terminal} 
-        [separator]
+    [exec] (Terminál) {roxterm} 
+    [separator]
     [submenu] (Vzhľad)
-    [include] (~/.fluxbox/submenus/appearance)
+    [include] (/usr/share/mxflux/menu-translations/appearance_sk)
     [end]
     [submenu] (Nastavenia)
-    [include] (~/.fluxbox/submenus/settings)
+    [include] (/usr/share/mxflux/menu-translations/settings_sk)
     [end]
     [submenu] ()
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_sk)
     [end]
     [submenu] ()
-        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] () { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Uspať) {sudo 'pm-suspend'}
         [exit] (Zvuk pri odhlásení) 
+        [exec] (Reštartovať) {sudo /sbin/reboot} 
         [exec] (Vypnúť) {sudo /sbin/halt}
     [end]
 [end]

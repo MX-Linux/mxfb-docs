@@ -5,11 +5,10 @@
     [exec] (Basculer conky) { conkytoggle.sh                    }
     [exec] (Basculer l'iDesk) { idesktoggle idesk                 }
     [exec] (Basculer les icônes) { idesktoggle icons                 }
-    [exec] (Basculer masquage auto. dock) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Basculer masquage auto. barre d'outils) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Basculer masquage auto. du panneau) {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
+    [exec] (Basculer masquage auto. dock) { toggledock }
+    [exec] (Basculer masquage auto. barre d'outils) { toggletoolbar}
+     [exec] (Basculer masquage auto. du panneau) { toggletint2}
     [exec] (Basculer les moniteurs) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Désactiver le dock par défaut) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Désactiver le dock par défaut) { killall wmalauncher && dfltdck_kill }
 [end]

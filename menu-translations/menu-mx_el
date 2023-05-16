@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (Όλες οι εφαρμογές) {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] (Πρόσφατοι φάκελοι) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Ανανέωση λίστας) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Περιήγηση ιστού) {sensible-browser}
-    [exec] (Διαχειρηστής αρχείων) {thunar} 
-    [exec] (Βοήθεια) {thunar /usr/share/mxflux/help/}
+    [exec] (Διαχειρηστής αρχείων) {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (Βοήθεια) {mxfb-help}
     [exec] (Μουσική) {deadbeef}
-    [exec] (Εκτέλεση) {fbrun}
+    [exec] (Εκτέλεση) {mxfb-rofirun}
     [exec] (Διαχειριστής ρυθμίσεων) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Τερματικό) {xfce4-terminal} 
-        [separator]
+    [exec] (Τερματικό) {roxterm} 
+    [separator]
     [submenu] (Εμφάνιση)
     [include] (/usr/share/mxflux/menu-translations/appearance_el)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_el)
     [end]
     [submenu] (Αποχώρηση)
-        [exec] (Ανανέωση) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Ανανέωση) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Αναστολή) {sudo 'pm-suspend'}
         [exit] (Αποσύνδεση) 
+        [exec] (Επανεκκίνηση) {sudo /sbin/reboot} 
         [exec] (Τερματισμός) {sudo /sbin/halt}
     [end]
 [end]

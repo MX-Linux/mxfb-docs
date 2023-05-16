@@ -1,30 +1,17 @@
 [begin] (Ulkoasu) 
     [exec] (Conky){conky-manager2}
     [submenu] (Telakat)
-			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
-			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
-			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
-			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
-			[exec] (Oletus) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Oletus) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] () {mx-dockmaker}
     [end]
     [exec] (Työpöydän kuvakkeet) {mx-idesktool}
+    [Exec] () {mxfb-menufont} 
     [exec] () {gkrellm}
-    [submenu] (Tyyli)
-    	[Exec] (— OVERLAY —)
-    	[Exec] (Border) {mxfb-borders}
-    	[Exec] (Menu font) {mxfb-menufont}
-    	[Exec] (Top) {mxfb-top}
-    	[Exec] (— TOOLBAR, MENU —)
-         	[stylesdir] (~/.fluxbox/styles)
-        	[stylesdir] (/usr/share/fluxbox/styles) 
-    [end]
-    [exec] (Ulkoasu) {lxappearance}
+  	[Exec] (Ulkoasu) {mx-tweak --theme}
     [submenu] (Työkalupalkki)
-        [exec] (Fluxbox) {toggletint2}
+        [exec] () {toggletint2}
         [exec] () {toggletint2}
     [end]
     [submenu] (Taustakuva) 

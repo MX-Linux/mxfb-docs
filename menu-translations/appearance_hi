@@ -1,30 +1,17 @@
 [begin] (स्वरूप) 
     [exec] (कोंकी){conky-manager2}
     [submenu] (डॉक)
-			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
-			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
-			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
-			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
-			[exec] (डिफ़ॉल्ट) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (डिफ़ॉल्ट) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] () {mx-dockmaker}
     [end]
     [exec] (डेस्कटॉप आइकन) {mx-idesktool}
+    [Exec] () {mxfb-menufont} 
     [exec] () {gkrellm}
-    [submenu] (शैली)
-    	[Exec] (— OVERLAY —)
-    	[Exec] (Border) {mxfb-borders}
-    	[Exec] (Menu font) {mxfb-menufont}
-    	[Exec] (Top) {mxfb-top}
-    	[Exec] (— TOOLBAR, MENU —)
-         	[stylesdir] (~/.fluxbox/styles)
-        	[stylesdir] (/usr/share/fluxbox/styles) 
-    [end]
-    [exec] (थीम) {lxappearance}
+  	[Exec] (थीम) {mx-tweak --theme}
     [submenu] (साधन पट्टी)
-        [exec] (फ्लक्सबॉक्स) {toggletint2}
+        [exec] () {toggletint2}
         [exec] () {toggletint2}
     [end]
     [submenu] (वॉलपेपर) 

@@ -5,11 +5,10 @@
     [exec] (Přepnout conky) { conkytoggle.sh                    }
     [exec] (Přepnout iDesk) { idesktoggle idesk                 }
     [exec] (Přepnout ikony) { idesktoggle icons                 }
-    [exec] (Přepnout automatické skrytí doku) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Přepnout automatické skrytí panelu nástrojů) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Přepnout automatické skrytí panelu) {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
+    [exec] (Přepnout automatické skrytí doku) { toggledock }
+    [exec] (Přepnout automatické skrytí panelu nástrojů) { toggletoolbar}
+     [exec] (Přepnout automatické skrytí panelu) { toggletint2}
     [exec] (Přepnout monitory) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Zakázat výchozí dok) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Zakázat výchozí dok) { killall wmalauncher && dfltdck_kill }
 [end]

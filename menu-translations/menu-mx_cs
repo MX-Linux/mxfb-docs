@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (Všechny aplikace) {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] () 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Prohlížeč) {sensible-browser}
-    [exec] () {thunar} 
-    [exec] (Nápověda) {thunar /usr/share/mxflux/help/}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (Nápověda) {mxfb-help}
     [exec] (Hudba) {deadbeef}
-    [exec] (Spustit) {fbrun}
+    [exec] (Spustit) {mxfb-rofirun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminál) {xfce4-terminal} 
-        [separator]
+    [exec] (Terminál) {roxterm} 
+    [separator]
     [submenu] (Vzhled)
     [include] (/usr/share/mxflux/menu-translations/appearance_cs)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_cs)
     [end]
     [submenu] (Ponechat)
-        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] () { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Suspendovat) {sudo 'pm-suspend'}
         [exit] (Odhlášení) 
+        [exec] (Restartovat) {sudo /sbin/reboot} 
         [exec] (Vypnout) {sudo /sbin/halt}
     [end]
 [end]

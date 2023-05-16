@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (全てのアプリ) {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] (最近のファイル) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (更新リスト) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (ブラウザ) {sensible-browser}
-    [exec] (ファイルマネージャ) {thunar} 
-    [exec] (ヘルプ) {thunar /usr/share/mxflux/help/}
+    [exec] (ファイルマネージャ) {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (ヘルプ) {mxfb-help}
     [exec] (ミュージック) {deadbeef}
-    [exec] (実行) {fbrun}
+    [exec] (実行) {mxfb-rofirun}
     [exec] (設定マネージャ) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (ターミナル) {xfce4-terminal} 
-        [separator]
+    [exec] (ターミナル) {roxterm} 
+    [separator]
     [submenu] (外観)
     [include] (/usr/share/mxflux/menu-translations/appearance_ja)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_ja)
     [end]
     [submenu] (終了)
-        [exec] (リフレッシュ) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (リフレッシュ) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (サスペンド) {sudo 'pm-suspend'}
         [exit] (ログアウト) 
+        [exec] (再起動) {sudo /sbin/reboot} 
         [exec] (シャットダウン) {sudo /sbin/halt}
     [end]
 [end]

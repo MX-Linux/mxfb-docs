@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] ()
-	[exec] (所有程序) {rofi -show drun}
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] (最近文件) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (浏览器) {sensible-browser}
-    [exec] () {thunar} 
-    [exec] (帮助) {thunar /usr/share/mxflux/help/}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (帮助) {mxfb-help}
     [exec] (音乐) {deadbeef}
-    [exec] (运行) {fbrun}
+    [exec] (运行) {mxfb-rofirun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (终端) {xfce4-terminal} 
-        [separator]
+    [exec] (终端) {roxterm} 
+    [separator]
     [submenu] (外观)
     [include] (/usr/share/mxflux/menu-translations/appearance_zh)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_zh)
     [end]
     [submenu] (离开)
-        [exec] () { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] () { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (挂起) {sudo 'pm-suspend'}
         [exit] (注销) 
+        [exec] (重启) {sudo /sbin/reboot} 
         [exec] (关机) {sudo /sbin/halt}
     [end]
 [end]

@@ -5,11 +5,10 @@
     [exec] (Toggle conky) { conkytoggle.sh                    }
     [exec] (Vaihda iDesk) { idesktoggle idesk                 }
     [exec] (Vaihda kuvakkeita) { idesktoggle icons                 }
-    [exec] (Toggle autohide dock) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Toggle autohide toolbar) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Toggle autohide panel) {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
+    [exec] (Toggle autohide dock) { toggledock }
+    [exec] (Toggle autohide toolbar) { toggletoolbar}
+     [exec] (Toggle autohide panel) { toggletint2}
     [exec] (Vaihda näyttöjä) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Poista oletustelakka käytöstä) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Poista oletustelakka käytöstä) { killall wmalauncher && dfltdck_kill }
 [end]

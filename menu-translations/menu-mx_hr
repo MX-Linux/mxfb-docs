@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (Flubox)
-	[exec] () {rofi -show drun}
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] (Nedavne datoteke) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] () {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Preglednik) {sensible-browser}
-    [exec] () {thunar} 
-    [exec] (Pomoć) {thunar /usr/share/mxflux/help/}
+    [exec] () {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (Pomoć) {mxfb-help}
     [exec] (Glazba) {deadbeef}
-    [exec] () {fbrun}
+    [exec] () {mxfb-rofirun}
     [exec] () {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminál) {xfce4-terminal} 
-        [separator]
+    [exec] (Terminál) {roxterm} 
+    [separator]
     [submenu] (Izgled)
     [include] (/usr/share/mxflux/menu-translations/appearance_hr)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_hr)
     [end]
     [submenu] ()
-        [exec] (Osvježi) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Osvježi) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Uspání) {sudo 'pm-suspend'}
         [exit] () 
+        [exec] (Restartování) {sudo /sbin/reboot} 
         [exec] (Vypnutí) {sudo /sbin/halt}
     [end]
 [end]

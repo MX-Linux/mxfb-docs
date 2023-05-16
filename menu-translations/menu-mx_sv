@@ -1,34 +1,46 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (Alla program) {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] (Senaste filer) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Uppdateringslista) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Webbläsare) {sensible-browser}
-    [exec] (Filhanterare) {thunar} 
-    [exec] (Hjälp) {thunar /usr/share/mxflux/help/}
+    [exec] (Filhanterare) {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (Hjälp) {mxfb-help}
     [exec] (Musik) {deadbeef}
-    [exec] (Kör) {fbrun}
+    [exec] (Kör) {mxfb-rofirun}
     [exec] (Inställningshanterare) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminal) {xfce4-terminal} 
-        [separator]
+    [exec] (Terminal) {roxterm} 
+    [separator]
     [submenu] (Utseende)
-    [include] (/usr/share/mxflux/menu/menu-translations/appearance_sv)
+    [include] (/usr/share/mxflux/menu-translations/appearance_sv)
     [end]
     [submenu] (Inställningar)
-    [include] (/usr/share/mxflux/menu/menu-translations/settings_sv)
+    [include] (/usr/share/mxflux/menu-translations/settings_sv)
     [end]
     [submenu] (Dold)
-        [include] (/usr/share/mxflux/menu/menu-translations/out-of-sight_sv)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_sv)
     [end]
     [submenu] (Avsluta)
-        [exec] (Förnya) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Förnya) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Vänteläge) {sudo 'pm-suspend'}
         [exit] (Logga ut) 
+        [exec] (Starta om) {sudo /sbin/reboot} 
         [exec] (Stäng av) {sudo /sbin/halt}
     [end]
 [end]

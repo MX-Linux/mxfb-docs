@@ -5,11 +5,10 @@
     [exec] (Veksle conky) { conkytoggle.sh                    }
     [exec] (Veksle iDesk) { idesktoggle idesk                 }
     [exec] (Veksle ikoner) { idesktoggle icons                 }
-    [exec] (Veksle autoskjuling av samlevindu) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Veksle autoskjuling av verktøylinje) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Veksle autoskjuling av panel) {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
+    [exec] (Veksle autoskjuling av samlevindu) { toggledock }
+    [exec] (Veksle autoskjuling av verktøylinje) { toggletoolbar}
+     [exec] (Veksle autoskjuling av panel) { toggletint2}
     [exec] (Veksle skjermer) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Slå av forvalgt samlevindu) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Slå av forvalgt samlevindu) { killall wmalauncher && dfltdck_kill }
 [end]

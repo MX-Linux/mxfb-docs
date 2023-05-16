@@ -5,11 +5,10 @@
     [exec] (Växla conky) { conkytoggle.sh                    }
     [exec] (Växla iDesk) { idesktoggle idesk                 }
     [exec] (Växla ikoner) { idesktoggle icons                 }
-    [exec] (Växla auto-dold docka) { $HOME/.fluxbox/scripts/toggledock }
-    [exec] (Växla auto-dolt verktygsfält) {$HOME/.fluxbox/scripts/toggletoolbar}
-    [exec] (Växla auto-dold panel) {$HOME/.fluxbox/scripts/toggletint2}
-    [exec] (Toggle autohide panel-dock) {$HOME/.fluxbox/scripts/toggletint2-dock}
+    [exec] (Växla auto-dold docka) { toggledock }
+    [exec] (Växla auto-dolt verktygsfält) { toggletoolbar}
+     [exec] (Växla auto-dold panel) { toggletint2}
     [exec] (Växla skärmar) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Avaktivera standard-docka) { killall wmalauncher && $HOME/.fluxbox/scripts/dfltdck_kill }
+    [exec] (Avaktivera standard-docka) { killall wmalauncher && dfltdck_kill }
 [end]

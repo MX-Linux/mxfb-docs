@@ -1,21 +1,32 @@
 #the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[exec] (Tutte le app.) {rofi -show drun}
+[begin] (MX Fluxbox)
+		[submenu] (All Apps)
+            [include] (~/.fluxbox/submenus/full_menu)
+            [separator]
+            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+   [end]
 	[submenu] (File recenti) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Elenco aggiornamenti) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Browser) {sensible-browser}
-    [exec] (Gestore dei file) {thunar} 
-    [exec] (Aiuto) {thunar /usr/share/mxflux/help/}
+    [exec] (Gestore dei file) {exo-open $HOME/.fluxbox} 
+    [submenu] ()
+    	[exec] () {weather_cli}
+    	[submenu] ()
+    	   	[Exec] () {mxfb-borders}
+    		[Exec] () {mxfb-top}
+        [end]
+    [end]
+    [exec] (Aiuto) {mxfb-help}
     [exec] (Musica) {deadbeef}
-    [exec] (Esegui...) {fbrun}
+    [exec] (Esegui...) {mxfb-rofirun}
     [exec] (Gestore delle impostazioni) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
-    [exec] (Terminale) {xfce4-terminal} 
-        [separator]
+    [exec] (Terminale) {roxterm} 
+    [separator]
     [submenu] (Aspetto)
     [include] (/usr/share/mxflux/menu-translations/appearance_it)
     [end]
@@ -26,9 +37,10 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_it)
     [end]
     [submenu] (Abbandona)
-        [exec] (Aggiorna) { fluxbox-remote restart; idesktoggle idesk refresh }
+        [exec] (Aggiorna) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
         [exec] (Sospendi) {sudo 'pm-suspend'}
         [exit] (Esci) 
+        [exec] (Riavvia) {sudo /sbin/reboot} 
         [exec] (Arresta) {sudo /sbin/halt}
     [end]
 [end]

@@ -1,31 +1,18 @@
 [begin] (Apariencia) 
     [exec] (Conky){conky-manager2}
     [submenu] (Docks)
-			[exec] (Drawer) {/home/pi/.fluxbox/scripts/Drawer.mxdk}
-			[exec] (exit) {/home/pi/.fluxbox/scripts/exit-options.mxdk}
-			[exec] (exitoptions) {/home/pi/.fluxbox/scripts/exitoptions.mxdk}
-			[exec] (OpenBox) {/home/pi/.fluxbox/scripts/OpenboxDock.mxdk}
-			[exec] (Predeterminado) {/home/pi/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Predeterminado) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Iconos de escritorio) {mx-idesktool}
+    [Exec] () {mxfb-menufont} 
     [exec] (Monitores) {gkrellm}
-    [submenu] (Estilo)
-    	[Exec] (— OVERLAY —)
-    	[Exec] (Border) {mxfb-borders}
-    	[Exec] (Menu font) {mxfb-menufont}
-    	[Exec] (Top) {mxfb-top}
-    	[Exec] (— TOOLBAR, MENU —)
-         	[stylesdir] (~/.fluxbox/styles)
-        	[stylesdir] (/usr/share/fluxbox/styles) 
-    [end]
-    [exec] (Tema) {lxappearance}
-    [submenu] (Barra de herramientas)
+  	[Exec] (Tema) {mx-tweak --theme}
+    [submenu] (Barras de herramientas)
         [exec] (Fluxbox) {toggletint2}
-        [exec] (Tradicional) {toggletint2}
+        [exec] (tint2) {toggletint2}
     [end]
     [submenu] (Fondo de pantalla) 
     [exec] (Rotar) {mxfb-bg-rotate}

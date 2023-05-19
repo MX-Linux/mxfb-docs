@@ -7,7 +7,7 @@
         [exec] (Twórz i edytuj dok) {mx-dockmaker}
     [end]
     [exec] (Ikony pulpitu) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Monitory) {gkrellm}
   	[Exec] (Motyw) {mx-tweak --theme}
     [submenu] (Pasek narzędzi)

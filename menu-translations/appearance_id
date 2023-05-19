@@ -7,7 +7,7 @@
         [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Ikon Desktop) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Layar) {gkrellm}
   	[Exec] (Tema) {mx-tweak --theme}
     [submenu] (Bilah Alat)

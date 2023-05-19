@@ -7,7 +7,7 @@
         [exec] (Dock-Ersteller) {mx-dockmaker}
     [end]
     [exec] (Desktop-Symbole) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Monitore) {gkrellm}
   	[Exec] (Thema) {mx-tweak --theme}
     [submenu] (Toolbars)

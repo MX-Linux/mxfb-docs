@@ -7,7 +7,7 @@
         [exec] () {mx-dockmaker}
     [end]
     [exec] (डेस्कटॉप आइकन) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] () {gkrellm}
   	[Exec] (थीम) {mx-tweak --theme}
     [submenu] (साधन पट्टी)

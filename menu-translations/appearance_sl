@@ -7,7 +7,7 @@
         [exec] (Izdelovalec sidrišč) {mx-dockmaker}
     [end]
     [exec] (Ikone namizja) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Zasloni) {gkrellm}
   	[Exec] (Tema) {mx-tweak --theme}
     [submenu] (Orodna vrstica)

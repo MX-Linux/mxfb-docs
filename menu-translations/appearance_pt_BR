@@ -7,7 +7,7 @@
         [exec] (Criador de Docas) {mx-dockmaker}
     [end]
     [exec] (Ícones da Área de Trabalho) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Monitores) {gkrellm}
   	[Exec] (Tema) {mx-tweak --theme}
     [submenu] (Barras de Ferramentas)

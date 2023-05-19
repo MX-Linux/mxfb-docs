@@ -7,7 +7,7 @@
         [exec] () {mx-dockmaker}
     [end]
     [exec] (Ikona desktopi) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Monitorë) {gkrellm}
   	[Exec] (Temë) {mx-tweak --theme}
     [submenu] (Panel)

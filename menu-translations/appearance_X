@@ -7,7 +7,7 @@
         [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Desktop icons) {mx-idesktool}
-    [Exec] (Font) {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Monitors) {gkrellm}
   	[Exec] (Theme) {mx-tweak --theme}
     [submenu] (Toolbars)

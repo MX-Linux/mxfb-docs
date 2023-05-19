@@ -7,7 +7,7 @@
         [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Skrivbords-ikoner) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Skärmar) {gkrellm}
   	[Exec] (Tema) {mx-tweak --theme}
     [submenu] (Verktygsfält)

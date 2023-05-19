@@ -7,7 +7,7 @@
         [exec] (Crea dock) {mx-dockmaker}
     [end]
     [exec] (Icone della scrivania) {mx-idesktool}
-    [Exec] () {mxfb-menufont} 
+    [Exec] (Font) {mxfb-font} 
     [exec] (Schermi) {gkrellm}
   	[Exec] (Tema) {mx-tweak --theme}
     [submenu] (Barras degli strumenti)

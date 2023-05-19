@@ -20,6 +20,7 @@
     	   	[Exec] (Border) {mxfb-borders}
     		[Exec] (Titlebar) {mxfb-top}
         [end]
+        [exec] (Xkcd) {bl-xkcd}
     [end]
     [exec] (Help) {mxfb-help}
     [exec] (Music) {deadbeef}

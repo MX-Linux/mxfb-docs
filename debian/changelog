@@ -1,5 +1,6 @@
-mxfb-docs (23.05.02mx23+nmu4) UNRELEASED; urgency=medium
+mxfb-docs (23.05.03mx23) mx; urgency=medium
 
+  [ Jerry ]
   * Non-maintainer upload.
   * added translations of draft Manual
   * corrected links to submenus in translated menu-mx
@@ -7,7 +8,10 @@ mxfb-docs (23.05.02mx23+nmu4) UNRELEASED; urgency=medium
   * updated translation templates, added links to spreadsheet
   * generated translated menus for mx-23
 
- -- Jerry <jb@mx>  Tue, 16 May 2023 13:46:37 -0400
+  [ Dolphin Oracle ]
+  * new build
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 19 May 2023 19:39:13 -0400
 
 mxfb-docs (23.05.02mx23) mx; urgency=medium
 

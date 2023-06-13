@@ -4,21 +4,22 @@
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
-            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Ανανέωση)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Απενεργοποίηση) {mx-tweak --other}
    [end]
 	[submenu] (Πρόσφατοι φάκελοι) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Ανανέωση) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Περιήγηση ιστού) {sensible-browser}
     [exec] (Διαχειρηστής αρχείων) {exo-open $HOME/.fluxbox} 
-    [submenu] ()
-    	[exec] () {weather_cli}
-    	[submenu] ()
-    	   	[Exec] () {mxfb-borders}
-    		[Exec] () {mxfb-top}
+    [submenu] (Extras)
+    	[exec] (Καιρός) {mxfb-simple-weather}
+    	[submenu] (Επιλογές παραθύρου)
+    	   	[Exec] (Περίγραμμα) {mxfb-borders}
+    		[Exec] (Γραμμή τίτλου) {mxfb-top}
         [end]
         [exec] (Xkcd) {bl-xkcd}
     [end]
@@ -38,7 +39,7 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_el)
     [end]
     [submenu] (Αποχώρηση)
-        [exec] (Ανανέωση) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
+        [exec] (Ανανέωση) {fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Αναστολή) {sudo 'pm-suspend'}
         [exit] (Αποσύνδεση) 
         [exec] (Επανεκκίνηση) {sudo /sbin/reboot} 

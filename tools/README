@@ -10,3 +10,17 @@ Rscript fluxbox.R
 5) the output will include all existing translations along with any new ones; this can be avoided by deleting all existing language columns except the first English one before adding in a new language. There will be an extra menu-mx_en that can be discarded.
 
 6) paste the new menu back into this folder
+
+--------------
+Procedure added to MenuTransitems.csv to get around "include" problems in other languages
+
+--copy the header row in the spreadsheet of translations with the language codes
+--add a new worksheet and paste in 3 times
+--copy the basic command up to the language code like this:
+
+/usr/share/mxflux/menu-translations/appearance_
+
+--tab down the 3 rows pasting the appropriate command in the entry box above the spreadsheet itself
+--save as something like "menu-command_hack" (csv will only save the active worksheet)
+--now go back to the full spreadsheet, introduce 3 rows for the commands, and paste in the results one at a time
+--check carefully

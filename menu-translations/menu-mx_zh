@@ -4,21 +4,22 @@
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
-            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (更新)  {/usr/bin/mxfb-menu-generator}
+            [exec] (禁用) {mx-tweak --other}
    [end]
 	[submenu] (最近文件) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (更新) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (浏览器) {sensible-browser}
     [exec] () {exo-open $HOME/.fluxbox} 
-    [submenu] ()
-    	[exec] () {weather_cli}
-    	[submenu] ()
-    	   	[Exec] () {mxfb-borders}
-    		[Exec] () {mxfb-top}
+    [submenu] (Extras)
+    	[exec] (天气) {mxfb-simple-weather}
+    	[submenu] (窗口选项)
+    	   	[Exec] (窗户边框) {mxfb-borders}
+    		[Exec] (钛金条) {mxfb-top}
         [end]
         [exec] (Xkcd) {bl-xkcd}
     [end]
@@ -38,7 +39,7 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_zh)
     [end]
     [submenu] (离开)
-        [exec] () { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
+        [exec] () {fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (挂起) {sudo 'pm-suspend'}
         [exit] (注销) 
         [exec] (重启) {sudo /sbin/reboot} 

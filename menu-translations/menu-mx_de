@@ -5,6 +5,7 @@
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
             [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Deaktivieren) {mx-tweak --other}
    [end]
 	[submenu] (Neueste Dateien) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
@@ -14,11 +15,11 @@
 	[separator]
     [exec] (Browser) {sensible-browser}
     [exec] (Dateimanager) {exo-open $HOME/.fluxbox} 
-    [submenu] ()
-    	[exec] () {weather_cli}
-    	[submenu] ()
-    	   	[Exec] () {mxfb-borders}
-    		[Exec] () {mxfb-top}
+    [submenu] (Extras)
+    	[exec] (Wetter) {mxfb-simple-weather}
+    	[submenu] (Fenster-Optionen)
+    	   	[Exec] (Rand) {mxfb-borders}
+    		[Exec] (Titelleiste) {mxfb-top}
         [end]
         [exec] (Xkcd) {bl-xkcd}
     [end]
@@ -38,7 +39,7 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_de)
     [end]
     [submenu] (Verlassen)
-        [exec] (Aktualisieren) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
+        [exec] (Aktualisieren) {fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Bereitschaft) {sudo 'pm-suspend'}
         [exit] (Logout) 
         [exec] (Neustart) {sudo /sbin/reboot} 

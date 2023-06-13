@@ -4,21 +4,22 @@
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
-            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Aktualizuj)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Wyłączyć) {mx-tweak --other}
    [end]
 	[submenu] (Ostatnie pliki) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Aktualizuj) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Przeglądarka) {sensible-browser}
     [exec] (Menedżer plików) {exo-open $HOME/.fluxbox} 
-    [submenu] ()
-    	[exec] () {weather_cli}
-    	[submenu] ()
-    	   	[Exec] () {mxfb-borders}
-    		[Exec] () {mxfb-top}
+    [submenu] (Extras)
+    	[exec] (Pogoda) {mxfb-simple-weather}
+    	[submenu] (Opcje okna)
+    	   	[Exec] (Ramka) {mxfb-borders}
+    		[Exec] (Pasek tytułu) {mxfb-top}
         [end]
         [exec] (Xkcd) {bl-xkcd}
     [end]
@@ -38,7 +39,7 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_pl)
     [end]
     [submenu] (Wyjdź)
-        [exec] (Odśwież) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
+        [exec] (Odśwież) {fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Wstrzymaj) {sudo 'pm-suspend'}
         [exit] (Wylogowanie) 
         [exec] (Uruchom ponownie) {sudo /sbin/reboot} 

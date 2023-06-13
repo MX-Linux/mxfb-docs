@@ -4,18 +4,19 @@
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
-            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Përditësoje listën)  {/usr/bin/mxfb-menu-generator}
+            [exec] () {mx-tweak --other}
    [end]
 	[submenu] (Kartela së fundi) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Përditësoje listën) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Shfletues) {sensible-browser}
     [exec] (Përgjegjës kartelash) {exo-open $HOME/.fluxbox} 
-    [submenu] ()
-    	[exec] () {weather_cli}
+    [submenu] (Extras)
+    	[exec] () {mxfb-simple-weather}
     	[submenu] ()
     	   	[Exec] () {mxfb-borders}
     		[Exec] () {mxfb-top}
@@ -38,7 +39,7 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_sq)
     [end]
     [submenu] (Braktise)
-        [exec] (Rifreskoje) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
+        [exec] (Rifreskoje) {fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Pezulloje) {sudo 'pm-suspend'}
         [exit] (Dalje) 
         [exec] (Rinise) {sudo /sbin/reboot} 

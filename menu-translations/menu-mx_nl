@@ -4,21 +4,22 @@
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
-            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Opwaarderen)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Uitschakelen) {mx-tweak --other}
    [end]
 	[submenu] (Recente bestanden) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Opwaarderen) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Browser) {sensible-browser}
     [exec] (Bestandsbeheerder) {exo-open $HOME/.fluxbox} 
-    [submenu] ()
-    	[exec] () {weather_cli}
-    	[submenu] ()
-    	   	[Exec] () {mxfb-borders}
-    		[Exec] () {mxfb-top}
+    [submenu] (Extras)
+    	[exec] (Weer) {mxfb-simple-weather}
+    	[submenu] (Vensteropties)
+    	   	[Exec] (Rand) {mxfb-borders}
+    		[Exec] (Titelbalk) {mxfb-top}
         [end]
         [exec] (Xkcd) {bl-xkcd}
     [end]
@@ -38,7 +39,7 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_nl)
     [end]
     [submenu] (Verlaten)
-        [exec] (Verversen) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
+        [exec] (Verversen) {fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Opschorten) {sudo 'pm-suspend'}
         [exit] (Afmelden) 
         [exec] (Herstarten) {sudo /sbin/reboot} 

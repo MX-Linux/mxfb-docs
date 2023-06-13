@@ -4,21 +4,22 @@
 		[submenu] (All Apps)
             [include] (~/.fluxbox/submenus/full_menu)
             [separator]
-            [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Uppdateringslista)  {/usr/bin/mxfb-menu-generator}
+            [exec] (Inaktivera) {mx-tweak --other}
    [end]
 	[submenu] (Senaste filer) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+			[exec] (Uppdateringslista) {~/.fluxbox/scripts/recentfiles-fbmenu}
 		[end]
 	[separator]
     [exec] (Webbläsare) {sensible-browser}
     [exec] (Filhanterare) {exo-open $HOME/.fluxbox} 
-    [submenu] ()
-    	[exec] () {weather_cli}
-    	[submenu] ()
-    	   	[Exec] () {mxfb-borders}
-    		[Exec] () {mxfb-top}
+    [submenu] (Extras)
+    	[exec] (Väder) {mxfb-simple-weather}
+    	[submenu] (Alternativ för fönster)
+    	   	[Exec] (Kant) {mxfb-borders}
+    		[Exec] (Titelrad) {mxfb-top}
         [end]
         [exec] (Xkcd) {bl-xkcd}
     [end]
@@ -38,7 +39,7 @@
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_sv)
     [end]
     [submenu] (Avsluta)
-        [exec] (Förnya) { fluxbox-remote reloadstyle; fluxbox-remote reconfigure; idesktoggle idesk refresh }
+        [exec] (Förnya) {fluxbox-remote restart; idesktoggle idesk refresh }
         [exec] (Vänteläge) {sudo 'pm-suspend'}
         [exit] (Logga ut) 
         [exec] (Starta om) {sudo /sbin/reboot} 

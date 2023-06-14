@@ -1,6 +1,5 @@
-mxfb-docs (23.05.03mx23+nmu1) UNRELEASED; urgency=medium
+mxfb-docs (23.06.01mx23) mx; urgency=medium
 
-  * Non-maintainer upload.
   * Updated menu templates
   * added new menu entries and populated translation spreadsheet
   * regenerated menu translations

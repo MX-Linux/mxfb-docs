@@ -1,8 +1,8 @@
-mxfb-docs (23.07.20) mx; urgency=medium
+mxfb-docs (23.07.19) UNRELEASED; urgency=medium
 
-  * fixed missing -s in file name
+  * 
 
- -- Jerry <jb@mx>  Wed, 19 Jul 2023 20:00:39 -0400
+ -- Jerry <jb@mx>  Wed, 19 Jul 2023 19:52:34 -0400
 
 mxfb-docs (23.07.18) mx; urgency=medium
 

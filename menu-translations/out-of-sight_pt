@@ -7,7 +7,7 @@
     [exec] (Ícones (lig/deslig)) { idesktoggle icons                 }
     [exec] (Auto-ocultar doca (lig/deslig)) { toggledock }
     [exec] (Auto-ocultar barra (lig/deslig)) { toggletoolbar}
-     [exec] (Auto-ocultar painel (lig/deslig)) { toggletint2}
+     [exec] (Auto-ocultar painel (lig/deslig)) { togglepanel}
     [exec] (Auto-ocultar monitores (lig/deslig)) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Desactivar a doca predefinida) { killall wmalauncher && dfltdck_kill }

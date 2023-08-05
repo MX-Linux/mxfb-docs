@@ -7,7 +7,7 @@
     [exec] (アイコンの切り換え) { idesktoggle icons                 }
     [exec] (ドックを自動的に隠す機能の切り換え) { toggledock }
     [exec] (ツールバーを自動的に隠す機能の切り換え) { toggletoolbar}
-     [exec] (パネルを自動的に隠す機能の切り換え) { toggletint2}
+     [exec] (パネルを自動的に隠す機能の切り換え) { togglepanel}
     [exec] (モニタの切り替え) { toggle-mx gkrellm                 }
     [separator]
     [exec] (既定ドックの無効化) { killall wmalauncher && dfltdck_kill }

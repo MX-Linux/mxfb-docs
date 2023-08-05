@@ -7,7 +7,7 @@
     [exec] (Přepnout ikony) { idesktoggle icons                 }
     [exec] (Přepnout automatické skrytí doku) { toggledock }
     [exec] (Přepnout automatické skrytí panelu nástrojů) { toggletoolbar}
-     [exec] (Přepnout automatické skrytí panelu) { toggletint2}
+     [exec] (Přepnout automatické skrytí panelu) { togglepanel}
     [exec] (Přepnout monitory) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Zakázat výchozí dok) { killall wmalauncher && dfltdck_kill }

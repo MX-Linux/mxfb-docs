@@ -7,7 +7,7 @@
     [exec] (Превключване на икони) { idesktoggle icons                 }
     [exec] (Превключване на автоматично скриване на док) { toggledock }
     [exec] (Превключване на автоматичното скриване на лентата с инструменти) { toggletoolbar}
-     [exec] (Превключване на автоматично скриване на панела) { toggletint2}
+     [exec] (Превключване на автоматично скриване на панела) { togglepanel}
     [exec] (Превключване на мониторите) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Деактивиране на док по подразбиране) { killall wmalauncher && dfltdck_kill }

@@ -7,7 +7,7 @@
     [exec] (Perjungti piktogramas) { idesktoggle icons                 }
     [exec] (Perjungti automatiškai paslėpti doką) { toggledock }
     [exec] (Perjungti automatinį įrankių juostos paslėpimą) { toggletoolbar}
-     [exec] (Perjungti automatinį skydelio paslėpimą) { toggletint2}
+     [exec] (Perjungti automatinį skydelio paslėpimą) { togglepanel}
     [exec] (Perjungti monitorius) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Išjungti numatytąjį doką) { killall wmalauncher && dfltdck_kill }

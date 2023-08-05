@@ -7,7 +7,7 @@
     [exec] () { idesktoggle icons                 }
     [exec] () { toggledock }
     [exec] () { toggletoolbar}
-     [exec] () { toggletint2}
+     [exec] () { togglepanel}
     [exec] () { toggle-mx gkrellm                 }
     [separator]
     [exec] () { killall wmalauncher && dfltdck_kill }

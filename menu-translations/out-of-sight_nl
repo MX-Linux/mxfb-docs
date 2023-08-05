@@ -7,7 +7,7 @@
     [exec] (Wissel iconen) { idesktoggle icons                 }
     [exec] (Wissel automatisch dock verbergen) { toggledock }
     [exec] (Wissel automatisch gereedschapsbalk verbergen) { toggletoolbar}
-     [exec] (Wissel automatisch gereedschapsbalk verbergen) { toggletint2}
+     [exec] (Wissel automatisch gereedschapsbalk verbergen) { togglepanel}
     [exec] (Wissel beeldschermen) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Standaard dock uitschakelen) { killall wmalauncher && dfltdck_kill }

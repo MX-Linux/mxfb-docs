@@ -7,7 +7,7 @@
     [exec] (Preklopi ikone) { idesktoggle icons                 }
     [exec] (Preklopi samodejno skirvanje sidrišča) { toggledock }
     [exec] (Preklopi samodejno skrivanje orodne vrstice) { toggletoolbar}
-     [exec] (Preklopi samodejno skirvanje panoja) { toggletint2}
+     [exec] (Preklopi samodejno skirvanje panoja) { togglepanel}
     [exec] (Preklop zaslonov) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Onemogoči privzeto sidrišče) { killall wmalauncher && dfltdck_kill }

@@ -7,7 +7,7 @@
     [exec] (Växla ikoner) { idesktoggle icons                 }
     [exec] (Växla auto-dold docka) { toggledock }
     [exec] (Växla auto-dolt verktygsfält) { toggletoolbar}
-     [exec] (Växla auto-dold panel) { toggletint2}
+     [exec] (Växla auto-dold panel) { togglepanel}
     [exec] (Växla skärmar) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Avaktivera standard-docka) { killall wmalauncher && dfltdck_kill }

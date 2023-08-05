@@ -7,7 +7,7 @@
     [exec] (Переключить значки) { idesktoggle icons                 }
     [exec] (Переключить автоскрытие дока) { toggledock }
     [exec] (Переключить автоскрытие панели инструментов) { toggletoolbar}
-     [exec] (Переключить автоскрытие панели) { toggletint2}
+     [exec] (Переключить автоскрытие панели) { togglepanel}
     [exec] (Переключить мониторы) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Отключить док по умолчанию) { killall wmalauncher && dfltdck_kill }

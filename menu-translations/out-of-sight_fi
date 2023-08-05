@@ -7,7 +7,7 @@
     [exec] (Vaihda kuvakkeita) { idesktoggle icons                 }
     [exec] (Toggle autohide dock) { toggledock }
     [exec] (Toggle autohide toolbar) { toggletoolbar}
-     [exec] (Toggle autohide panel) { toggletint2}
+     [exec] (Toggle autohide panel) { togglepanel}
     [exec] (Vaihda näyttöjä) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Poista oletustelakka käytöstä) { killall wmalauncher && dfltdck_kill }

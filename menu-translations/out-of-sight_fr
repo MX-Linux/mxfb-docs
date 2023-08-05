@@ -7,7 +7,7 @@
     [exec] (Basculer les icônes) { idesktoggle icons                 }
     [exec] (Basculer masquage auto. dock) { toggledock }
     [exec] (Basculer masquage auto. barre d'outils) { toggletoolbar}
-     [exec] (Basculer masquage auto. du panneau) { toggletint2}
+     [exec] (Basculer masquage auto. du panneau) { togglepanel}
     [exec] (Basculer les moniteurs) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Désactiver le dock par défaut) { killall wmalauncher && dfltdck_kill }

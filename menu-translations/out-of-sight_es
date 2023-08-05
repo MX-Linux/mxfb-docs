@@ -7,7 +7,7 @@
     [exec] (Alternar iconos) { idesktoggle icons                 }
     [exec] (Alternar auto ocultar dock) { toggledock }
     [exec] (Alternar auto ocultar barra de herramientas) { toggletoolbar}
-     [exec] (Alternar auto ocultar panel) { toggletint2}
+     [exec] (Alternar auto ocultar panel) { togglepanel}
     [exec] (Alternar monitores) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Deshabilitar dock predeterminado) { killall wmalauncher && dfltdck_kill }

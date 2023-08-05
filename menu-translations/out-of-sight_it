@@ -7,7 +7,7 @@
     [exec] (Interruttore icone) { idesktoggle icons                 }
     [exec] (Interruttore nascondi automaticamente il dock) { toggledock }
     [exec] (Interruttore nascondi automaticamente la barra degli strumenti) { toggletoolbar}
-     [exec] (Interruttore nascondi automaticamente pannello) { toggletint2}
+     [exec] (Interruttore nascondi automaticamente pannello) { togglepanel}
     [exec] (Interruttore schermi) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Disabilita dock di default) { killall wmalauncher && dfltdck_kill }

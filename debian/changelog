@@ -1,3 +1,9 @@
+mxfb-docs (23.07.21) mx; urgency=medium
+
+  * switch toggletint2 for togglepanel
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 04 Aug 2023 20:29:47 -0400
+
 mxfb-docs (23.07.20) mx; urgency=medium
 
   * fixed missing -s in file name

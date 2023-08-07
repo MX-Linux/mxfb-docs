@@ -1,9 +1,8 @@
-mxfb-docs (23.07.21+nmu1) UNRELEASED; urgency=medium
+mxfb-docs (23.08.01) mx; urgency=medium
 
-  * Non-maintainer upload.
   * Corrected command in 1 out-of-sight file
 
- -- Dolphin Oracle <jb@mx>  Sun, 06 Aug 2023 15:56:13 -0400
+ -- Dolphin Oracle <<dolphinoracle@gmail.com>  Sun, 06 Aug 2023 15:56:13 -0400
 
 mxfb-docs (23.07.21) mx; urgency=medium
 

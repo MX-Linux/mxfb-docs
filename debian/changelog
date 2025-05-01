@@ -1,3 +1,10 @@
+mxfb-docs (23.08.01+nmu1) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * CHanged the location of the submenus for translation 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 01 May 2025 18:32:09 -0400
+
 mxfb-docs (23.08.01) mx; urgency=medium
 
   * Corrected command in 1 out-of-sight file

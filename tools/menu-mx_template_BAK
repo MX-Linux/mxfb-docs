@@ -30,13 +30,13 @@
     [exec] (Terminal) {roxterm} 
     [separator]
     [submenu] (Appearance)
-    [include] (/usr/share/mxflux/menu/appearance)
+    [include] (~/.fluxbox/submenus/appearance)
     [end]
     [submenu] (Settings)
-    [include] (/usr/share/mxflux/menu/settings)
+    [include] (~/.fluxbox/submenus/settings)
     [end]
     [submenu] (Out of sight)
-        [include] (/usr/share/mxflux/menu/out-of-sight)
+        [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Leave)
         [exec] (Refresh) {fluxbox-remote restart; idesktoggle idesk refresh }

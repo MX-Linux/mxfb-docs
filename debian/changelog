@@ -1,3 +1,10 @@
+mxfb-docs (25.07.01) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * MX-25 manual and translations added
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 07 Jul 2025 19:08:18 -0400
+
 mxfb-docs (23.08.01+nmu1) mx; urgency=medium
 
   * Non-maintainer upload.

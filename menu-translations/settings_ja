@@ -1,0 +1,45 @@
+[begin] (設定)
+    [exec] (バックアップ) {grsync}
+    [submenu] (設定ファイル)
+        [config] (クイック設定)
+        [exec] (アプリ) {exo-open ~/.fluxbox/apps}
+        [submenu] () 
+        	[exec] (編集) {exo-open ~/.fluxbox/init}
+        	[separator]
+        	[exec] (カテゴリ分け) {mxfb-sortinit}
+        [end]
+        [exec] (キー) {exo-open ~/.fluxbox/keys}
+        [submenu] (メニュー) 
+           [exec] (メイン) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (外観) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (設定) {exo-open ~/.fluxbox/submenus/settings}
+           [exec] (視界の外) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (重ねて表示) {exo-open ~/.fluxbox/overlay}
+        [exec] (起動) {featherpad ~/.fluxbox/startup}
+        [exec] (スタイル) {thunar ~/.fluxbox/styles/}
+        [exec] (Tint2 パネル) {mxfb-tint2-manager}
+    [end]
+    [submenu] (ディスプレイ)
+    	[exec] (変更) {arandr}
+    	[exec](ヘルプ) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    	[exec] (スクリーンセーバー) {exo-open /usr/share/doc/mxfb-accessories/help_mxfb-screensaver}
+    [end]
+    [submenu] (キーボード)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+    [submenu] (ツールバー)
+        [exec] (トラディショナル) {toggletint2}
+        [exec] (tint2) {toggletint2}
+    [end]
+[end]

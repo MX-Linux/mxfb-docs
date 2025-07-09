@@ -1,0 +1,50 @@
+the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (MX Fluxbox)
+   	[submenu] (Todas as aplicações)
+   		[exec] (Pesquisar) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (Actualizar)  {/usr/bin/mxfb-menu-generator}
+        [exec] (Desactivar) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (Navegador) {sensible-browser}
+    [exec] (Ficheiros) {exo-open $HOME} 
+    [exec] (Font) {mxfb-help}
+    [submenu] (Multimédia)
+    	[exec] (Leitor de música) {deadbeef}
+    	[exec] (Webcomic) {bl-xkcd}
+        [end]
+    [submenu] (Outros)
+    	[submenu] (Ficheiros recentes) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Actualizar) {mxfb-recent-files}
+		[end]
+		[exec] (Captura de ecrã) {mxfb-quickshot}
+		[exec] (Aparência) {mxfb-simple-weather}
+	[end]
+    [exec] (Monitores) {mxfb-rofirun}
+    [exec] (Ferramentas MX Fluxbox) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminal) {x-terminal-emulator} 
+    [separator]
+    [submenu] (Aparência)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_pt)
+    [end]
+    [submenu] (Definições)
+    	[include] (/usr/share/mxflux/menu-translations/settings_pt)
+    [end]
+    [submenu] (Ocultar)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_pt)
+    [end]
+    [submenu] (Sair)
+        [exec] (Refrescar) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (Suspender) {sudo 'pm-suspend'}
+        [exec] (Bloquear) {dm-tool switch-to-greeter}
+        [exit] (Terminar) 
+        [exec] (Reiniciar) {sudo /sbin/reboot} 
+        [exec] (Desligar) {sudo poweroff}
+    [end]
+[end]

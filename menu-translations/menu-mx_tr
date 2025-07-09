@@ -1,0 +1,50 @@
+the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (MX Fluxbox)
+   	[submenu] (Tüm Uygulamalar)
+   		[exec] (Arama) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (Güncelle)  {/usr/bin/mxfb-menu-generator}
+        [exec] (Devre dışı) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (Web tarayıcı) {sensible-browser}
+    [exec] (Dosya yöneticisi) {exo-open $HOME} 
+    [exec] (Yardım) {mxfb-help}
+    [submenu] (Multimedya)
+    	[exec] (Müzik çalar) {deadbeef}
+    	[exec] (Web çizgi roman) {bl-xkcd}
+        [end]
+    [submenu] (Diğer)
+    	[submenu] (Son dosyalar) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Güncelle) {mxfb-recent-files}
+		[end]
+		[exec] (Ekran görüntüsü) {mxfb-quickshot}
+		[exec] (Hava durumu) {mxfb-simple-weather}
+	[end]
+    [exec] (Çalıştır) {mxfb-rofirun}
+    [exec] (MX Fluxbox araçları) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminal) {x-terminal-emulator} 
+    [separator]
+    [submenu] (Görünüm)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_tr)
+    [end]
+    [submenu] (Ayarlar)
+    	[include] (/usr/share/mxflux/menu-translations/settings_tr)
+    [end]
+    [submenu] (Görünmez)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_tr)
+    [end]
+    [submenu] (Çık)
+        [exec] (Yenile) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (Askıya al) {sudo 'pm-suspend'}
+        [exec] (Kilit) {dm-tool switch-to-greeter}
+        [exit] (Oturumu kapat) 
+        [exec] (Yeniden başlat) {sudo /sbin/reboot} 
+        [exec] (Kapat) {sudo poweroff}
+    [end]
+[end]

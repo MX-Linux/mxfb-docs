@@ -1,0 +1,45 @@
+[begin] (Ayarlar)
+    [exec] (Yedekle) {grsync}
+    [submenu] (Yapılandırma dosyaları)
+        [config] (Hızlı yapılandırma)
+        [exec] (Uygulamalar) {exo-open ~/.fluxbox/apps}
+        [submenu] (Başlat) 
+        	[exec] (Düzenle) {exo-open ~/.fluxbox/init}
+        	[separator]
+        	[exec] (Sınıflandır) {mxfb-sortinit}
+        [end]
+        [exec] (Tuşlar) {exo-open ~/.fluxbox/keys}
+        [submenu] (Menüler) 
+           [exec] (Ana) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Görünüm) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Ayarlar) {exo-open ~/.fluxbox/submenus/settings}
+           [exec] (Görünmez) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (Üst katman) {exo-open ~/.fluxbox/overlay}
+        [exec] (Başlat) {featherpad ~/.fluxbox/startup}
+        [exec] (Stiller) {thunar ~/.fluxbox/styles/}
+        [exec] (Tint2 paneli) {mxfb-tint2-manager}
+    [end]
+    [submenu] (Görüntü)
+    	[exec] (Değiştir) {arandr}
+    	[exec](Yardım) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    	[exec] (Ekran koruyucu) {exo-open /usr/share/doc/mxfb-accessories/help_mxfb-screensaver}
+    [end]
+    [submenu] (Klavye)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+    [submenu] (Araç çubukları)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] (tint2) {toggletint2}
+    [end]
+[end]

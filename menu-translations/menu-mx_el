@@ -1,0 +1,50 @@
+the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (MX Fluxbox)
+   	[submenu] (Όλες οι εφαρμογές)
+   		[exec] (Αναζήτηση) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (Ανανέωση)  {/usr/bin/mxfb-menu-generator}
+        [exec] (Απενεργοποίηση) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (Πρόγραμμα περιήγησης) {sensible-browser}
+    [exec] (Διαχειρηστής αρχείων) {exo-open $HOME} 
+    [exec] (Βοήθεια) {mxfb-help}
+    [submenu] (Πολυμέσα)
+    	[exec] (Μουσική) {deadbeef}
+    	[exec] (Webcomic) {bl-xkcd}
+        [end]
+    [submenu] (Άλλα)
+    	[submenu] (Πρόσφατοι φάκελοι) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Ανανέωση) {mxfb-recent-files}
+		[end]
+		[exec] (Λήψη οθόνης) {mxfb-quickshot}
+		[exec] (Καιρός) {mxfb-simple-weather}
+	[end]
+    [exec] (Εκτέλεση) {mxfb-rofirun}
+    [exec] (MX Fluxbox εργαλεία) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Τερματικό) {x-terminal-emulator} 
+    [separator]
+    [submenu] (Εμφάνιση)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_el)
+    [end]
+    [submenu] (Ρυθμίσεις)
+    	[include] (/usr/share/mxflux/menu-translations/settings_el)
+    [end]
+    [submenu] (Εκτός οπτικού πεδίου)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_el)
+    [end]
+    [submenu] (Αποχώρηση)
+        [exec] (Ανανέωση) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (Αναστολή) {sudo 'pm-suspend'}
+        [exec] (Κλείδωμα) {dm-tool switch-to-greeter}
+        [exit] (Αποσύνδεση) 
+        [exec] (Επανεκκίνηση) {sudo /sbin/reboot} 
+        [exec] (Τερματισμός) {sudo poweroff}
+    [end]
+[end]

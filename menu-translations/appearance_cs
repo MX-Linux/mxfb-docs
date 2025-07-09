@@ -1,0 +1,18 @@
+[begin] (Vzhled) 
+    [exec] (Conky){conky-manager2}
+    [submenu] (Dokovací panely)
+        [exec] (Výchozí) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
+        [separator]
+        [exec] (Dockmaker) {mx-dockmaker}
+    [end]
+    [exec] (Ikony na ploše) {mx-idesktool}
+    [Exec] (Písmo) {mxfb-font} 
+    [exec] (Monitory) {gkrellm}
+  	[Exec] (Téma) {mx-tweak --theme}
+    [submenu] (Tapeta) 
+        [exec] (Vybrat) {nitrogen}
+        [exec] (Otočit) {mxfb-bg-rotate}
+        [exec] (Oddělit) {mxfb-separate-backgrounds}
+    [end]
+[end]

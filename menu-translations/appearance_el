@@ -1,0 +1,18 @@
+[begin] (Εμφάνιση) 
+    [exec] (Conky){conky-manager2}
+    [submenu] (Docks)
+        [exec] (Εξ ορισμού) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
+        [separator]
+        [exec] (Δημιουργός εργαλείων Dock) {mx-dockmaker}
+    [end]
+    [exec] (Εικονίδια επιφάνειας εργασίας) {mx-idesktool}
+    [Exec] (Font) {mxfb-font} 
+    [exec] (Οθόνες) {gkrellm}
+  	[Exec] (Θέμα) {mx-tweak --theme}
+    [submenu] (Ταπετσαρία) 
+        [exec] (Επιλέξτε) {nitrogen}
+        [exec] (Περιστροφή) {mxfb-bg-rotate}
+        [exec] (Διαχώρισε) {mxfb-separate-backgrounds}
+    [end]
+[end]

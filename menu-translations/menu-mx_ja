@@ -1,0 +1,50 @@
+the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (MX Fluxbox)
+   	[submenu] (すべてのアプリ)
+   		[exec] (検索) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (アップデート)  {/usr/bin/mxfb-menu-generator}
+        [exec] (ディスエーブル) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (ウェブブラウザ) {sensible-browser}
+    [exec] (ファイルマネージャ) {exo-open $HOME} 
+    [exec] (ヘルプ) {mxfb-help}
+    [submenu] (マルチメディア)
+    	[exec] (音楽プレーヤー) {deadbeef}
+    	[exec] (ウェブコミック) {bl-xkcd}
+        [end]
+    [submenu] (その他)
+    	[submenu] (最近のファイル) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (アップデート) {mxfb-recent-files}
+		[end]
+		[exec] (スクリーンキャプチャ) {mxfb-quickshot}
+		[exec] (天気予報) {mxfb-simple-weather}
+	[end]
+    [exec] (実行) {mxfb-rofirun}
+    [exec] (MX Fluxbox ツール) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (ターミナル) {x-terminal-emulator} 
+    [separator]
+    [submenu] (外観)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_ja)
+    [end]
+    [submenu] (設定)
+    	[include] (/usr/share/mxflux/menu-translations/settings_ja)
+    [end]
+    [submenu] (視界の外)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_ja)
+    [end]
+    [submenu] (終了)
+        [exec] (リフレッシュ) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (サスペンド) {sudo 'pm-suspend'}
+        [exec] (ロック) {dm-tool switch-to-greeter}
+        [exit] (ログアウト) 
+        [exec] (再起動) {sudo /sbin/reboot} 
+        [exec] (シャットダウン) {sudo poweroff}
+    [end]
+[end]

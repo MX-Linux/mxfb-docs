@@ -1,0 +1,14 @@
+[begin] (Скрыть) 
+    [exec] (Убить док) { killall wmalauncher               }
+    [exec] (Убить окно) { xkill                             }
+    [separator]
+    [exec] (Включить/выключить conky) { conkytoggle.sh                    }
+    [exec] (Включить/выключить iDesk) { idesktoggle idesk                 }
+    [exec] (Включить/выключить значки) { idesktoggle icons                 }
+    [exec] (Включить/выключить автоматическое скрытие дока) { toggledock }
+    [exec] (Включить/выключить автоматическое скрытие панели инструментов) { toggletoolbar}
+    [exec] (Включить/выключить автоматическое скрытие панели) { togglepanel}
+    [exec] (Включить/выключить мониторы) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Отключить док по умолчанию) { killall wmalauncher && dfltdck_kill }
+[end]

@@ -1,0 +1,50 @@
+the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (MX Fluxbox)
+   	[submenu] (جميع التطبيقات)
+   		[exec] (بحث) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (تحديث)  {/usr/bin/mxfb-menu-generator}
+        [exec] (تعطيل) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (متصفح الويب) {sensible-browser}
+    [exec] (مدير الملفات) {exo-open $HOME} 
+    [exec] (المساعدة) {mxfb-help}
+    [submenu] (الوسائط المتعددة)
+    	[exec] (مشغل الموسيقى) {deadbeef}
+    	[exec] (الويب كوميك) {bl-xkcd}
+        [end]
+    [submenu] (أخرى)
+    	[submenu] (الملفات الحديثة) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (تحديث) {mxfb-recent-files}
+		[end]
+		[exec] (التقاط الشاشة) {mxfb-quickshot}
+		[exec] (الطقس) {mxfb-simple-weather}
+	[end]
+    [exec] (تشغيل) {mxfb-rofirun}
+    [exec] (أدوات MX Fluxbox) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (المحطة) {x-terminal-emulator} 
+    [separator]
+    [submenu] (المظهر)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_ar)
+    [end]
+    [submenu] (إعدادات)
+    	[include] (/usr/share/mxflux/menu-translations/settings_ar)
+    [end]
+    [submenu] (خارج نطاق الرؤية)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_ar)
+    [end]
+    [submenu] (مغادرة)
+        [exec] (تحديث) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (تعليق) {sudo 'pm-suspend'}
+        [exec] (قفل) {dm-tool switch-to-greeter}
+        [exit] (تسجيل) 
+        [exec] (إعادة) {sudo /sbin/reboot} 
+        [exec] (خروج) {sudo poweroff}
+    [end]
+[end]

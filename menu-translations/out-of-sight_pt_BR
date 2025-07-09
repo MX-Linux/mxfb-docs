@@ -1,0 +1,14 @@
+[begin] (Ocultar) 
+    [exec] (Aniquilar a Doca) { killall wmalauncher               }
+    [exec] (Aniquilar a Janela) { xkill                             }
+    [separator]
+    [exec] (Ligar/Desligar o Conky) { conkytoggle.sh                    }
+    [exec] (Ligar/Desligar o iDesk) { idesktoggle idesk                 }
+    [exec] (Ligar/Desligar os Ícones) { idesktoggle icons                 }
+    [exec] (Ligar/Desligar o Auto-Ocultar da Doca) { toggledock }
+    [exec] (Ligar/Desligar o Auto-Ocultar da Barra de Ferramentas) { toggletoolbar}
+    [exec] (Ligar/Desligar o Auto-Ocultar do Painel) { togglepanel}
+    [exec] (Ligar/Desligar os Monitores) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Desativar a Doca Padrão) { killall wmalauncher && dfltdck_kill }
+[end]

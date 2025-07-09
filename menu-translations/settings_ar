@@ -1,0 +1,45 @@
+[begin] (إعدادات)
+    [exec] (نسخ احتياطي) {grsync}
+    [submenu] (ملفات التكوين)
+        [config] (التكوين السريع)
+        [exec] (تطبيقات) {exo-open ~/.fluxbox/apps}
+        [submenu] (بدء) 
+        	[exec] (تحرير) {exo-open ~/.fluxbox/init}
+        	[separator]
+        	[exec] (تصنيف) {mxfb-sortinit}
+        [end]
+        [exec] (مفاتيح) {exo-open ~/.fluxbox/keys}
+        [submenu] (قوائم) 
+           [exec] (رئيسي) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (المظهر) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (إعدادات) {exo-open ~/.fluxbox/submenus/settings}
+           [exec] (خارج نطاق الرؤية) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (تراكب) {exo-open ~/.fluxbox/overlay}
+        [exec] (بدء) {featherpad ~/.fluxbox/startup}
+        [exec] (أنماط) {thunar ~/.fluxbox/styles/}
+        [exec] (لوحة Tint2) {mxfb-tint2-manager}
+    [end]
+    [submenu] (عرض)
+    	[exec] (تغيير) {arandr}
+    	[exec](المساعدة) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    	[exec] (شاشة) {exo-open /usr/share/doc/mxfb-accessories/help_mxfb-screensaver}
+    [end]
+    [submenu] (لوحة المفاتيح)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+    [submenu] (أشرطة الأدوات)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] (tint2) {toggletint2}
+    [end]
+[end]

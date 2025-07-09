@@ -1,0 +1,14 @@
+[begin] (Görünmez) 
+    [exec] (Dock'u kapat) { killall wmalauncher               }
+    [exec] (Pencereyi kapat) { xkill                             }
+    [separator]
+    [exec] (Conky'yi aç/kapat) { conkytoggle.sh                    }
+    [exec] (iDesk'i aç/kapat) { idesktoggle idesk                 }
+    [exec] (Simgeleri aç/kapat) { idesktoggle icons                 }
+    [exec] (Dock'u otomatik gizle'yi aç/kapat) { toggledock }
+    [exec] (Araç çubuğunu otomatik gizle'yi aç/kapat) { toggletoolbar}
+    [exec] (Paneli otomatik gizle'yi aç/kapat) { togglepanel}
+    [exec] (Monitörleri aç/kapat) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Varsayılan dock'u devre dışı bırak'ı seçin.) { killall wmalauncher && dfltdck_kill }
+[end]

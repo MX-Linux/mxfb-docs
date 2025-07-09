@@ -1,0 +1,14 @@
+[begin] (隐藏) 
+    [exec] (关闭码头) { killall wmalauncher               }
+    [exec] (关闭窗口) { xkill                             }
+    [separator]
+    [exec] (切换 Conky) { conkytoggle.sh                    }
+    [exec] (切换 iDesk) { idesktoggle idesk                 }
+    [exec] (切换图标) { idesktoggle icons                 }
+    [exec] (切换自动隐藏码头) { toggledock }
+    [exec] (切换自动隐藏工具栏) { toggletoolbar}
+    [exec] (切换自动隐藏面板) { togglepanel}
+    [exec] (切换显示器) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (禁用默认码头) { killall wmalauncher && dfltdck_kill }
+[end]

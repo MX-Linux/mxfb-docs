@@ -1,0 +1,14 @@
+[begin] (Mimo dohled) 
+    [exec] (Zavřít dok) { killall wmalauncher               }
+    [exec] (Zavřít okno) { xkill                             }
+    [separator]
+    [exec] (Přepnout conky) { conkytoggle.sh                    }
+    [exec] (Přepnout iDesk) { idesktoggle idesk                 }
+    [exec] (Přepnout ikony) { idesktoggle icons                 }
+    [exec] (Přepnout automatické skrytí doku) { toggledock }
+    [exec] (Přepnout automatické skrytí panelu nástrojů) { toggletoolbar}
+    [exec] (Přepnout automatické skrytí panelu) { togglepanel}
+    [exec] (Přepnout monitory) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Zakázat výchozí dok) { killall wmalauncher && dfltdck_kill }
+[end]

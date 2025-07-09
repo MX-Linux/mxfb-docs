@@ -1,0 +1,50 @@
+the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (MX Fluxbox)
+   	[submenu] (Všechny aplikace)
+   		[exec] (Hledat) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (Aktualizace)  {/usr/bin/mxfb-menu-generator}
+        [exec] (Zakázat) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (Webový prohlížeč) {sensible-browser}
+    [exec] (Správce souborů) {exo-open $HOME} 
+    [exec] (Nápověda) {mxfb-help}
+    [submenu] (Multimédia)
+    	[exec] (Přehrávač hudby) {deadbeef}
+    	[exec] (Webový komiks) {bl-xkcd}
+        [end]
+    [submenu] (Ostatní)
+    	[submenu] (Poslední soubory) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Aktualizace) {mxfb-recent-files}
+		[end]
+		[exec] (Snímání obrazovky) {mxfb-quickshot}
+		[exec] (Počasí) {mxfb-simple-weather}
+	[end]
+    [exec] (Spustit) {mxfb-rofirun}
+    [exec] (Nástroje MX Fluxbox) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminál) {x-terminal-emulator} 
+    [separator]
+    [submenu] (Vzhled)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_cs)
+    [end]
+    [submenu] (Nastavení)
+    	[include] (/usr/share/mxflux/menu-translations/settings_cs)
+    [end]
+    [submenu] (Mimo dohled)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_cs)
+    [end]
+    [submenu] (Odejděte)
+        [exec] (Obnovit) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (Pozastavit) {sudo 'pm-suspend'}
+        [exec] (Zámek) {dm-tool switch-to-greeter}
+        [exit] (Odhlásit) 
+        [exec] (Restart) {sudo /sbin/reboot} 
+        [exec] (Vypnout) {sudo poweroff}
+    [end]
+[end]

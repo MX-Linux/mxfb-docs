@@ -1,0 +1,18 @@
+[begin] (Aparência) 
+    [exec] (Conky){conky-manager2}
+    [submenu] (Docks)
+        [exec] (Padrão) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
+        [separator]
+        [exec] (Dockmaker) {mx-dockmaker}
+    [end]
+    [exec] (Ícones da área de trabalho) {mx-idesktool}
+    [Exec] (Fonte) {mxfb-font} 
+    [exec] (Monitores) {gkrellm}
+  	[Exec] (Tema) {mx-tweak --theme}
+    [submenu] (Fundo) 
+        [exec] (Seleccionar) {nitrogen}
+        [exec] (Rodar) {mxfb-bg-rotate}
+        [exec] (Separar) {mxfb-separate-backgrounds}
+    [end]
+[end]

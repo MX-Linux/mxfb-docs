@@ -1,0 +1,14 @@
+[begin] (Εκτός οπτικού πεδίου) 
+    [exec] (Καταστροφή Dock) { killall wmalauncher               }
+    [exec] (Καταστροφή ενός παραθύρου) { xkill                             }
+    [separator]
+    [exec] (Εναλλαγή conky) { conkytoggle.sh                    }
+    [exec] (Εναλλαγή iDesk) { idesktoggle idesk                 }
+    [exec] (Εναλλαγή εικονιδίων) { idesktoggle icons                 }
+    [exec] (Εναλλαγή αυτόματης απόκρυψης dock) { toggledock }
+    [exec] (Εναλλαγή αυτόματης απόκρυψης toolbar) { toggletoolbar}
+    [exec] (Εναλλαγή αυτόματης απόκρυψης panel) { togglepanel}
+    [exec] (Εναλλαγή οθονών) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Απενεργοποίηση προκαθορισμένου dock) { killall wmalauncher && dfltdck_kill }
+[end]

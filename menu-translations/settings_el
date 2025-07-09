@@ -1,0 +1,45 @@
+[begin] (Ρυθμίσεις)
+    [exec] (Backup) {grsync}
+    [submenu] (Αρχεία ρυθμίσεων)
+        [config] (Γρήγορη ρύθμιση)
+        [exec] (Εφαρμογές) {exo-open ~/.fluxbox/apps}
+        [submenu] (Αρχικοποίηση) 
+        	[exec] (Επεξεργασία) {exo-open ~/.fluxbox/init}
+        	[separator]
+        	[exec] (Κατηγοριοποίηση) {mxfb-sortinit}
+        [end]
+        [exec] (Κλειδιά) {exo-open ~/.fluxbox/keys}
+        [submenu] (Μενού) 
+           [exec] (Κύριa) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (Εμφάνιση) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (Ρυθμίσεις) {exo-open ~/.fluxbox/submenus/settings}
+           [exec] (Εκτός οπτικού πεδίου) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (Επικάλυμμα) {exo-open ~/.fluxbox/overlay}
+        [exec] (Εκκίνηση) {featherpad ~/.fluxbox/startup}
+        [exec] (Styles) {thunar ~/.fluxbox/styles/}
+        [exec] (Πάνελ Tint2) {mxfb-tint2-manager}
+    [end]
+    [submenu] (Οθόνη)
+    	[exec] (Αλλαγή) {arandr}
+    	[exec](Βοήθεια) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    	[exec] (Screensaver) {exo-open /usr/share/doc/mxfb-accessories/help_mxfb-screensaver}
+    [end]
+    [submenu] (Πληκτρολόγιο)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+    [submenu] (Γραμμή εργαλείων)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] (tint2) {toggletint2}
+    [end]
+[end]

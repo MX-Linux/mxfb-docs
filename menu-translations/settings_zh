@@ -1,0 +1,45 @@
+[begin] (设置)
+    [exec] (备份) {grsync}
+    [submenu] (配置文件)
+        [config] (快速配置)
+        [exec] (应用) {exo-open ~/.fluxbox/apps}
+        [submenu] (初始化) 
+        	[exec] (编辑) {exo-open ~/.fluxbox/init}
+        	[separator]
+        	[exec] (分类) {mxfb-sortinit}
+        [end]
+        [exec] (键盘) {exo-open ~/.fluxbox/keys}
+        [submenu] (菜单) 
+           [exec] (主) {exo-open ~/.fluxbox/menu-mx}
+           [exec] (外观) {exo-open ~/.fluxbox/submenus/appearance}
+           [exec] (设置) {exo-open ~/.fluxbox/submenus/settings}
+           [exec] (隐藏) {exo-open ~/.fluxbox/submenus/out-of-sight}
+        [end]
+        [exec] (叠加) {exo-open ~/.fluxbox/overlay}
+        [exec] (启动) {featherpad ~/.fluxbox/startup}
+        [exec] (样式) {thunar ~/.fluxbox/styles/}
+        [exec] (Tint2 面板) {mxfb-tint2-manager}
+    [end]
+    [submenu] (显示)
+    	[exec] (更改) {arandr}
+    	[exec](帮助) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    	[exec] (屏幕保护程序) {exo-open /usr/share/doc/mxfb-accessories/help_mxfb-screensaver}
+    [end]
+    [submenu] (键盘)
+        [exec] (DE) {setxkbmap de}
+        [exec] (ES) {setxkbmap es} 
+        [exec] (FR) {setxkbmap fr}
+        [exec] (GB) {setxkbmap gb}
+        [exec] (GR) {setxkbmap gr}
+        [exec] (JA) {setxkbmap ja}
+        [exec] (IT) {setxkbmap it}
+        [exec] (PL) {setxkbmap pl}
+        [exec] (PT) {setxkbmap pt}
+        [exec] (RU) {setxkbmap ru}
+        [exec] (US) {setxkbmap us}
+    [end]
+    [submenu] (工具栏)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] (tint2) {toggletint2}
+    [end]
+[end]

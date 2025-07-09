@@ -1,0 +1,14 @@
+[begin] (Cambiar la vista) 
+    [exec] (Matar la barra de iconos) { killall wmalauncher               }
+    [exec] (Matar una ventana) { xkill                             }
+    [separator]
+    [exec] (Ver/ocultar conky) { conkytoggle.sh                    }
+    [exec] (Ver/ocultar iDesk) { idesktoggle idesk                 }
+    [exec] (Ver/ocultar iconos) { idesktoggle icons                 }
+    [exec] (Activar la ocultación automática de la barra de iconos) { toggledock }
+    [exec] (Activar la ocultación automática de la barra de herramientas) { toggletoolbar}
+    [exec] (Activar la ocultación automática del panel) { togglepanel}
+    [exec] (Ver/ocultar monitores) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Desactivar la barra de iconos por defecto) { killall wmalauncher && dfltdck_kill }
+[end]

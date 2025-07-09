@@ -1,0 +1,14 @@
+[begin] (خارج نطاق الرؤية) 
+    [exec] (إيقاف تشغيل الرصيف) { killall wmalauncher               }
+    [exec] (إيقاف تشغيل نافذة) { xkill                             }
+    [separator]
+    [exec] (تبديل conky) { conkytoggle.sh                    }
+    [exec] (تبديل iDesk) { idesktoggle idesk                 }
+    [exec] (تبديل الرموز) { idesktoggle icons                 }
+    [exec] (تبديل إخفاء الرصيف تلقائيًا) { toggledock }
+    [exec] (تبديل إخفاء شريط الأدوات تلقائيًا) { toggletoolbar}
+    [exec] (تبديل إخفاء اللوحة تلقائيًا) { togglepanel}
+    [exec] (تبديل الشاشات) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (تعطيل الرصيف الافتراضي) { killall wmalauncher && dfltdck_kill }
+[end]

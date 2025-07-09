@@ -1,0 +1,50 @@
+the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (MX Fluxbox)
+   	[submenu] (所有应用)
+   		[exec] (搜索) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (更新)  {/usr/bin/mxfb-menu-generator}
+        [exec] (禁用) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (网页浏览器) {sensible-browser}
+    [exec] (文件管理器) {exo-open $HOME} 
+    [exec] (帮助) {mxfb-help}
+    [submenu] (多媒体)
+    	[exec] (音乐播放器) {deadbeef}
+    	[exec] (网络漫画) {bl-xkcd}
+        [end]
+    [submenu] (其他)
+    	[submenu] (最近文件) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (更新) {mxfb-recent-files}
+		[end]
+		[exec] (屏幕截图) {mxfb-quickshot}
+		[exec] (天气) {mxfb-simple-weather}
+	[end]
+    [exec] (运行) {mxfb-rofirun}
+    [exec] (MX Fluxbox 工具) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (终端) {x-terminal-emulator} 
+    [separator]
+    [submenu] (外观)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_zh)
+    [end]
+    [submenu] (设置)
+    	[include] (/usr/share/mxflux/menu-translations/settings_zh)
+    [end]
+    [submenu] (隐藏)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_zh)
+    [end]
+    [submenu] (离开)
+        [exec] (刷新) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (暂停) {sudo 'pm-suspend'}
+        [exec] (锁) {dm-tool switch-to-greeter}
+        [exit] (注销) 
+        [exec] (重启) {sudo /sbin/reboot} 
+        [exec] (关机) {sudo poweroff}
+    [end]
+[end]

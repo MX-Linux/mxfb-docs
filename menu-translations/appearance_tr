@@ -1,0 +1,18 @@
+[begin] (Görünüm) 
+    [exec] (Conky){conky-manager2}
+    [submenu] (Yuvaya ekle)
+        [exec] (Varsayılan) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
+        [separator]
+        [exec] (Yuva oluşturucu) {mx-dockmaker}
+    [end]
+    [exec] (Masaüstü simgeleri) {mx-idesktool}
+    [Exec] (Yazı tipi) {mxfb-font} 
+    [exec] (Monitörler) {gkrellm}
+  	[Exec] (Tema) {mx-tweak --theme}
+    [submenu] (Duvar kağıdı) 
+        [exec] (Seç) {nitrogen}
+        [exec] (Döndür) {mxfb-bg-rotate}
+        [exec] (Ayır) {mxfb-separate-backgrounds}
+    [end]
+[end]

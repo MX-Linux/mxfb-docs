@@ -1,8 +1,9 @@
-mxfb-docs (25.07.01mx25) UNRELEASED; urgency=medium
+mxfb-docs (25.07.01mx25) mx; urgency=medium
 
   * Non-maintainer upload.
   * MX-25 manual and translations added
   * Starting menu translations
+  * Finished menu translations
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 07 Jul 2025 19:08:18 -0400
 

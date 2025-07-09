@@ -1,0 +1,5 @@
+test both
+
+sed -E -n 's/.*\((.*)\).*$/\1/p' inputfile > output file
+
+grep -oP '\(\K[^)]+' inputfile > outputfile

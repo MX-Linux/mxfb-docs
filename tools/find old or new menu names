@@ -1,0 +1,13 @@
+** to identify old items no longer in use: gather old menuitems and new menuitems together then run -- be sure to delete language codes from result **
+** to identify new names absent in older file: reverse file order **
+
+grep -Fxv -f oldfile newfile > names2exclude.txt
+
+* examples *
+
+grep -Fxv -f 25menunames.txt 23menunames.txt > names2exclude.txt
+
+grep -Fxv -f 23menunames.txt 25menunames.txt > newnames.txt
+
+
+

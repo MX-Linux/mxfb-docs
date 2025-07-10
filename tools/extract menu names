@@ -1,5 +1,4 @@
-test both
+** collect the 4 menus into a work location **
 
-sed -E -n 's/.*\((.*)\).*$/\1/p' inputfile > output file
+sed -E -n 's/.*\((.*)\).*$/\1/p' menu-mx appearance settings out-of-sight > menunames.txt
 
-grep -oP '\(\K[^)]+' inputfile > outputfile

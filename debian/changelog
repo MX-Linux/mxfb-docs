@@ -1,3 +1,11 @@
+mxfb-docs (25.07.02mx25+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Updated Appearance menu template
+  * Changed command for menu entry Conky
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 29 Jul 2025 19:47:33 -0400
+
 mxfb-docs (25.07.02mx25) mx; urgency=medium
 
   * Minor tool file correction

@@ -1,5 +1,5 @@
 [begin] (Εμφάνιση) 
-    [exec] (Conky){conky-manager2}
+    [exec] (Conky){mx-conky}
     [submenu] (Docks)
         [exec] (Εξ ορισμού) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}

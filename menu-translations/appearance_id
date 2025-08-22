@@ -1,0 +1,18 @@
+[begin] (Penampilan) 
+    [exec] (Conky){mx-conky}
+    [submenu] (Dock)
+        [exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
+        [separator]
+        [exec] (Dockmaker) {mx-dockmaker}
+    [end]
+    [exec] (Ikon desktop) {mx-idesktool}
+    [Exec] (Font) {mxfb-font} 
+    [exec] (Monitor) {gkrellm}
+  	[Exec] (Tema) {mx-tweak --theme}
+    [submenu] (Wallpaper) 
+        [exec] (Pilih) {nitrogen}
+        [exec] (Putar) {mxfb-bg-rotate}
+        [exec] (Pisahkan) {mxfb-separate-backgrounds}
+    [end]
+[end]

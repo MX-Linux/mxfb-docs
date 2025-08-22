@@ -1,0 +1,50 @@
+the default versions of the submenus are located in /usr/share/mxflux/menu
+
+[begin] (MX Fluxbox)
+   	[submenu] (Semua Aplikasi)
+   		[exec] (Pencarian) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (Perbarui)  {/usr/bin/mxfb-menu-generator}
+        [exec] (Nonaktifkan) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (Peramban web) {sensible-browser}
+    [exec] (Pengelola berkas) {exo-open $HOME} 
+    [exec] (Bantuan) {mxfb-help}
+    [submenu] (Multimedia)
+    	[exec] (Pemutar musik) {deadbeef}
+    	[exec] (Webkomik) {bl-xkcd}
+        [end]
+    [submenu] (Lainnya)
+    	[submenu] (Berkas terbaru) 
+			[include] (~/.fluxbox/submenus/recent_files_menu)
+			[separator]
+			[exec] (Perbarui) {mxfb-recent-files}
+		[end]
+		[exec] (Penangkapan layar) {mxfb-quickshot}
+		[exec] (Cuaca) {mxfb-simple-weather}
+	[end]
+    [exec] (Jalankan) {mxfb-rofirun}
+    [exec] (Alat MX Fluxbox) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminal) {x-terminal-emulator} 
+    [separator]
+    [submenu] (Penampilan)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_fr)
+    [end]
+    [submenu] (Pengaturan)
+    	[include] (/usr/share/mxflux/menu-translations/settings_fr)
+    [end]
+    [submenu] (Di luar tampilan)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_fr)
+    [end]
+    [submenu] (Keluar)
+        [exec] (Segarkan) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (Tunda) {sudo 'pm-suspend'}
+        [exec] (Kunci) {dm-tool switch-to-greeter}
+        [exit] (Keluar) 
+        [exec] (Mulai ulang) {sudo /sbin/reboot} 
+        [exec] (Matikan) {sudo poweroff}
+    [end]
+[end]

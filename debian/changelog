@@ -1,3 +1,11 @@
+mxfb-docs (25.08,01) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * Updated Manual with new mx conky, default desktop
+  * Added Manual and menu translation into id
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 22 Aug 2025 15:13:58 -0400
+
 mxfb-docs (25.07.03mx25) mx; urgency=medium
 
   * Updated Appearance menu template

@@ -1,0 +1,14 @@
+[begin] (Di luar tampilan) 
+    [exec] (Matikan dok) { killall wmalauncher               }
+    [exec] (Matikan jendela) { xkill                             }
+    [separator]
+    [exec] (Aktifkan/nonaktifkan Conky) { conkytoggle.sh                    }
+    [exec] (Aktifkan/nonaktifkan iDesk) { idesktoggle idesk                 }
+    [exec] (Aktifkan/nonaktifkan ikon) { idesktoggle icons                 }
+    [exec] (Aktifkan/nonaktifkan dok otomatis) { toggledock }
+    [exec] (Aktifkan/nonaktifkan bilah alat otomatis) { toggletoolbar}
+    [exec] (Aktifkan/nonaktifkan panel otomatis) { togglepanel}
+    [exec] (Aktifkan/nonaktifkan monitor) { toggle-mx gkrellm                 }
+    [separator]
+    [exec] (Nonaktifkan dok default) { killall wmalauncher && dfltdck_kill }
+[end]

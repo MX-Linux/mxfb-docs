@@ -30,6 +30,15 @@ Provides: mxfbum
 Description: user manual for MX Fluxbox
  MX Fluxbox Manual in arabic
  
+Package: mxfb-docs-cs
+Section: doc
+Conflicts:  mxfb-docs (<25.07.02)
+Replaces:  mxfb-docs
+Architecture: all
+Provides: mxfbum
+Description: user manual for MX Fluxbox
+ MX Fluxbox Manual in czech
+ 
 Package: mxfb-docs-de
 Section: doc
 Conflicts:  mxfb-docs (<25.07.02)
@@ -74,7 +83,16 @@ Architecture: all
 Provides: mxfbum
 Description: user manual for MX Fluxbox
  MX Fluxbox Manual in french
- 
+
+Package: mxfb-docs-id
+Section: doc
+Conflicts:  mxfb-docs (<25.07.02)
+Replaces:  mxfb-docs
+Architecture: all
+Provides: mxfbum
+Description: user manual for MX Fluxbox
+ MX Fluxbox Manual in indonesian
+  
 Package: mxfb-docs-it
 Section: doc
 Conflicts:  mxfb-docs (<25.07.02)
@@ -119,6 +137,15 @@ Architecture: all
 Provides: mxfbum
 Description: user manual for MX Fluxbox
  MX Fluxbox Manual in russian
+ 
+Package: mxfb-docs-sv
+Section: doc
+Conflicts:  mxfb-docs (<25.07.02)
+Replaces:  mxfb-docs
+Architecture: all
+Provides: mxfbum
+Description: user manual for MX Fluxbox
+ MX Fluxbox Manual in swedish
  
 Package: mxfb-docs-tr
 Section: doc

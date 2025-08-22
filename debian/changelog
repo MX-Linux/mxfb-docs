@@ -1,10 +1,9 @@
-mxfb-docs (25.08,01) mx; urgency=medium
+mxfb-docs (25.08.01mx25) mx; urgency=medium
 
-  * Non-maintainer upload.
   * Updated Manual with new mx conky, default desktop
-  * Added Manual and menu translation into id
+  * Added Manual and menu translation into id, sv, cs
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 22 Aug 2025 15:13:58 -0400
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 22 Aug 2025 16:00:33 -0400
 
 mxfb-docs (25.07.03mx25) mx; urgency=medium
 

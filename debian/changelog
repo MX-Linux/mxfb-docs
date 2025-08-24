@@ -1,3 +1,9 @@
+mxfb-docs (25.08.02mx25) mx; urgency=medium
+
+  * fix missing depends on metapackage
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 23 Aug 2025 21:47:58 -0400
+
 mxfb-docs (25.08.01mx25) mx; urgency=medium
 
   * Updated Manual with new mx conky, default desktop

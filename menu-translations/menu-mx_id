@@ -14,7 +14,7 @@ the default versions of the submenus are located in /usr/share/mxflux/menu
     [exec] (Pengelola berkas) {exo-open $HOME} 
     [exec] (Bantuan) {mxfb-help}
     [submenu] (Multimedia)
-    	[exec] (Pemutar musik) {deadbeef}
+    	[exec] (Pemutar musik) {audacious}
     	[exec] (Webkomik) {bl-xkcd}
         [end]
     [submenu] (Lainnya)

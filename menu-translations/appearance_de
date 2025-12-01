@@ -7,12 +7,12 @@
         [exec] (Dock-Ersteller) {mx-dockmaker}
     [end]
     [exec] (Desktop-Symbole) {mx-idesktool}
-    [Exec] (Font) {mxfb-font} 
+    [Exec] (Schriftarten) {mxfb-font} 
     [exec] (Monitore) {gkrellm}
   	[Exec] (Thema) {mx-tweak --theme}
     [submenu] (Hintergrund) 
         [exec] (Auswählen) {nitrogen}
-        [exec] (Drehen) {mxfb-bg-rotate}
-        [exec] (Trennen) {mxfb-separate-backgrounds}
+        [exec] (Diashow) {mxfb-bg-rotate}
+        [exec] (pro Arbeitsfläche) {mxfb-separate-backgrounds}
     [end]
 [end]

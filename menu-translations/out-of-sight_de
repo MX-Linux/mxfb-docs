@@ -1,6 +1,6 @@
 [begin] (Verstecken) 
-    [exec] (Dock abschießen) { killall wmalauncher               }
-    [exec] (Fenster abschießen) { xkill                             }
+    [exec] (Dock beenden) { killall wmalauncher               }
+    [exec] (Fenster beenden) { xkill                             }
     [separator]
     [exec] (Conky an/aus) { conkytoggle.sh                    }
     [exec] (iDesk an/aus) { idesktoggle idesk                 }
@@ -8,7 +8,7 @@
     [exec] (Automatisches Ausblenden des Docks an/aus) { toggledock }
     [exec] (Automatisches Ausblenden der Werkzeugleiste an/aus) { toggletoolbar}
     [exec] (Automatisches Ausblenden des Panel an/aus) { togglepanel}
-    [exec] (Bildschirme umschalten) { toggle-mx gkrellm                 }
+    [exec] (System-Monitor umschalten) { toggle-mx gkrellm                 }
     [separator]
     [exec] (Standard-Dock deaktivieren) { killall wmalauncher && dfltdck_kill }
 [end]

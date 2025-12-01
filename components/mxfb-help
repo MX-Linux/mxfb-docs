@@ -6,7 +6,7 @@ if [ -n "$test" ]; then
 	FILE="/usr/share/mxflux/help/MXRPi2-Manual"
 fi
 lang_check=$(echo $LANG|cut -d_ -f1)
-lang_check=${lang_check^^}
+#lang_check=${lang_check^^}
 echo $lang_check
 FILE2=$FILE"_"$lang_check".pdf"
 
